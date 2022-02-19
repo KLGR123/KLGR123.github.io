@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-18T12:47:16.559Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15" etag="eCmRmyyp184LrZoK9DnJ" version="16.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-19T11:17:31.152Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15" etag="2SB91luB-kRuIxLZAYp0" version="16.6.1" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
-    <mxGraphModel dx="2066" dy="1510" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2066" dy="1509" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -66,7 +66,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NdOrvFPb7zr40TQDn14a-120" value="" style="whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=1;strokeWidth=3;fillColor=#FFFFCC" parent="1" vertex="1">
+        <mxCell id="NdOrvFPb7zr40TQDn14a-120" value="Topsis" style="whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=1;strokeWidth=3;fillColor=#FFFFCC" parent="1" vertex="1">
           <mxGeometry x="757.5" y="2.1316282072803006e-14" width="90" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NdOrvFPb7zr40TQDn14a-121" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;strong&gt;detail 1&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;text-align: left ; margin: 0px ; margin-left: 8px&quot;&gt;&lt;i&gt;Get the Sequester&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px ; margin-left: 8px&quot;&gt;&lt;i&gt;and time relation&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px ; margin-left: 8px&quot;&gt;&lt;i&gt;with different&amp;nbsp;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;&amp;nbsp; management plan&lt;/i&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="verticalAlign=middle;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;fontStyle=1;strokeWidth=3;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" parent="1" vertex="1">
@@ -210,7 +210,7 @@
         <mxCell id="irT96-nwT7kxmxrKVlNN-77" value="GM(1, 1)" style="whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=1;strokeWidth=3;fillColor=#FFFFCC" parent="1" vertex="1">
           <mxGeometry x="313" y="690" width="90" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="irT96-nwT7kxmxrKVlNN-78" value="" style="whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=1;strokeWidth=3;fillColor=#FFFFCC" parent="1" vertex="1">
+        <mxCell id="irT96-nwT7kxmxrKVlNN-78" value="聚类" style="whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=1;strokeWidth=3;fillColor=#FFFFCC" parent="1" vertex="1">
           <mxGeometry x="440.5" y="690" width="90" height="60" as="geometry" />
         </mxCell>
         <mxCell id="irT96-nwT7kxmxrKVlNN-80" value="" style="edgeStyle=none;noEdgeStyle=1;strokeColor=#990000;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="irT96-nwT7kxmxrKVlNN-78" target="irT96-nwT7kxmxrKVlNN-75" edge="1">
@@ -286,6 +286,12 @@
         </mxCell>
         <mxCell id="irT96-nwT7kxmxrKVlNN-101" value="RNN" style="whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=1;strokeWidth=3;fillColor=#FFFFCC" parent="1" vertex="1">
           <mxGeometry x="313" y="760" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aL0ZiZZu7eytjXn01ATo-59" value="分类" style="whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=1;strokeWidth=3;fillColor=#FFFFCC" vertex="1" parent="1">
+          <mxGeometry x="1011" y="760" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aL0ZiZZu7eytjXn01ATo-60" value="regression" style="whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=1;strokeWidth=3;fillColor=#FFFFCC" vertex="1" parent="1">
+          <mxGeometry x="1310" y="620" width="90" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
