@@ -12,21 +12,23 @@
 
 🔗 github: [https://github.com/KLGR123/MINT](https://github.com/KLGR123/MINT)
 
-🗝 uniapp uniCloud SNS 推荐系统 前后端
+🗝 _uniapp uniCloud SNS 推荐系统 前后端
 
 
 ## 课程 大学物理
-☕️ 电磁学、波和光学。
+☕️ 电磁学、波和光学。实验内容包含分光计、惠斯登电桥测量中值电阻、霍尔元件测磁场、液压杨氏模量、非线性电路等。
 
 
 ## 课程+项目 导论课
-☕️ 从物流到环境监测，以及基于AprilTag实现智能追踪；从小车的简单运行到wifi图传和遥控同步化实现；小程序端和网页端的不断创新。再到后期的人脸识别，红外成像等等，“格兰帕”智能小车是基于本课程和兴趣爱好的诸多实现的综合体。在导论课作业中，我们只展示其中的一个主要场景，即环境勘探的数据反馈与图传、可操作界面遥控、可视化数据，以及基于AprilTag追踪的智能跟随。通过 openmv 平台和 arduino, 我们实现了 wifi 图传，以便监测场景并随时做出反应；通过 tkinter 所设计的图形界面，我们实现了按钮发送数据并用 wifi 模块接受并通过串口通信，最终实现电机控制，以及蜂鸣器的控制。小车可以在我们的操作下前进后退、左转右转、原地转弯、发出警报等。
+☕️ arduino，微信小程序，网络抓包分析，python入门等等。
+
+项目从物流到环境监测，以及基于AprilTag实现智能追踪；从小车的简单运行到wifi图传和遥控同步化实现；小程序端和网页端的不断创新。再到后期的人脸识别，红外成像等等，“格兰帕”智能小车是基于本课程和兴趣爱好的诸多实现的综合体。在导论课作业中，我们只展示其中的一个主要场景，即环境勘探的数据反馈与图传、可操作界面遥控、可视化数据，以及基于AprilTag追踪的智能跟随。通过 openmv 平台和 arduino, 我们实现了 wifi 图传，以便监测场景并随时做出反应；通过 tkinter 所设计的图形界面，我们实现了按钮发送数据并用 wifi 模块接受并通过串口通信，最终实现电机控制，以及蜂鸣器的控制。小车可以在我们的操作下前进后退、左转右转、原地转弯、发出警报等。
 
 🔗 github: [https://github.com/TaroPie0224/AE86](https://github.com/TaroPie0224/AE86)
 
 🔗 bilibili: [https://www.bilibili.com/video/BV1xJ411s7DX](https://www.bilibili.com/video/BV1xJ411s7DX)
 
-🗝 micropython wifi图传 openmv arduino tkinter socket 微信小程序 电机驱动 电路板 CV追踪 遥控
+🗝 _micropython wifi图传 openmv arduino tkinter socket 微信小程序 电机驱动 电路板 CV追踪 遥控
 
 
 ## 课程 电类实验
@@ -44,13 +46,13 @@
 ## 课程+项目 计算机原理
 ☕️ ARM架构、指令集、微机组成、三级流水线、Cortex-M4 处理器、寻址方式、存储器、总线、中断、串并联接口。完成了数码管循环显示实验报告，完成了ARM可执行映像文件的实验报告。
 
-🗝 Proteus 电路设计 C语言 片选 GPIO 可执行映像文件 底层编程
+🗝 _Proteus 电路设计 C语言 片选 GPIO 可执行映像文件 底层编程
 
 
 ## 课程+项目 模拟电路 数字电路
 ☕️ 时间跨度长的重点课程。包括模电、模电实验、数电、数电实验四部分。模电实验主要有常用电子测量仪表、一阶 RC 电路研究、有源二端网络等效参数和戴维南验证、运放电路设计、等等，完成了忆阻器调查研究与分析的论文。数电实验有密码箱电路设计、任意数计数器设计，自行车尾灯指示系统设计与实现。内容比较复杂，技术点过多，不再详述。
 
-🗝 Multisim Proteus Verilog Quartus Modelsim 模拟电路 数字电路 STM32F4 电路设计 电路调试
+🗝 _Multisim Proteus Verilog Quartus Modelsim 模拟电路 数字电路 STM32F4 电路设计 电路调试
 
 🔗 github: [https://github.com/KLGR123/Digital_Circuit_homework](https://github.com/KLGR123/Digital_Circuit_homework)
 
@@ -81,6 +83,14 @@
 ☕️ 完成论文“MIDI 呼吸控制器的创业实 践项目管理与决策”。
 
 
+## 课程 工程数学
+☕️ 复变函数、矢量分析与场论、数学物理方法。
+
+
+## 课程 离散数学
+☕️ 命题逻辑、一阶逻辑、集合、二元关系和函数、图。
+
+
 ## 项目 英语四六级考试
 ☕️ 学习英语，参加考试，四级分数为 658 分，六级分数为 521 分。
 
@@ -98,6 +108,8 @@
 
 🔗 bilibili: [https://www.bilibili.com/video/BV1JS4y1j734](https://www.bilibili.com/video/BV1JS4y1j734)
 
+🗝 _CV+NLP 图像描述任务 JetsonNano 手势识别 手追踪 深度学习 边缘智能 视频帧描述 socket 数据集
+
 
 ## 课程 电磁场与电磁波
 ☕️ 静电场、恒定磁场、时变电磁场、均匀平面波传播、反射与透射、导行电磁波、电磁辐射。
@@ -109,9 +121,74 @@
 🔗 github: [https://github.com/KLGR123/DataScience_Homework](https://github.com/KLGR123/DataScience_Homework)
 
 
+## 课程 通信电子电路
+☕️ 噪声与干扰、高频放大电路、正弦波振荡电路、调制解调与变频电路、反馈控制电路、锁相环、频率合成器、射频收发机设计。实验内容包括示波器、克拉珀电路、席勒电路、集成乘法器调制解调（同步检波）。该课程更偏重工程设计和应用。
+
+
+## 课程 通信原理I
+☕️ 确定信号分析、随机过程、模拟通信系统、数字信号的基带传输、数字信号的频带传输。
+
+
+## 课程+项目 无线通信与人工智能
+☕️ 人工智能实例应用和在通信方面的应用发展。包括交叉点实践案例（DNN 信道估计和信号检测、LSTM 的用户移动性预测、流量时空数据的 DNN 和 ConvLSTM + Dropout 预测）。
+
+🔗 github: [https://github.com/KLGR123/DeepST_ConvLSTM_wireless_data_prediction](https://github.com/KLGR123/DeepST_ConvLSTM_wireless_data_prediction)
+
+
+## 课程+项目 物联网基础与应用
+☕️ 物联网感知技术、无线传输技术、应用层技术、物联安全技术、5G与物联网、工业物联网、车联网等等。完成 KMeans 图片压缩、CNN 复现和最终的汇报大作业。
+
+🔗 bilibili: [https://www.bilibili.com/video/BV1QD4y1F7TZ](https://www.bilibili.com/video/BV1QD4y1F7TZ)
+
+
+## 项目 数学建模（美赛）
+☕️ 2022年美国大学生数学建模 MCM 比赛，选择赛题为 E 题，题目是 Forestry 相关。我是队伍的编程手和画图手。最终奖项还未公布。
+
+🔗 github: [https://github.com/KLGR123/2022_MCM_Code](https://github.com/KLGR123/2022_MCM_Code)
+
+
+## 项目 三创跨境电商大赛
+☕️ 以独立站 SaaS 店匠科技为竞赛平台，在深圳店匠科技 支持下，开展跨境电商独立站实战赛。仍在进行中。
+
+🔗 语雀: [https://www.yuque.com/liujiarun-kfs4n/zbdrxv](https://www.yuque.com/liujiarun-kfs4n/zbdrxv)
+
+
+## 项目 微信机器人
+☕️ 使用你的一个微信账户通过windows上的客户端来实现微信接受信息和回复信息，依赖 PyWeChatSpy 实现。后添加了天气自动回复、图片关键字批量搜索等有趣功能，均通过 python 实现。
+
+🔗 github: [https://github.com/KLGR123/Wechat-Robot](https://github.com/KLGR123/Wechat-Robot)
+
+
+## 项目 python 和实用库
+☕️ 参考众多教程自学 python 和许多实用库，一些实现见我的 github 主页。
+
+🗝 _Django Matplotlib Pandas Numpy Mysql MongoDB TCP与UDP 多线程编程 正则表达式 网络爬虫Scrappy tkinter
+
+
+## 项目 智能算法作曲
+☕️ 在大二之初，我和同学与一个研究音乐生成、算法作曲的项目组学习和完善项目，带队导师是中国传媒大学的靳聪博士。她在其中一篇论文提到了如何将强化学习(两个奖励网络)应用于时序音乐生成，而且是基于 musegan(GAN)以及 magenta(RNN) 的框架上有创新的，这令我很受启发。同时，我也学习并实践了基于图神经网络(GNN)训练(使用有关和弦理论和乐理的知识图谱 embedding)，增改了一些应用于 RL 奖励机制的约束条件。
+
+🔗 语雀: [https://www.yuque.com/sfzq/wbhaoz/kacmv5](https://www.yuque.com/sfzq/wbhaoz/kacmv5)
+
+🔗 语雀: [https://www.yuque.com/sfzq/wbhaoz/elozh0](https://www.yuque.com/sfzq/wbhaoz/elozh0)
+
+
+## 项目 KBQA科研
+☕️ 从简单 kbqa 到多跳 kbqa，阅读文献并实现。包括 bert、rGCN、word2vec、TransferNet等。仍在进行中。
 
 
 ![Image](/art.jpg)
+
+
+
+## 业余 量化投资
+☕️ 我曾复现过一些量化投资算法，也学习了使用深度学习方法进行大盘预测等。之后接触了一些量化平台例如聚宽等等。
+
+
+## 业余 校团委宣传部 北邮青年宣传部
+☕️ 负责平面设计、海报喷绘和微信公众号的制作。曾两次为信通院“枫叶红”歌手大赛设计海报和手环周边，迎新海报以及为校管乐团制作公众号宣传等等。
+
+我可以熟练使用 PS 和 LR，Vectornator 等等平面设计工具。
 
 
 ## 业余 MIDI控制器
@@ -119,28 +196,53 @@
 
 
 ## 业余 摄影
+☕️ 我的第一台机器是佳能的 500D，现在使用 sony A6400 进行拍摄。镜头焦段则为常用的 1650 和人像焦段 18135。
+
+
+## 业余 视频拍摄和后期
+☕️ 我在平时有自制 vlog 和知识分享的习惯。我常使用 davinci 视频剪辑、调色等。详见我的 bilibili 个人主页。我曾和同班同学共同参演拍摄了建党一百年纪念片，翻拍中共一大。该视频得到了一致好评，并在北邮青年等学校平台广受宣传。
+
+🔗 bilibili: [https://www.bilibili.com/video/BV1pQ4y1o78R](https://www.bilibili.com/video/BV1pQ4y1o78R)
+
+
+## 业余 校管乐团
+☕️ 曾在校管乐团和管弦乐团担任小号手，共一年。曾参加大艺展的录制和学校演出。
+
+
+## 业余 Jazzoo爵士乐队
+☕️ 曾和志同道合的朋友组建了乐队，并在学校的摇滚音乐节演出曲目《レイディ・ブルース》和《r&b all night》，大获好评。我们平时也会尝试标准曲和现代 rnb、funk 和 citypop 风格的曲目，甚至是摇滚也不在话下。我们的乐队包括一个主唱、一个键盘手、一个鼓手、一个贝斯手、两个吉他手、一个萨克斯以及我本人，一个小号手。
+
+🔗 bilibili: [https://www.bilibili.com/video/BV1Df4y1h7hf](https://www.bilibili.com/video/BV1Df4y1h7hf)
+
+
+## 业余 信通院合唱队
+☕️ 曾作为男中音在信通院合唱队。参加“五月鲜花”全校演出和“艺馨杯”全校演出，均为第二名的好成绩。
+
+
+## 业余 使用 C4d 创建游戏模型
+☕️ 跟随网上的教程对一些小样进行了实现和渲染，很酷。
 
 
 ## 业余 搭建个人博客
-☕️ 本博客主要记录我的学业生涯内的主要事件和经历。如下是一个markdown，暂时不删除。
-```markdown
+☕️ 本博客主要记录我的学业生涯内的主要事件和经历。
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## 业余 金融理财
+☕️ 我有长期投资股票和基金的习惯，对于基本面和数据面有浅薄的学习。
 
-**Bold** and _Italic_ and `Code` text
+🔗 语雀: [https://www.yuque.com/liujiarun-kfs4n/ma2n6w](https://www.yuque.com/liujiarun-kfs4n/ma2n6w)
 
-[Link](url) and ![Image](src)
-```
+
+## 业余 网页自动化脚本
+☕️ 项目是针对北邮体育馆抢健身房的脚本。
+
+🔗 github: [https://github.com/KLGR123/gymScript](https://github.com/KLGR123/gymScript)
 
 
 ## Contact Me
 
-my video channel: [https://space.bilibili.com/474465629](https://space.bilibili.com/474465629)
+my **video channel**: [https://space.bilibili.com/474465629](https://space.bilibili.com/474465629)
 
-my documentation workspace: [https://www.yuque.com/liujiarun-kfs4n](https://www.yuque.com/liujiarun-kfs4n) 
+my **documentation workspace**: [https://www.yuque.com/liujiarun-kfs4n](https://www.yuque.com/liujiarun-kfs4n) 
 
-my email: liujiarun01@126.com
+my **email**: liujiarun01@126.com
