@@ -55,6 +55,17 @@
 ## 课程+项目 数据结构与算法导论
 ☕️ 
 
+## 创新实验课
+我在本课程完成了一个关于……的项目。
+
+
+🔗 工作日志: [https://www.yuque.com/liujiarun-kfs4n/zhfh7s](https://www.yuque.com/liujiarun-kfs4n/zhfh7s)
+
+🔗 github: [项目代码](https://github.com/KLGR123/Image_Caption_with_Gesture_Based_Interaction_System)
+
+
+![Image](/art.jpg)
+
 
 ## 业余 MIDI控制器
 ☕️ MIDI 呼吸控制器的用途，即通过使用者对传感器吹气，将气息气压变化的模拟信号量化为数字信号，通过映射到0到127内并扩展为MIDI信号，借助数据线传入宿主，最终控制音乐音符。MIDI 协议中的内容，除去如音高、时值等信息，还有一类常用参数即 MIDI Controller，这就是 MIDI 控制器。目前广泛应用的 MIDI 控制器共有128个，在协议数据中以 CC1 到 CC128 表示。每个控制通道可以控制一定范围内的数值，相当于128个推子控制着例如声音强弱、踏板延音、音符力度、颤音幅度等等。国内方面存在一些人已经关注到这一小众领域，但仍然可以说是“蓝海”领域。
@@ -63,19 +74,8 @@
 ## 业余 摄影
 
 
-
-## 创新实验课
-我在本课程完成了一个关于……的项目。
-
-
-
-🔗 工作日志: [https://www.yuque.com/liujiarun-kfs4n/zhfh7s](https://www.yuque.com/liujiarun-kfs4n/zhfh7s)
-
-🔗 github: [项目代码](https://github.com/KLGR123/Image_Caption_with_Gesture_Based_Interaction_System)
-
-
 ## 业余 搭建个人博客
-本博客即为创作内容，主要记录我的学业生涯内的主要事件和经历。
+☕️ 本博客即为创作内容，主要记录我的学业生涯内的主要事件和经历。
 如下是一个markdown，暂时不删除。
 ```markdown
 
