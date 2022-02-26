@@ -1,6 +1,11 @@
 # Jasper Leo 🏔 的项目汇总
+我的专业是信息与通信工程，目前是北京邮电大学在读大三学生，于大二加入英才班，配备一名导师。专业排名 97 名(分流后共 530 人)，综合加权平均分 88 分。我的数理能力较强，同时也偏向感性思维，在专业和业余爱好都有很好的发展。
+
+我感兴趣和在行的方向包括深度学习、机器学习、强化学习、自然语言处理和KBQA、通信系统、机器人、数据科学、量化投资等等。我的业余爱好包括爵士和摇滚乐、平面设计和绘画、球类运动和健身、无人机和硬件设计、编程、阅读、旅游、摄影等等。
+
 
 ![Image](/coder.jpg)
+
 
 ## 课程+项目 程序设计实验
 ☕️ 基于 uniapp 和 uniCloud 平台实现了一个基于小任务和用户性格爱好肖像的偏向博客的校园社交网络应用 MINT，即 mini-task 和 mini-thought 的缩写。其旨在让大学生脱离枯燥的日常生活，认识不同的自我，通过“我做即我本身”的理念实现校园社交网络。MINT 包含了博客类的想法收集和展示功能，实现基于想法时间线和同性格爱好的校园匹配交友; MINT 有基于用户肖像的小任务的推荐，偏向趣味类、生活类的应用类型; 基于发布博客、小任务和用户性格爱好肖像的偏向论坛博客、灵魂交友的校园社交网络。
@@ -47,13 +52,38 @@
 
 🗝 Multisim Proteus Verilog Quartus Modelsim 模拟电路 数字电路 STM32F4 电路设计 电路调试
 
+🔗 github: [https://github.com/KLGR123/Digital_Circuit_homework](https://github.com/KLGR123/Digital_Circuit_homework)
+
 
 ## 课程 数学分析
 ☕️ 基础课程，高等数学。下部分包括多元函数微分、重积分、曲线曲面积分、无穷级数。完成了“谈Fourier级数的理论建立与应用”这篇论文。
 
 
 ## 课程+项目 数据结构与算法导论
-☕️ 
+☕️ 树、链表、队列、图、矩阵等等 C++ 算法实现。与前面的 C++ 导论衔接，为算法学习做基础部署。完成期末论文为“手写识别算法的研究”。
+
+🔗 github: [https://github.com/KLGR123/Algorithms_CPP](https://github.com/KLGR123/Algorithms_CPP)
+
+
+## 课程 信号与系统
+☕️ 线性时不变系统、连续时间信号傅立叶变换、通信系统、复频域分析、离散时间信号 z 变换、状态变量分析法。
+
+
+## 课程 信息与通信技术前沿
+☕️ 完成论文“大数据和人工智能在不同行业领域的应用”。
+
+
+## 课程 数字信号处理
+☕️ 离散时间信号和系统、DFT 离散傅立叶变换、IIR 数字滤波器设计、FIR 数字滤波器设计。
+
+
+## 项目管理
+☕️ 完成论文“MIDI 呼吸控制器的创业实 践项目管理与决策”。
+
+
+## 项目 英语四六级考试
+☕️ 学习英语，参加考试，四级分数为 658 分，六级分数为 521 分。
+
 
 ## 创新实验课
 我在本课程完成了一个关于……的项目。
@@ -61,7 +91,7 @@
 
 🔗 工作日志: [https://www.yuque.com/liujiarun-kfs4n/zhfh7s](https://www.yuque.com/liujiarun-kfs4n/zhfh7s)
 
-🔗 github: [项目代码](https://github.com/KLGR123/Image_Caption_with_Gesture_Based_Interaction_System)
+🔗 github: [https://github.com/KLGR123/Image_Caption_with_Gesture_Based_Interaction_System](https://github.com/KLGR123/Image_Caption_with_Gesture_Based_Interaction_System)
 
 
 ![Image](/art.jpg)
@@ -75,13 +105,8 @@
 
 
 ## 业余 搭建个人博客
-☕️ 本博客即为创作内容，主要记录我的学业生涯内的主要事件和经历。
-如下是一个markdown，暂时不删除。
+☕️ 本博客主要记录我的学业生涯内的主要事件和经历。如下是一个markdown，暂时不删除。
 ```markdown
-
-# Projects
-## Projects
-### Projects
 
 - Bulleted
 - List
