@@ -77,7 +77,7 @@
 ☕️ 离散时间信号和系统、DFT 离散傅立叶变换、IIR 数字滤波器设计、FIR 数字滤波器设计。
 
 
-## 项目管理
+## 课程 项目管理
 ☕️ 完成论文“MIDI 呼吸控制器的创业实 践项目管理与决策”。
 
 
@@ -85,13 +85,30 @@
 ☕️ 学习英语，参加考试，四级分数为 658 分，六级分数为 521 分。
 
 
-## 创新实验课
-我在本课程完成了一个关于……的项目。
+## 课程+项目 创新实验
+☕️ 项目所完成的手势辅助的实时图像描述智能系统是一个不需要服务端提供推理的全边缘智能硬件。
 
+从技术角度出发，其主要用到了图像理解和图像描述 Image Captioning 技术，也用到了手势识别和手追踪等其他技术；从功能角度出发，它可以胜任下文所提到的功能和用处；从应用场景出发，它能帮助人们在视频标注时流畅地在关键帧生成概括性语句、也能帮助人们在屏幕或其他信息来源平面上得到总结描述、还能辅助视障人士对周围环境事物辅助性理解。从创新角度，这是一项很少有人尝试的应用。目前基本没有比较具体和健壮的产品直接应用图像描述技术，应用于硬件更是少之又少，虽然微软已经将图像描述技术应用于 PowerPoint ，但其应用场景比较狭窄，有一定突破瓶颈。但这并不能否认其本身具有的科研价值。
+
+本项目的几个主要模块分别是：（1）图像描述实现（2）手势交互控制（3）socket通信（4）集成设计。通过主函数和接口设计实现多线程同步。
 
 🔗 工作日志: [https://www.yuque.com/liujiarun-kfs4n/zhfh7s](https://www.yuque.com/liujiarun-kfs4n/zhfh7s)
 
 🔗 github: [https://github.com/KLGR123/Image_Caption_with_Gesture_Based_Interaction_System](https://github.com/KLGR123/Image_Caption_with_Gesture_Based_Interaction_System)
+
+🔗 bilibili: [https://www.bilibili.com/video/BV1JS4y1j734](https://www.bilibili.com/video/BV1JS4y1j734)
+
+
+## 课程 电磁场与电磁波
+☕️ 静电场、恒定磁场、时变电磁场、均匀平面波传播、反射与透射、导行电磁波、电磁辐射。
+
+
+## 课程+项目 数据科学基础
+☕️ 统计学原理、机器学习（分类、回归、聚类、协同过滤、降维）、深度学习、CNN 和 RNN、损失函数训练、框架实践、MapReduce 和 HDFS 等等。
+
+🔗 github: [https://github.com/KLGR123/DataScience_Homework](https://github.com/KLGR123/DataScience_Homework)
+
+
 
 
 ![Image](/art.jpg)
