@@ -239,6 +239,17 @@
 🔗 github: [https://github.com/KLGR123/gymScript](https://github.com/KLGR123/gymScript)
 
 
+![Image](/learn.jpg)
+
+
+
+## 网络学习
+🔗 李沐 动手学深度学习 + 论文精读: [https://space.bilibili.com/1567748478](https://space.bilibili.com/1567748478)
+🔗 uniapp 基础实战: [https://www.bilibili.com/video/BV11Z4y1K7yY](https://www.bilibili.com/video/BV11Z4y1K7yY)
+🔗 吴恩达 深度学习: [https://www.bilibili.com/video/BV1FT4y1E74V](https://www.bilibili.com/video/BV1FT4y1E74V)
+🔗 CS224n 斯坦福 自然语言处理: [https://www.bilibili.com/video/BV1pt411h7aT](https://www.bilibili.com/video/BV1pt411h7aT)
+
+
 ## Contact Me
 
 my **video channel**: [https://space.bilibili.com/474465629](https://space.bilibili.com/474465629)
