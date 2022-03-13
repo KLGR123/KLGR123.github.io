@@ -12,7 +12,7 @@
 
 🔗 github: [https://github.com/KLGR123/MINT](https://github.com/KLGR123/MINT)
 
-🗝 _uniapp uniCloud SNS 推荐系统 前后端
+🗝 uniapp uniCloud SNS 推荐系统 前后端
 
 
 ## 课程 大学物理
@@ -28,7 +28,7 @@
 
 🔗 bilibili: [https://www.bilibili.com/video/BV1xJ411s7DX](https://www.bilibili.com/video/BV1xJ411s7DX)
 
-🗝 _micropython wifi图传 openmv arduino tkinter socket 微信小程序 电机驱动 电路板 CV追踪 遥控
+🗝 micropython wifi图传 openmv arduino tkinter socket 微信小程序 电机驱动 电路板 CV追踪 遥控
 
 
 ## 课程 电类实验
@@ -46,13 +46,13 @@
 ## 课程+项目 计算机原理
 ☕️ ARM架构、指令集、微机组成、三级流水线、Cortex-M4 处理器、寻址方式、存储器、总线、中断、串并联接口。完成了数码管循环显示实验报告，完成了ARM可执行映像文件的实验报告。
 
-🗝 _Proteus 电路设计 C语言 片选 GPIO 可执行映像文件 底层编程
+🗝 Proteus 电路设计 C语言 片选 GPIO 可执行映像文件 底层编程
 
 
 ## 课程+项目 模拟电路 数字电路
 ☕️ 时间跨度长的重点课程。包括模电、模电实验、数电、数电实验四部分。模电实验主要有常用电子测量仪表、一阶 RC 电路研究、有源二端网络等效参数和戴维南验证、运放电路设计、等等，完成了忆阻器调查研究与分析的论文。数电实验有密码箱电路设计、任意数计数器设计，自行车尾灯指示系统设计与实现。内容比较复杂，技术点过多，不再详述。
 
-🗝 _Multisim Proteus Verilog Quartus Modelsim 模拟电路 数字电路 STM32F4 电路设计 电路调试
+🗝 Multisim Proteus Verilog Quartus Modelsim 模拟电路 数字电路 STM32F4 电路设计 电路调试
 
 🔗 github: [https://github.com/KLGR123/Digital_Circuit_homework](https://github.com/KLGR123/Digital_Circuit_homework)
 
@@ -108,7 +108,7 @@
 
 🔗 bilibili: [https://www.bilibili.com/video/BV1JS4y1j734](https://www.bilibili.com/video/BV1JS4y1j734)
 
-🗝 _CV+NLP 图像描述任务 JetsonNano 手势识别 手追踪 深度学习 边缘智能 视频帧描述 socket 数据集
+🗝 CV+NLP 图像描述任务 JetsonNano 手势识别 手追踪 深度学习 边缘智能 视频帧描述 socket 数据集
 
 
 ## 课程 电磁场与电磁波
@@ -146,6 +146,8 @@
 
 🔗 github: [https://github.com/KLGR123/2022_MCM_Code](https://github.com/KLGR123/2022_MCM_Code)
 
+🔗 bilibili: [https://www.bilibili.com/video/BV15L411P7A3](https://www.bilibili.com/video/BV15L411P7A3)
+
 
 ## 项目 三创跨境电商大赛
 ☕️ 以独立站 SaaS 店匠科技为竞赛平台，在深圳店匠科技 支持下，开展跨境电商独立站实战赛。仍在进行中。
@@ -162,7 +164,7 @@
 ## 项目 python 和实用库
 ☕️ 参考众多教程自学 python 和许多实用库，一些实现见我的 github 主页。
 
-🗝 _Django Matplotlib Pandas Numpy Mysql MongoDB TCP与UDP 多线程编程 正则表达式 网络爬虫Scrappy tkinter
+🗝 Django Matplotlib Pandas Numpy Mysql MongoDB TCP与UDP 多线程编程 正则表达式 网络爬虫Scrappy tkinter
 
 
 ## 项目 智能算法作曲
