@@ -176,7 +176,8 @@
 
 
 ## 项目 KBQA科研
-☕️ 从简单 kbqa 到多跳 kbqa，阅读文献并实现。包括 bert、rGCN、word2vec、TransferNet等。仍在进行中。
+☕️ 从简单 kbqa 到多跳 kbqa，阅读文献并实现。包括 bert、rGCN、word2vec、TransferNet等。目前在北京邮电大学信通院的智能系统研究实验室，主要方向包括自然语言处理、知识工程、强化学习、图像处理和时空大数据处理等。
+
 
 
 ![Image](/art.jpg)
@@ -239,6 +240,15 @@
 ☕️ 项目是针对北邮体育馆抢健身房的脚本。
 
 🔗 github: [https://github.com/KLGR123/gymScript](https://github.com/KLGR123/gymScript)
+
+
+## 业余 接单 CV NLP
+☕️ 实现了一个钱币定位系统，基于 Canny 和 Hough 算法实现检测。实现了中文的 SVD 和 SGNS 词向量。共计 400 元收益。
+
+🔗 github: [https://github.com/KLGR123/CV_coins_detection](https://github.com/KLGR123/CV_coins_detection)
+
+🔗 github: [https://github.com/KLGR123/Chinese_Embedding](https://github.com/KLGR123/Chinese_Embedding)
+
 
 
 ![Image](/learn.jpg)
