@@ -178,6 +178,8 @@
 ## 项目 KBQA科研
 ☕️ 从简单 kbqa 到多跳 kbqa，阅读文献并实现。包括 bert、rGCN、word2vec、TransferNet等。目前在北京邮电大学信通院的智能系统研究实验室，主要方向包括自然语言处理、知识工程、强化学习、图像处理和时空大数据处理等。
 
+🔗 语雀: [https://www.yuque.com/liujiarun-kfs4n/cb68o9](https://www.yuque.com/liujiarun-kfs4n/cb68o9)
+
 
 
 ![Image](/art.jpg)
