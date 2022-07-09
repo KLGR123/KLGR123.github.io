@@ -141,6 +141,54 @@
 🔗 bilibili: [https://www.bilibili.com/video/BV1QD4y1F7TZ](https://www.bilibili.com/video/BV1QD4y1F7TZ)
 
 
+## 课程 电磁场实验
+☕️ 频谱特性测量、网络参量测量、微带天线仿真实验等。
+
+
+## 课程 光通信系统
+☕️ 包括光纤、光发射机与接收机、激光光源与调制、光通信系统与光器件。
+
+
+## 课程+项目 模式识别应用 
+☕️ 模式识别算法与机器学习，主要是贝叶斯决策、概率密度函数估计、线性判别、人工神经网络、SVM、近邻法、特征选择与提取、非监督学习等。
+
+🔗 github: [https://github.com/KLGR123/capacitor_detection_SVM](https://github.com/KLGR123/capacitor_detection_SVM)
+
+
+## 课程+项目 通信系统建模与仿真
+☕️ RTL-SDR 和 Simulink 模型搭建。基于通信原理实现软件定义的通信收发建模和模拟，包括复信号、频谱观察、AM 调制解调、载波同步、数字调制、数字通信接收端同步、粗频率同步与帧同步。
+
+🔗 github: [https://github.com/KLGR123/Simulink-SDR](https://github.com/KLGR123/Simulink-SDR)
+
+
+## 课程 现代通信技术
+☕️ 包括业务与终端、交换与路由、光通信与无线通信。
+
+🔗 bilibili: [https://www.bilibili.com/video/BV1tT411V7bT](https://www.bilibili.com/video/BV1tT411V7bT)
+
+
+## 课程 信息论
+☕️ 离散信息度量、离散信源、连续信息与信源、无失真信源编码、离散信道容量、有噪信道编码、连续波形信道。
+
+
+## 课程 移动通信
+☕️ 传播预测模型、信源编码与调制、抗衰落和链路增强、蜂窝组网、GSM 和 CDMA、LTE、5G 等。
+
+
+## 课程 英语学术写作
+☕️ 学术论文写作规则规范、写作风格、写作语法句法等。
+
+
+## 课程 最优化理论与算法
+☕️ 包括单纯形、对偶理论、一维搜索、使用导数的最优化、直接方法、可行方向法、罚函数法、复合优化算法等。
+
+
+## 项目 “互联网+”本科组初创项目
+☕️ 项目的应用场景是在一些小型的商业公司、科技公司的前台、展示区或者服务区域，放置在固定位置自动检测用户人眼关注;对话时，逻辑合理地回答用户提出的关于公司业务问题或者闲聊，其中业务问题诸如公司的业务范围、成功案例、负责人团队信息、厅室导航信息等;用户还可以要求给公司留言，例如和某人开会等，机器人会将留言发送到App;全程流畅低时延。除此之外，项目设计的与问答智能机器人匹配的App可以接收查看留言;公司方面还可以实时通过App添加样本问答对的预设，即给出问题使得机器人回答的更准确，接口开放可微调。
+
+🗝 本项目的核心技术包括:(1)“源1.0”大语言模型的few-shot小样本学习部署(2)边缘智能系统的设计(3)中文语音识别技术(4)中文语音合成技术(5)人脸识别和人眼识别技术(6)局域网通信技术(7)边缘AI部署(8)应用程序系统的交互设计。
+
+
 ## 项目 数学建模（美赛）
 ☕️ 2022年美国大学生数学建模 MCM 比赛，选择赛题为 E 题，题目是 Forestry 相关。我是队伍的编程手和画图手。最终奖项还未公布。
 
@@ -150,9 +198,11 @@
 
 
 ## 项目 三创跨境电商大赛
-☕️ 以独立站 SaaS 店匠科技为竞赛平台，在深圳店匠科技 支持下，开展跨境电商独立站实战赛。仍在进行中。
+☕️ 以独立站 SaaS 店匠科技为竞赛平台，在深圳店匠科技支持下，开展跨境电商独立站实战赛。通过了初赛，但复赛没有晋级。不过电商网站已经设计完成，详见链接。
 
 🔗 语雀: [https://www.yuque.com/liujiarun-kfs4n/zbdrxv](https://www.yuque.com/liujiarun-kfs4n/zbdrxv)
+
+🔗 店匠店铺: [https://342826.myshoplaza.com](https://342826.myshoplaza.com)
 
 
 ## 项目 微信机器人
@@ -175,10 +225,16 @@
 🔗 语雀: [https://www.yuque.com/sfzq/wbhaoz/elozh0](https://www.yuque.com/sfzq/wbhaoz/elozh0)
 
 
-## 项目 KBQA科研
+# 科研之路
+
+## 基于知识库的问答系统
 ☕️ 从简单 kbqa 到多跳 kbqa，阅读文献并实现。包括 bert、rGCN、word2vec、TransferNet等。目前在北京邮电大学信通院的智能系统研究实验室，主要方向包括自然语言处理、知识工程、强化学习、图像处理和时空大数据处理等。
 
 🔗 语雀: [https://www.yuque.com/liujiarun-kfs4n/cb68o9](https://www.yuque.com/liujiarun-kfs4n/cb68o9)
+
+
+## 多智能体强化学习
+☕️ 经过大三下之后，与实验室方面沟通重新确定目标。目前确定发表论文，具体方向在确定中。考虑决策智能（强化学习与多智能体）、自然语言（问答系统）、时空数据建模分析等。
 
 
 
@@ -205,7 +261,7 @@
 
 
 ## 业余 视频拍摄和后期
-☕️ 我在平时有自制 vlog 和知识分享的习惯。我常使用 davinci 视频剪辑、调色等。详见我的 bilibili 个人主页。我曾和同班同学共同参演拍摄了建党一百年纪念片，翻拍中共一大。该视频得到了一致好评，并在北邮青年等学校平台广受宣传。
+☕️ 我在平时有自制 vlog 和知识分享的习惯。我常使用 davinci 视频剪辑、调色等。详见我的 bilibili 个人主页。我曾和同班同学共同参演拍摄了建党一百年纪念片，翻拍中共一大。该视频得到了一致好评，并在北邮青年等学校平台广受宣传。目前在制作发布一些科技和知识类视频。
 
 🔗 bilibili: [https://www.bilibili.com/video/BV1pQ4y1o78R](https://www.bilibili.com/video/BV1pQ4y1o78R)
 
@@ -250,7 +306,6 @@
 🔗 github: [https://github.com/KLGR123/CV_coins_detection](https://github.com/KLGR123/CV_coins_detection)
 
 🔗 github: [https://github.com/KLGR123/Chinese_Embedding](https://github.com/KLGR123/Chinese_Embedding)
-
 
 
 ![Image](/learn.jpg)
