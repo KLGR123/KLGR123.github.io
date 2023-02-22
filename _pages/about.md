@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -44,6 +44,14 @@ Many people use a git client to create files on their local computer and then pu
 
 Example: editing a markdown file for a talk
 ![Editing a markdown file for a talk](/images/editing-talk.png)
+
+Contact Me
+------
+If you want to know more about me / job offer / project cowork, here comes more.
+my **video channel**: [bilibili Personal Channel](https://space.bilibili.com/474465629)
+my **documentation workspace**: [yuque.com Research / Projects Logs](https://www.yuque.com/liujiarun-kfs4n)
+my **email**: liujiarun01@126.com
+
 
 For more info
 ------
