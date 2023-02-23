@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Jasper Playing Jazz, Jazzoo"
+excerpt: "We formed a jazz band 'Jazzoo', and im the trumpet player.<br/><img src='/images/trumpet.png'>"
 collection: portfolio
 ---
 
