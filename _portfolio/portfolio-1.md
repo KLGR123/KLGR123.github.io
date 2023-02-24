@@ -1,6 +1,6 @@
 ---
 title: "Jasper Playing Jazz, Jazzoo"
-excerpt: "We formed a jazz band 'Jazzoo', and im the trumpet player.<br/><img src='/images/trumpet.png'><img src='/images/trumpet2.png'>"
+excerpt: "We formed a jazz band 'Jazzoo', and im the trumpet player.<br/><img src='/images/trumpet.png'><br>This is all of us. 🤩 <br/><img src='/images/trumpet2.png'>"
 collection: portfolio
 ---
 
