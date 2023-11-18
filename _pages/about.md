@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "2023 A Brand New Start"
+title: "Jiarun Liu (Jasper Leo) Personal Website"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -12,18 +12,21 @@ redirect_from:
 <img alt="C" src="https://img.shields.io/badge/-C/C++-DAE8FC?style=plastic&logo=c" />
 <img alt="Vue" src="https://img.shields.io/badge/-VUE-EC4A3F?style=plastic&logo=vue.js&logoColor=white" />
 
-This is my official academic personal blog, which can also be considered an electronic resume. Welcome!
+Welcome! This is my official academic personal blog, which can also be considered an electronic resume. If you're studying the field of DL / ML / NLP / RL, then we could have a nice chat and I'd love to learn from you!
 
-Zero More Thing 📭
+Who am I 🧑🏻‍💻
 ------
-Since the website is just being established, im not gonna put / pin
-any article / blog page here, but comming soon i will share some of my 
-best work here.
+I am Jiarun Liu from the School of Information and Communication Engineering (SICE), Beijing University of Posts and Telecommunications (BUPT), and I am currently studying for my master's degree. I am responsible for my work, dare to challenge difficult problems and have a sense of motivation. I am currently studying in the Laboratory of Intelligent Systems under the State Key Laboratory of Network and Switching Technology, and my main research interests include natural language processing, reinforcement learning and so on. If you are interested in my work, please refer to my [Google Scholar personal page](https://scholar.google.com/citations?user=dP4KddUAAAAJ&hl=en).
+
+I have a lot of hobbies too, I'm a very interesting person haha! If you have more time, go check out my **JasperGA** page, hope you enjoy it! 👁
+
 
 Contact Me 🧭
 ------
-If you want to know more about me / job offer / project cowork, here comes more.
+If you want to know more about me / job offer / working together / try something fun
+- my **social media**: [twitter or X](https://twitter.com/leoAK123) 
 - my **video channel**: [bilibili Personal Channel](https://space.bilibili.com/474465629)
-- my **documentation workspace**: [yuque.com Research / Projects Logs](https://www.yuque.com/liujiarun-kfs4n)
-- my **email**: liujiarun01@126.com
+- my **documentation workspace**: [Notion Projects Logs]([https://www.yuque.com/liujiarun-kfs4n](https://liujiarun01.notion.site/Lab-Working-b17b8d8aaa4040e0b974ca2fc96c8e0b?pvs=4))
+- my **personal email**: liujiarun01@126.com
+- my **working email**: liujiarun01@bupt.edu.cn
 
