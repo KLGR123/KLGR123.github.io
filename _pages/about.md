@@ -16,7 +16,9 @@ Welcome! This is my official academic personal blog, which can also be considere
 
 Who am I 🧑🏻‍💻
 ------
-I am Jiarun Liu from the School of Information and Communication Engineering (SICE), Beijing University of Posts and Telecommunications (BUPT), and I am currently studying for my master's degree. I am responsible for my work, dare to challenge difficult problems and have a sense of motivation. I am currently studying in the Laboratory of Intelligent Systems under the State Key Laboratory of Network and Switching Technology, and my main research interests include natural language processing, reinforcement learning and so on. If you are interested in my work, please refer to my [Google Scholar personal page](https://scholar.google.com/citations?user=dP4KddUAAAAJ&hl=en).
+I am Jiarun Liu from the School of Information and Communication Engineering (SICE), Beijing University of Posts and Telecommunications (BUPT), and I am currently studying for my master's degree. I am responsible for work and dare to challenge difficult problems.
+
+I am currently studying in the Laboratory of Intelligent Systems under the State Key Laboratory of Network and Switching Technology, and my main research interests include natural language processing, reinforcement learning and so on. If you are interested in my work, please refer to my [Google Scholar personal page](https://scholar.google.com/citations?user=dP4KddUAAAAJ&hl=en).
 
 I have a lot of hobbies too, I'm a very interesting person haha! If you have more time, go check out my **JasperGA** page, hope you enjoy it! 👁
 
