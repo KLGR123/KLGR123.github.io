@@ -1,7 +1,7 @@
 ---
 title: "Intelligent Car 'GrandPa'"
 date: 2019-12-27
-permalink: /posts/grandpa
+permalink: /posts/2019/12/grandpa
 tags:
   - python
   - microPython
