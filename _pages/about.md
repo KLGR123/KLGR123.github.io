@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Progressive Knowledge Acquisition May No Longer Fit the Age of Artificial Intelligence"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
