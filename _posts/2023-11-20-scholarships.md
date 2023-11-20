@@ -1,14 +1,9 @@
 ---
-title: "Intelligent Car 'GrandPa'"
-date: 2019-12-27
-permalink: /posts/2019/12/grandpa/
+title: "Received the first prize of the Master's Degree Scholarship"
+date: 2023-11-22
+permalink: /posts/2023/11/scholarships/
 tags:
-  - python
-  - microPython
-  - OpenMV
-  - WIFI
-  - Socket
-  - CV
+  - Scholarship
 ---
 
-The project covers environmental monitoring, intelligent tracking based on AprilTag, four-axis motor drive, and wifi image transmission and remote control. The project is based on python embedded implementation of face recognition, target tracking and other functions.
+I am very happy and proud! Congrats 🎉！
