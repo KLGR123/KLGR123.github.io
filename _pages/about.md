@@ -12,7 +12,7 @@ redirect_from:
 <img alt="C" src="https://img.shields.io/badge/-C/C++-DAE8FC?style=plastic&logo=c" />
 <img alt="Vue" src="https://img.shields.io/badge/-VUE-EC4A3F?style=plastic&logo=vue.js&logoColor=white" />
 
-**Welcome!** This is my official academic personal blog, which can also be considered an electronic resume. If you're studying the field of DL / ML / NLP / RL, then we could have a nice chat and I'd love to learn from you!
+**Welcome!** This is my official academic blog, which can also be considered an electronic resume. If you're studying the field of DL / ML / NLP / RL, then we could have a nice chat and I'd love to learn from you!
 
 Who am I 🧑🏻‍💻
 ------
