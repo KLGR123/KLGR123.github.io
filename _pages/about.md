@@ -18,7 +18,7 @@ redirect_from:
 
 
 
-**Welcome!** This is my official academic blog, which can also be considered an electronic resume. If you're studying the field of DL / ML / NLP / RL, then we could have a nice chat and I'd love to learn from you!
+**Welcome!** This is my official academic blog, which can also be considered an electronic resume. Looking foward to have a nice chat with you, and I'd love to learn from you!
 
 Who am I 🧑🏻‍💻
 ------
@@ -31,7 +31,7 @@ I have a lot of hobbies too, I'm a very interesting person haha! If you have mor
 
 Contact Me 🧭
 ------
-If you want to know more about me / job offer / working together / try something fun, Please contact me in one of these following ways (looking foward to it 🥰)
+If you want to know more about me / job offer / working together / try something fun, Please contact me in one of these following ways
 - my **social media**: [twitter or X](https://twitter.com/leoAK123) 
 - my **video channel**: [bilibili Personal Channel](https://space.bilibili.com/474465629)
 - my **documentation workspace**: [Notion Projects Logs]([https://www.yuque.com/liujiarun-kfs4n](https://liujiarun01.notion.site/Lab-Working-b17b8d8aaa4040e0b974ca2fc96c8e0b?pvs=4))
