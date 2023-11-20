@@ -10,9 +10,10 @@ redirect_from:
 
 <img alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=plastic&logo=python&logoColor=white" />
 <img alt="C++" src="https://img.shields.io/badge/-C++-9C27B0?style=plastic&logo=cplusplus&logoColor=white" />
-<img alt="Vue" src="https://img.shields.io/badge/-VUE-EC4A3F?style=plastic&logo=vue.js&logoColor=white" />
+<img alt="Vue.js" src="https://img.shields.io/badge/-Vue.js-4FC08D?style=plastic&logo=vue.js&logoColor=white" />
 <img alt="PyTorch" src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=plastic&logo=pytorch&logoColor=white" />
-<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-4BC51D?style=plastic&logo=javascript&logoColor=black" />
+<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black" />
+
 
 
 
