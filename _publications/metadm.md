@@ -1,7 +1,7 @@
 ---
 title: "Meta-DM: Applications of Diffusion Models on Few-Shot Learning"
 collection: publications
-permalink: /publication/2010-10-01-paper-title-number-2
+permalink: /publication/metadm
 excerpt: 'In the field of few-shot learning (FSL), extensive research has focused on improving network structures and training strategies. However, the role of data processing modules has not been fully explored. Therefore, in this paper, we propose Meta-DM, a generalized data processing module for FSL problems based on diffusion models. Meta-DM is a simple yet effective module that can be easily integrated with existing FSL methods, leading to significant performance improvements in both supervised and unsupervised settings. We provide a theoretical analysis of Meta-DM and evaluate its performance on several algorithms. Our experiments show that combining Meta-DM with certain methods achieves state-of-the-art results.'
 date: 2010-10-01
 venue: 'arxiv preprint'
