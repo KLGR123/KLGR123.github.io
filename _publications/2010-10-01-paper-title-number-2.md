@@ -1,15 +1,14 @@
 ---
-title: "I dont have any publication now, but im working on it. So Wait!"
+title: "Meta-DM: Applications of Diffusion Models on Few-Shot Learning"
 collection: publications
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+excerpt: 'In the field of few-shot learning (FSL), extensive research has focused on improving network structures and training strategies. However, the role of data processing modules has not been fully explored. Therefore, in this paper, we propose Meta-DM, a generalized data processing module for FSL problems based on diffusion models. Meta-DM is a simple yet effective module that can be easily integrated with existing FSL methods, leading to significant performance improvements in both supervised and unsupervised settings. We provide a theoretical analysis of Meta-DM and evaluate its performance on several algorithms. Our experiments show that combining Meta-DM with certain methods achieves state-of-the-art results.'
 date: 2010-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'dont know yet.'
+venue: 'arxiv preprint'
+paperurl: 'https://arxiv.org/pdf/2305.08092.pdf'
+citation: 'Hu, W., Jiang, X., Liu, J., Yang, Y., & Tian, H. (2023). Meta-DM: Applications of Diffusion Models on Few-Shot Learning. arXiv preprint arXiv:2305.08092.'
 ---
-I dont have any publication now, but im working on it. So Wait!
+#### 📌 This paper is rejected by NeurIPS 2023. You can check the arxiv preprint version.
+In the field of few-shot learning (FSL), extensive research has focused on improving network structures and training strategies. However, the role of data processing modules has not been fully explored. Therefore, in this paper, we propose Meta-DM, a generalized data processing module for FSL problems based on diffusion models. Meta-DM is a simple yet effective module that can be easily integrated with existing FSL methods, leading to significant performance improvements in both supervised and unsupervised settings. We provide a theoretical analysis of Meta-DM and evaluate its performance on several algorithms. Our experiments show that combining Meta-DM with certain methods achieves state-of-the-art results.
 
 [Download paper here](http://klgr123.github.io/files/paper2.pdf)
-
-Recommended citation: Jiarun, Liu. (202X). "Dont know yet" <i>Journal X</i>. X(XX).
