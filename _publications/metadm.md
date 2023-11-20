@@ -13,4 +13,4 @@ In the field of few-shot learning (FSL), extensive research has focused on impro
 
 #### 📌 This paper is rejected by NeurIPS 2023. You can check the arxiv preprint version.
 
-[Download paper here](http://klgr123.github.io/files/paper2.pdf)
+[Download paper here](https://arxiv.org/pdf/2305.08092.pdf)
