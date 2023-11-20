@@ -1,7 +1,17 @@
 ---
 title: "Jasper Playing Jazz, Jazzoo"
-excerpt: "We formed a jazz band 'Jazzoo', and im the trumpet player.<br/><img src='/images/trumpet.png'><br>This is all of us. 🤩 <br/><img src='/images/trumpet2.png'>"
+excerpt: "<img src='/images/trumpet.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+We formed a jazz band 'Jazzoo', and im the trumpet player.
+
+
+<img src='/images/trumpet.png'>
+
+
+This is all of us. 🤩
+
+
+
+<img src='/images/trumpet2.png'> 
