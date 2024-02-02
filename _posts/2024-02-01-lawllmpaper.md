@@ -1,5 +1,5 @@
 ---
-title: "The Law Large Language Model Project Paper: BM24 at COLIEE 2024: Case and Statute Retrieval by Semantic Similarity"
+title: "The Law Large Language Model Project Paper BM24 at COLIEE 2024: Case and Statute Retrieval by Semantic Similarity"
 date: 2024-02-01
 permalink: /posts/2024/02/lawllmpaper/
 tags:
