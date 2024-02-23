@@ -1,7 +1,7 @@
 ---
 title: "Done Reading 'Statistical Learning Method' by Hang Li"
 date: 2024-02-25
-permalink: /posts/2023/02/mlreading/
+permalink: /posts/2024/02/mlreading/
 tags:
   - Machine Learning
   - Statistical Machine Learning
