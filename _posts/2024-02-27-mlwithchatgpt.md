@@ -1,5 +1,5 @@
 ---
-title: "Done Reading 'Statistical Learning Method' by Hang Li"
+title: "My personal video lesson Learning Machine Learning with ChatGPT4"
 date: 2024-02-27
 permalink: /posts/2024/02/mlreading/
 tags:
