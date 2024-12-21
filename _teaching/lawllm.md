@@ -3,7 +3,7 @@ title: "The Law Large Language Model Project"
 collection: teaching
 type: "Lab"
 permalink: /teaching/lawllm
-venue: 
+venue: "Lab"
 date: 2023-05-10
 location: "Beijing, China"
 image: "/images/lawllm.png"
