@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Jasper Leo / Academic Blog 🛰"
-excerpt: "Jasper Leo / Academic Blog 🛰"
+title: "Jiarun Liu's Academic Blog 🛰"
+excerpt: "Jiarun Liu's Academic Blog 🛰"
 author_profile: true
 redirect_from: 
   - /about/
@@ -15,26 +15,24 @@ redirect_from:
 <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black" />
 
 
-
-
-
-**Welcome!** This is my official academic blog, which can also be considered an electronic resume. Looking foward to have a nice chat with you, and I'd love to learn from you!
+**Welcome!** This is my official academic blog, which also serves as my electronic resume. I look forward to engaging in meaningful conversations and learning from your experiences and insights!
 
 Who am I 🧑🏻‍💻
 ------
-I am **Jiarun Liu (Jasper Leo)** from the School of Information and Communication Engineering (SICE), Beijing University of Posts and Telecommunications (BUPT), and I am currently studying for my master's degree. I am responsible for work and dare to challenge difficult problems.
+I am **Jiarun Liu (Jasper)**, a Master's student at the School of Information and Communication Engineering (SICE), Beijing University of Posts and Telecommunications (BUPT). I am a dedicated researcher with a strong drive to tackle challenging problems in the field of artificial intelligence.
 
-I am currently studying in the Laboratory of Intelligent Systems under the State Key Laboratory of Network and Switching Technology, and my main research interests include natural language processing, reinforcement learning and so on. If you are interested in my work, please refer to my [Google Scholar personal page](https://scholar.google.com/citations?user=dP4KddUAAAAJ&hl=en).
+My research interests primarily focus on **Natural Language Processing** and **Reinforcement Learning**. Currently, I am working on cutting-edge research in **Large Language Model based Web Agents**, exploring ways to enhance AI systems' ability to navigate and interact with the web.
 
-I have a lot of hobbies too, I'm a very interesting person haha! If you have more time, go check out my **JasperGA** page, hope you enjoy it!
+I conduct my research at the Laboratory of Intelligent Systems, which is part of the State Key Laboratory of Network and Switching Technology. For more details about my research work and publications, please visit my [Google Scholar personal page](https://scholar.google.com/citations?user=dP4KddUAAAAJ&hl=en).
 
 
 Contact Me 🧭
 ------
-If you want to know more about me / job offer / working together / try something fun, Please contact me in one of these following ways
+Feel free to connect with me and learn more about my work through any of the following channels
+
 - my **social media**: [twitter or X](https://twitter.com/leoAK123) 
 - my **video channel**: [bilibili Personal Channel](https://space.bilibili.com/474465629)
 - my **documentation workspace**: [Notion Projects Logs]([https://www.yuque.com/liujiarun-kfs4n](https://liujiarun01.notion.site/Lab-Working-b17b8d8aaa4040e0b974ca2fc96c8e0b?pvs=4))
-- my **personal email**: liujiarun01@126.com
-- my **working email**: liujiarun01@bupt.edu.cn
+- my **personal email**: *liujiarun01@126.com*
+- my **working email**: *liujiarun01@bupt.edu.cn*
 
