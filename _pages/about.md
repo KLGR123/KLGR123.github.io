@@ -15,13 +15,13 @@ redirect_from:
 <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black" />
 
 
-**Welcome!** This is my official academic blog, which also serves as my electronic resume. I look forward to engaging in meaningful conversations and learning from your experiences and insights!
+**Welcome!** This is my official academic blog, which also serves as my electronic resume. I look forward to engaging in meaningful conversations and learning from your insights!
 
 Who am I 🧑🏻‍💻
 ------
-I am **Jiarun Liu (Jasper)**, a Master's student at the School of Information and Communication Engineering (SICE), Beijing University of Posts and Telecommunications (BUPT). I am a dedicated researcher with a strong drive to tackle challenging problems in the field of artificial intelligence.
+I am **Jiarun Liu (Jasper)**, a Master's student at the School of Information and Communication Engineering (SICE), Beijing University of Posts and Telecommunications (BUPT). I am a dedicated researcher with a strong drive to tackle challenging problems in the field of AI.
 
-My research interests primarily focus on **Natural Language Processing** and **Reinforcement Learning**. Currently, I am working on cutting-edge research in **Large Language Model based Web Agents**, exploring ways to enhance AI systems' ability to navigate and interact with the web.
+My research interests primarily focus on **Natural Language Processing** and **Reinforcement Learning**. Currently, I am working on cutting-edge research in **Large Language Model based Web Agents**, exploring ways to enhance AI systems' ability to interact with the web.
 
 I conduct my research at the Laboratory of Intelligent Systems, which is part of the State Key Laboratory of Network and Switching Technology. For more details about my research work and publications, please visit my [Google Scholar personal page](https://scholar.google.com/citations?user=dP4KddUAAAAJ&hl=en).
 
