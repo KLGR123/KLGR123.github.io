@@ -27,4 +27,16 @@ Retainer is an LLM-based agent for game development that enables natural languag
 
 ### Achievement
 
-Successfully secured $300K angel round investment from Miracle Forum.
+Successfully secured $300K angel round investment from MiraclePlus.
+
+<div class="paper-image">
+    <img src="/images/miracleplus1.png" style="border-radius: 10px; width: 800px;">
+</div>
+
+<div class="paper-image">
+    <img src="/images/miracleplus2.png" style="border-radius: 10px; width: 800px;">
+</div>
+
+<div class="paper-image">
+    <img src="/images/miracleplus3.png" style="border-radius: 10px; width: 800px;">
+</div>
