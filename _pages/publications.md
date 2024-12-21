@@ -13,6 +13,8 @@ I am currently working on **Large Language Model based Web Agents**, especially 
 
 {% include base_path %}
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="grid__wrapper">
+  {% for post in site.publications reversed %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>

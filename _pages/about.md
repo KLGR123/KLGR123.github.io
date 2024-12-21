@@ -32,7 +32,7 @@ Feel free to connect with me and learn more about my work through any of the fol
 
 - my **social media**: [twitter or X](https://twitter.com/leoAK123) 
 - my **video channel**: [bilibili Personal Channel](https://space.bilibili.com/474465629)
-- my **documentation workspace**: [Notion Projects Logs]([https://www.yuque.com/liujiarun-kfs4n](https://liujiarun01.notion.site/Lab-Working-b17b8d8aaa4040e0b974ca2fc96c8e0b?pvs=4))
+<!-- - my **documentation workspace**: [Notion Projects Logs]([https://www.yuque.com/liujiarun-kfs4n](https://liujiarun01.notion.site/Lab-Working-b17b8d8aaa4040e0b974ca2fc96c8e0b?pvs=4)) -->
 - my **personal email**: *liujiarun01@126.com*
 - my **working email**: *liujiarun01@bupt.edu.cn*
 
