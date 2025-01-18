@@ -5,7 +5,7 @@ permalink: /publication/wepo
 excerpt: ""
 image: "/images/wepo.png"
 date: 2024-12-14
-venue: '39th AAAI Conference on Artificial Intelligence (AAAI-25)'
+venue: '39th AAAI Conference on Artificial Intelligence (AAAI-25 Oral)'
 paperurl: 'https://arxiv.org/pdf/2412.10742'
 citation: 'Jiarun Liu, Jia Hao, Chunhong Zhang and Zheng Hu. 2025. WEPO: Web Element Preference Optimization for LLM-based Web Navigation. In Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI-25), Philadelphia, Pennsylvania, USA.'
 ---
