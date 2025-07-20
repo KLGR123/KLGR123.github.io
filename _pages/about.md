@@ -9,6 +9,42 @@ redirect_from:
 ---
 
 <style>
+/* 隐藏顶部导航栏 */
+.masthead {
+  display: none !important;
+}
+
+/* 隐藏页面顶部的导航元素 */
+.page__hero,
+.page__hero--overlay {
+  display: none !important;
+}
+
+/* 隐藏面包屑导航 */
+.breadcrumbs {
+  display: none !important;
+}
+
+/* 隐藏可能的语言切换按钮 */
+.lang-switch,
+.language-switch,
+.toggle-lang,
+[class*="language"],
+[class*="lang-"] {
+  display: none !important;
+}
+
+/* 调整整体字体大小 */
+body,
+.page,
+.page__content {
+  font-size: 14px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.2em !important;
+}
+
 .pdf-container {
   margin: 20px 0;
   text-align: center;
@@ -30,7 +66,7 @@ redirect_from:
 }
 
 .pdf-title {
-  font-size: 1.5em;
+  font-size: 1.3em !important;
   font-weight: bold;
   margin-bottom: 15px;
   color: #333;
@@ -39,12 +75,13 @@ redirect_from:
 .download-link {
   display: inline-block;
   margin: 10px;
-  padding: 10px 20px;
+  padding: 8px 16px;
   background-color: #007cba;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
+  font-size: 13px !important;
 }
 
 .download-link:hover {
@@ -60,14 +97,25 @@ redirect_from:
   padding: 15px;
   margin: 20px 0;
   text-align: center;
+  font-size: 13px !important;
+}
+
+/* 调整页面布局，让内容更紧凑 */
+.page__content {
+  padding-top: 10px !important;
+}
+
+/* 隐藏作者信息侧边栏（如果需要的话） */
+.sidebar {
+  display: none !important;
+}
+
+/* 让主内容区域占满整个宽度 */
+.page__content .container {
+  max-width: 100% !important;
+  padding: 0 20px;
 }
 </style>
-
-<div class="back-notice">
-  <p><strong>临时页面</strong> | <em>Temporary Page</em></p>
-  <p>这是一个临时页面，用于展示个人简历。原始主页内容已暂时隐藏。</p>
-  <p>This is a temporary page for displaying personal CVs. The original homepage content is temporarily hidden.</p>
-</div>
 
 <div class="pdf-section">
   <div class="pdf-title">📄 中文简历 | Chinese CV</div>
