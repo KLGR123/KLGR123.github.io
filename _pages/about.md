@@ -45,24 +45,59 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2em !important;
 }
 
+/* 隐藏作者信息侧边栏 */
+.sidebar {
+  display: none !important;
+}
+
+/* 让主内容区域占满整个宽度 */
+.page__content,
+.page__content .container {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 调整页面布局，让内容更紧凑 */
+.page__content {
+  padding-top: 10px !important;
+}
+
+/* 主容器样式 */
+.cv-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .pdf-container {
-  margin: 20px 0;
+  margin: 0;
   text-align: center;
+  height: 100%;
 }
 
 .pdf-viewer {
   width: 100%;
-  height: 600px;
+  height: calc(100% - 80px);
   border: 1px solid #ddd;
   border-radius: 8px;
   margin: 10px 0;
 }
 
 .pdf-section {
-  margin: 30px 0;
+  flex: 1;
+  margin: 0;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .pdf-title {
@@ -70,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-bottom: 15px;
   color: #333;
+  text-align: center;
 }
 
 .download-link {
@@ -100,38 +136,54 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px !important;
 }
 
-/* 调整页面布局，让内容更紧凑 */
-.page__content {
-  padding-top: 10px !important;
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .pdf-section {
+    height: 600px;
+    margin-bottom: 20px;
+  }
 }
 
-/* 隐藏作者信息侧边栏（如果需要的话） */
-.sidebar {
-  display: none !important;
+/* 移除默认的页面约束 */
+body {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* 让主内容区域占满整个宽度 */
-.page__content .container {
-  max-width: 100% !important;
-  padding: 0 20px;
+.layout--single .page {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* 确保容器占满屏幕 */
+html, body {
+  height: 100% !important;
+  overflow-x: hidden;
 }
 </style>
 
-<div class="pdf-section">
-  <div class="pdf-title">📄 中文简历 | Chinese CV</div>
-  <div class="pdf-container">
-    <embed src="刘嘉润 个人简历.pdf" type="application/pdf" class="pdf-viewer">
-    <p>如果PDF无法显示，请点击下方链接下载：</p>
-    <a href="刘嘉润 个人简历.pdf" class="download-link" download>下载中文简历</a>
+<div class="cv-container">
+  <div class="pdf-section">
+    <div class="pdf-title">📄 中文简历 | Chinese CV</div>
+    <div class="pdf-container">
+      <embed src="刘嘉润 个人简历.pdf" type="application/pdf" class="pdf-viewer">
+      <p>如果PDF无法显示，请点击下方链接下载：</p>
+      <a href="刘嘉润 个人简历.pdf" class="download-link" download>下载中文简历</a>
+    </div>
   </div>
-</div>
 
-<div class="pdf-section">
-  <div class="pdf-title">📄 英文简历 | English CV</div>
-  <div class="pdf-container">
-    <embed src="Jiarun Liu CV.pdf" type="application/pdf" class="pdf-viewer">
-    <p>If the PDF cannot be displayed, please click the link below to download:</p>
-    <a href="Jiarun Liu CV.pdf" class="download-link" download>Download English CV</a>
+  <div class="pdf-section">
+    <div class="pdf-title">📄 英文简历 | English CV</div>
+    <div class="pdf-container">
+      <embed src="Jiarun Liu CV.pdf" type="application/pdf" class="pdf-viewer">
+      <p>If the PDF cannot be displayed, please click the link below to download:</p>
+      <a href="Jiarun Liu CV.pdf" class="download-link" download>Download English CV</a>
+    </div>
   </div>
 </div>
 
