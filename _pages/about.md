@@ -175,8 +175,8 @@ html {
     <div class="pdf-title">📄 中文简历 | Chinese CV</div>
     <div class="pdf-container">
       <embed src="刘嘉润 个人简历.pdf" type="application/pdf" class="pdf-viewer">
-      <p>如果PDF无法显示，请点击下方链接下载：</p>
-      <a href="刘嘉润 个人简历.pdf" class="download-link" download>下载中文简历</a>
+      <!-- <p>如果PDF无法显示，请点击下方链接下载：</p> -->
+      <a href="刘嘉润 个人简历.pdf" class="download-link" download>下载</a>
     </div>
   </div>
 
@@ -184,8 +184,8 @@ html {
     <div class="pdf-title">📄 英文简历 | English CV</div>
     <div class="pdf-container">
       <embed src="Jiarun Liu CV.pdf" type="application/pdf" class="pdf-viewer">
-      <p>If the PDF cannot be displayed, please click the link below to download:</p>
-      <a href="Jiarun Liu CV.pdf" class="download-link" download>Download English CV</a>
+      <!-- <p>If the PDF cannot be displayed, please click the link below to download:</p> -->
+      <a href="Jiarun Liu CV.pdf" class="download-link" download>Download</a>
     </div>
   </div>
 </div>
