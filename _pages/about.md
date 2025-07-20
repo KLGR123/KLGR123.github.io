@@ -50,8 +50,15 @@ h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
-/* 让主内容区域占满整个宽度 */
-.page__content,
+/* 让主内容区域占满宽度但保持边距 */
+.page__content {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 20px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
 .page__content .container {
   max-width: 100% !important;
   width: 100% !important;
@@ -59,18 +66,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 !important;
 }
 
-/* 调整页面布局，让内容更紧凑 */
-.page__content {
-  padding-top: 10px !important;
-}
-
 /* 主容器样式 */
 .cv-container {
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  max-width: 100%;
   gap: 20px;
-  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -78,11 +79,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   text-align: center;
   height: 100%;
+  flex: 1;
 }
 
 .pdf-viewer {
   width: 100%;
-  height: calc(100% - 80px);
+  height: 700px;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin: 10px 0;
@@ -94,10 +96,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
-  height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .pdf-title {
@@ -140,12 +142,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .cv-container {
     flex-direction: column;
-    height: auto;
   }
   
   .pdf-section {
-    height: 600px;
     margin-bottom: 20px;
+  }
+  
+  .pdf-viewer {
+    height: 500px;
   }
 }
 
@@ -160,9 +164,8 @@ body {
   margin: 0 !important;
 }
 
-/* 确保容器占满屏幕 */
-html, body {
-  height: 100% !important;
+/* 防止水平溢出 */
+html {
   overflow-x: hidden;
 }
 </style>
