@@ -1,41 +1,289 @@
----
----
+@charset "utf-8";
 
-/*
- *    Minimal Mistakes Jekyll Theme
- *
- *  - Michael Rose
- *  - mademistakes.com
- *  - https://twitter.com/mmistakes
- *
-*/
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
 
-@import "vendor/breakpoint/breakpoint"; // media query mixins
-@import "variables";
-@import "mixins";
-@import "vendor/susy/susy";
+/* Academic Style Enhancements */
 
-@import "reset";
-@import "base";
+/* Overall font and typography optimization */
+body {
+  font-family: "Source Sans Pro", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+}
 
-@import "utilities";
-@import "animations";
-@import "tables";
-@import "buttons";
-@import "notices";
-@import "masthead";
-@import "navigation";
-@import "footer";
-@import "syntax";
+/* Academic style header */
+.masthead {
+  border-bottom: 2px solid #e9ecef;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
 
-@import "forms";
+.masthead__inner-wrap {
+  max-width: 1200px;
+}
 
-@import "page";
-@import "archive";
-@import "sidebar";
+/* Homepage introduction style optimization */
+.academic-badges {
+  margin: 2rem 0;
+  text-align: center;
+}
 
-@import "vendor/font-awesome/fontawesome";
-@import "vendor/font-awesome/solid";
-@import "vendor/font-awesome/brands";
-@import "vendor/magnific-popup/magnific-popup";
-@import "print";
+.academic-badges img {
+  margin: 0.25rem;
+  transition: transform 0.2s ease;
+}
+
+.academic-badges img:hover {
+  transform: scale(1.05);
+}
+
+/* Sidebar academic style */
+.sidebar .author__avatar {
+  border: 3px solid #3498db;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+}
+
+.sidebar .author__bio {
+  font-style: italic;
+  color: #5a6c7d;
+  border-left: 3px solid #3498db;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+/* Page title academic style */
+.page__title {
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Content area styles */
+.page__content {
+  max-width: none;
+}
+
+.page__content h2 {
+  color: #2c3e50;
+  border-left: 4px solid #3498db;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page__content h3 {
+  color: #34495e;
+  margin-top: 1.5rem;
+}
+
+/* Link style optimization */
+a {
+  color: #3498db;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+/* Code block academic style */
+pre {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-left: 4px solid #3498db;
+}
+
+code {
+  background-color: #f1f3f4;
+  color: #d73a49;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", monospace;
+}
+
+/* Blockquote styles */
+blockquote {
+  border-left: 4px solid #3498db;
+  background-color: #f8f9fa;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  color: #5a6c7d;
+}
+
+/* Table academic style */
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table th {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Button style optimization */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Navigation style optimization */
+.greedy-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.greedy-nav a {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.greedy-nav a:hover {
+  color: #3498db;
+}
+
+/* Responsive design optimization */
+@media (max-width: 768px) {
+  .academic-badges {
+    text-align: center;
+  }
+  
+  .academic-badges img {
+    display: inline-block;
+    margin: 0.2rem;
+  }
+  
+  .page__content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Article list styles */
+.archive__item {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.archive__item:last-child {
+  border-bottom: none;
+}
+
+.archive__item-title {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.archive__item-title a:hover {
+  color: #3498db;
+}
+
+/* Footer styles */
+.page__footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  margin-top: 3rem;
+}
+
+.page__footer a {
+  color: #3498db;
+}
+
+/* Academic achievement highlighting */
+.highlight-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.highlight-box h3 {
+  color: white;
+  margin-top: 0;
+}
+
+/* Math formula styles */
+.MathJax {
+  font-size: 1.1em !important;
+}
+
+/* Image style optimization */
+img {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Professional icon styles */
+.academic-icon {
+  color: #3498db;
+  margin-right: 0.5rem;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2c3e50;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}

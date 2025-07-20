@@ -1,0 +1,238 @@
+<!-- Language Toggle Component -->
+<div class="language-toggle-container">
+  <div class="language-toggle" id="languageToggle">
+    <div class="toggle-option active" data-lang="zh" title="中文">
+      <span class="lang-text">中</span>
+    </div>
+    <div class="toggle-option" data-lang="en" title="English">
+      <span class="lang-text">EN</span>
+    </div>
+    <div class="toggle-slider"></div>
+  </div>
+</div>
+
+<style>
+.language-toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(52, 152, 219, 0.2);
+}
+
+.language-toggle {
+  position: relative;
+  display: flex;
+  width: 80px;
+  height: 35px;
+  border-radius: 20px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+  border-radius: 18px;
+}
+
+.toggle-option.active .lang-text {
+  color: white;
+  font-weight: 600;
+}
+
+.toggle-option:not(.active) .lang-text {
+  color: #7f8c8d;
+}
+
+.lang-text {
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 38px;
+  height: 31px;
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  border-radius: 16px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.3);
+}
+
+.language-toggle.en .toggle-slider {
+  transform: translateX(38px);
+}
+
+.language-toggle:hover {
+  background: #e9ecef;
+}
+
+.language-toggle:hover .toggle-slider {
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+@media (max-width: 768px) {
+  .language-toggle-container {
+    top: 15px;
+    right: 15px;
+  }
+  
+  .language-toggle {
+    width: 70px;
+    height: 32px;
+  }
+  
+  .toggle-slider {
+    width: 33px;
+    height: 28px;
+  }
+  
+  .language-toggle.en .toggle-slider {
+    transform: translateX(33px);
+  }
+  
+  .lang-text {
+    font-size: 11px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('languageToggle');
+  const toggleOptions = toggle.querySelectorAll('.toggle-option');
+  
+  // Language configuration
+  const langConfig = {
+    zh: {
+      'Research': '研究成果',
+      'Academic Blog': '学术博客',
+      'CV': '简历',
+      'Others': '其他',
+      'Research 🔬': '研究成果 🔬',
+      'Academic Posts 📝': '学术博客 📝'
+    },
+    en: {
+      '研究成果': 'Research',
+      '学术博客': 'Academic Blog',
+      '简历': 'CV',
+      '其他': 'Others',
+      '研究成果 🔬': 'Research 🔬',
+      '学术博客 📝': 'Academic Posts 📝'
+    }
+  };
+  
+  // Get saved language preference or default to Chinese
+  const savedLang = localStorage.getItem('preferred-language') || 'zh';
+  setLanguage(savedLang);
+  
+  // Add click event listeners
+  toggleOptions.forEach(option => {
+    option.addEventListener('click', function() {
+      const lang = this.getAttribute('data-lang');
+      setLanguage(lang);
+      localStorage.setItem('preferred-language', lang);
+    });
+  });
+  
+  function setLanguage(lang) {
+    // Update toggle state
+    toggle.className = `language-toggle ${lang}`;
+    toggleOptions.forEach(opt => {
+      opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
+    });
+    
+    // Update document language
+    document.documentElement.lang = lang;
+    document.body.setAttribute('data-lang', lang);
+    
+    // Switch content
+    switchContent(lang);
+  }
+  
+  function switchContent(lang) {
+    // Switch text content based on data attributes
+    const elements = document.querySelectorAll('[data-zh][data-en]');
+    elements.forEach(el => {
+      const text = el.getAttribute(`data-${lang}`);
+      if (text) {
+        el.textContent = text;
+      }
+    });
+    
+    // Switch HTML content based on data attributes
+    const htmlElements = document.querySelectorAll('[data-zh-html][data-en-html]');
+    htmlElements.forEach(el => {
+      const html = el.getAttribute(`data-${lang}-html`);
+      if (html) {
+        el.innerHTML = html;
+      }
+    });
+    
+    // Show/hide language specific elements
+    const zhElements = document.querySelectorAll('.lang-zh');
+    const enElements = document.querySelectorAll('.lang-en');
+    
+    if (lang === 'zh') {
+      zhElements.forEach(el => el.style.display = '');
+      enElements.forEach(el => el.style.display = 'none');
+    } else {
+      zhElements.forEach(el => el.style.display = 'none');
+      enElements.forEach(el => el.style.display = '');
+    }
+    
+    // Update page title
+    const titleElement = document.querySelector('.page__title');
+    if (titleElement) {
+      const currentTitle = titleElement.textContent.trim();
+      if (langConfig[lang][currentTitle]) {
+        titleElement.textContent = langConfig[lang][currentTitle];
+      }
+    }
+    
+    // Update navigation links
+    const navLinks = document.querySelectorAll('.greedy-nav .visible-links a');
+    navLinks.forEach(link => {
+      const currentText = link.textContent.trim();
+      if (langConfig[lang][currentText]) {
+        link.textContent = langConfig[lang][currentText];
+      }
+    });
+    
+    // Update masthead title
+    const mastheadTitle = document.querySelector('.site-title');
+    if (mastheadTitle) {
+      if (lang === 'zh') {
+        mastheadTitle.textContent = '刘嘉润的学术主页';
+      } else {
+        mastheadTitle.textContent = "Jiarun Liu's Academic Homepage";
+      }
+    }
+    
+    // Update author bio in sidebar
+    const authorBio = document.querySelector('.author__bio');
+    if (authorBio) {
+      if (lang === 'zh') {
+        authorBio.textContent = '每个人都是一个完整的世界。';
+      } else {
+        authorBio.textContent = 'Chaque personne porte en soi un monde tout entier.';
+      }
+    }
+  }
+});
+</script> 

@@ -1,19 +1,13 @@
-# main links links
+# Main navigation links
 main:
-  # - title: "Research"
-  #   url: /talks/
+  - title: "研究成果"
+    url: /publications/
 
-  - title: "Research"
-    url: /publications/    
-
-  - title: "Activities"
-    url: /teaching/    
-        
-  # - title: "Timeline" # 暂时不展示了
-  #   url: /posts/
+  - title: "学术博客"
+    url: /posts/
     
-  - title: "JasperGA"
-    url: /portfolio/
+  # - title: "简历"
+  #   url: /cv/
     
-  # - title: "#"
+  # - title: "其他"
   #   url: /markdown/
