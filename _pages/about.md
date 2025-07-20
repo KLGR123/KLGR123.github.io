@@ -1,12 +1,97 @@
 ---
 permalink: /
-title: "刘嘉润 | Jiarun Liu"
-excerpt: "Personal Academic Homepage - Jiarun Liu"
+title: "个人简历 | Personal CV"
+excerpt: "Personal CV - Jiarun Liu"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+<style>
+.pdf-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.pdf-section {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.pdf-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.download-link {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007cba;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.download-link:hover {
+  background-color: #005a8b;
+  color: white;
+  text-decoration: none;
+}
+
+.back-notice {
+  background-color: #e7f3ff;
+  border: 1px solid #b3d9ff;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+  text-align: center;
+}
+</style>
+
+<div class="back-notice">
+  <p><strong>临时页面</strong> | <em>Temporary Page</em></p>
+  <p>这是一个临时页面，用于展示个人简历。原始主页内容已暂时隐藏。</p>
+  <p>This is a temporary page for displaying personal CVs. The original homepage content is temporarily hidden.</p>
+</div>
+
+<div class="pdf-section">
+  <div class="pdf-title">📄 中文简历 | Chinese CV</div>
+  <div class="pdf-container">
+    <embed src="刘嘉润 个人简历.pdf" type="application/pdf" class="pdf-viewer">
+    <p>如果PDF无法显示，请点击下方链接下载：</p>
+    <a href="刘嘉润 个人简历.pdf" class="download-link" download>下载中文简历</a>
+  </div>
+</div>
+
+<div class="pdf-section">
+  <div class="pdf-title">📄 英文简历 | English CV</div>
+  <div class="pdf-container">
+    <embed src="Jiarun Liu CV.pdf" type="application/pdf" class="pdf-viewer">
+    <p>If the PDF cannot be displayed, please click the link below to download:</p>
+    <a href="Jiarun Liu CV.pdf" class="download-link" download>Download English CV</a>
+  </div>
+</div>
+
+<!-- 
+========================================
+原始主页内容已被临时注释掉
+Original homepage content temporarily commented out
+========================================
 
 <div class="academic-badges">
   <img alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
@@ -17,7 +102,6 @@ redirect_from:
 </div>
 
 <div class="multilingual-content">
-  <!-- Chinese Content -->
   <div class="lang-zh">
     <h2>个人简介</h2>
     
@@ -73,7 +157,6 @@ redirect_from:
     <p><em>欢迎访问我的学术主页！我期待与您进行有意义的学术交流与合作。</em></p>
   </div>
 
-  <!-- English Content -->
   <div class="lang-en" style="display: none;">
     <h2>About Me</h2>
     
@@ -129,4 +212,6 @@ redirect_from:
     <p><em>Welcome to my academic homepage! I look forward to engaging in meaningful academic discussions and collaborations with you.</em></p>
   </div>
 </div>
+
+-->
 

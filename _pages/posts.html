@@ -9,12 +9,10 @@ author_profile: true
   <!-- Chinese Content -->
   <div class="lang-zh">
     <div class="posts-intro">
-      <p>欢迎来到我的学术博客！这里记录了我在研究过程中的思考、实践经验以及对学术前沿的见解。希望这些内容能为同行们提供一些参考和启发。</p>
     </div>
 
     <div class="posts-section">
-      <h2><i class="fas fa-pen-alt" aria-hidden="true"></i> 最新文章</h2>
-      
+
       {% include base_path %}
       
       {% assign posts = site.posts | sort: 'date' | reverse %}
