@@ -1,0 +1,33 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Bundle
+vendor/
+.bundle/
+
+# Python (if any)
+venv/
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+jekyll.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride

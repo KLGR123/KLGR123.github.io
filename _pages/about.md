@@ -1,320 +1,921 @@
 ---
 permalink: /
-title: "个人简历 | Personal CV"
-excerpt: "Personal CV - Jiarun Liu"
-author_profile: true
+title: "🏔️ Hi there! It's Jasper!"
+excerpt: "Modern Academic Portfolio - CV, Code Demos, Gallery"
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<div class="modern-portfolio">
+  <!-- Enhanced Header -->
+  <header class="portfolio-header">
+    <div class="header-container">
+      <div class="profile-section">
+        <div class="profile-info">
+          <h1 class="portfolio-title">Jiarun Liu</h1>
+          <p class="portfolio-subtitle">Research & Development Portfolio</p>
+          <div class="profile-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">LLM Research</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Enhanced Tab Navigation -->
+      <nav class="tab-navigation">
+        <div class="nav-container">
+          <button class="tab-btn active" data-tab="cv">
+            <div class="tab-icon">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="tab-info">
+              <span class="tab-title">Profile</span>
+              <span class="tab-desc">CV & Links</span>
+            </div>
+          </button>
+          <button class="tab-btn" data-tab="code">
+            <div class="tab-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="tab-info">
+              <span class="tab-title">Code</span>
+              <span class="tab-desc">Jupyter Demos</span>
+            </div>
+          </button>
+          <button class="tab-btn" data-tab="gallery">
+            <div class="tab-icon">
+              <i class="fas fa-images"></i>
+            </div>
+            <div class="tab-info">
+              <span class="tab-title">Gallery</span>
+              <span class="tab-desc">Photo Collection</span>
+            </div>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Tab Content -->
+  <main class="tab-content-container">
+    
+    <!-- CV Tab - 重新设计为下载和链接页面 -->
+    <section id="cv-tab" class="tab-content active">
+      <div class="content-section">
+        <div class="cv-section">
+          <h2 class="section-title">
+            <i class="fas fa-download"></i>
+            Download CV
+          </h2>
+          <div class="download-buttons">
+            <a href="assets/cv/en.pdf" class="download-btn english" download>
+              <div class="btn-icon">
+                <i class="fas fa-file-pdf"></i>
+              </div>
+              <div class="btn-content">
+                <span class="btn-title">English CV</span>
+                <span class="btn-desc">Download PDF</span>
+              </div>
+            </a>
+            <a href="assets/cv/zh.pdf" class="download-btn chinese" download>
+              <div class="btn-icon">
+                <i class="fas fa-file-pdf"></i>
+              </div>
+              <div class="btn-content">
+                <span class="btn-title">中文简历</span>
+                <span class="btn-desc">下载PDF</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="links-section">
+          <h2 class="section-title">
+            <i class="fas fa-link"></i>
+            Professional Links
+          </h2>
+          <div class="social-links">
+            <a href="https://github.com/KLGR123" class="social-link github" target="_blank" rel="noopener">
+              <div class="link-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="link-content">
+                <span class="link-title">GitHub</span>
+                <span class="link-desc">@KLGR123</span>
+              </div>
+              <div class="link-arrow">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
+            
+            <a href="https://huggingface.co/KLGR123" class="social-link huggingface" target="_blank" rel="noopener">
+              <div class="link-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="link-content">
+                <span class="link-title">Hugging Face</span>
+                <span class="link-desc">@KLGR123</span>
+              </div>
+              <div class="link-arrow">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
+            
+            <a href="https://orcid.org/0009-0006-5538-3979" class="social-link orcid" target="_blank" rel="noopener">
+              <div class="link-icon">
+                <i class="fab fa-orcid"></i>
+              </div>
+              <div class="link-content">
+                <span class="link-title">ORCID</span>
+                <span class="link-desc">0009-0006-5538-3979</span>
+              </div>
+              <div class="link-arrow">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/jiarun-liu-2a5545297/" class="social-link linkedin" target="_blank" rel="noopener">
+              <div class="link-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="link-content">
+                <span class="link-title">LinkedIn</span>
+                <span class="link-desc">Jiarun Liu</span>
+              </div>
+              <div class="link-arrow">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Demos Tab -->
+    <section id="code-tab" class="tab-content">
+      <div class="content-section">
+        <div class="code-container">
+          <h2 class="section-title">
+            <i class="fas fa-code"></i>
+            Jupyter Notebooks
+          </h2>
+          <div class="notebook-selector">
+            <div class="notebook-tabs" id="notebook-tabs">
+              <!-- Will be populated dynamically -->
+            </div>
+          </div>
+          
+          <div class="notebook-viewer">
+            <div class="notebook-content" id="notebook-content">
+              <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading notebooks...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Tab -->
+    <section id="gallery-tab" class="tab-content">
+      <div class="content-section">
+        <div class="gallery-container">
+          <h2 class="section-title">
+            <i class="fas fa-images"></i>
+            Photo Gallery
+          </h2>
+          <div class="photo-grid" id="photo-grid">
+            <!-- Photos will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+</div>
+
+<!-- Photo Modal -->
+<div id="photo-modal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <img id="modal-image" src="" alt="">
+    <div class="modal-nav">
+      <button id="prev-photo" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+      <button id="next-photo" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</div>
+
 <style>
-/* 隐藏顶部导航栏 */
-.masthead {
-  display: none !important;
-}
-
-/* 隐藏页面顶部的导航元素 */
-.page__hero,
-.page__hero--overlay {
-  display: none !important;
-}
-
-/* 隐藏面包屑导航 */
-.breadcrumbs {
-  display: none !important;
-}
-
-/* 隐藏可能的语言切换按钮 */
-.lang-switch,
-.language-switch,
-.toggle-lang,
-[class*="language"],
-[class*="lang-"] {
-  display: none !important;
-}
-
-/* 调整整体字体大小 */
-body,
-.page,
-.page__content {
-  font-size: 14px !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1.2em !important;
-}
-
-/* 隐藏作者信息侧边栏 */
-.sidebar {
-  display: none !important;
-}
-
-/* 让主内容区域占满宽度但保持边距 */
-.page__content {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding: 20px !important;
-  margin: 0 !important;
-  box-sizing: border-box !important;
-}
-
-.page__content .container {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* 主容器样式 */
-.cv-container {
-  display: flex;
-  width: 100%;
-  max-width: 100%;
-  gap: 20px;
+/* Reset and Base Styles */
+* {
   box-sizing: border-box;
 }
 
-.pdf-container {
+/* Modern Portfolio Styles - 使用Consolas字体 */
+.modern-portfolio {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
   margin: 0;
+  padding: 0;
+  color: #2c3e50;
+  width: 100vw;
+  max-width: none;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Enhanced Header Styles */
+.portfolio-header {
+  background: url('assets/images/background.jpg') center/cover;
+  color: white;
+  padding: 2rem 0 1.5rem 0;
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  max-width: none;
+  margin: 2rem auto 0 auto;
+  border-radius: 0px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.header-container {
+  width: 100%;
+  margin: 0;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-section {
   text-align: center;
-  height: 100%;
-  flex: 1;
+  margin-bottom: 2rem;
 }
 
-.pdf-viewer {
+.portfolio-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 0.3rem 0;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+}
+
+.portfolio-subtitle {
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.profile-tags {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 400;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Enhanced Tab Navigation */
+.nav-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   width: 100%;
-  height: 700px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin: 10px 0;
+  max-width: none;
+  margin: 0;
 }
 
-.pdf-section {
-  flex: 1;
-  margin: 0;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-sizing: border-box;
+.tab-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  backdrop-filter: blur(10px);
+  font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.tab-btn.active {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.tab-icon {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.tab-info {
   display: flex;
   flex-direction: column;
-  min-width: 0;
+  align-items: flex-start;
 }
 
-.pdf-title {
-  font-size: 1.3em !important;
+.tab-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.tab-desc {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+/* Tab Content */
+.tab-content-container {
+  width: 100%;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Content Section - 去掉背景色 */
+.content-section {
+  /* 去掉背景色和边框 */
+  padding: 0;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #e0e6ed;
+  padding-bottom: 0.5rem;
+}
+
+/* CV Section Styles */
+.cv-section {
+  margin-bottom: 3rem;
+}
+
+.download-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border: 2px solid #e0e6ed;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+  font-family: 'Consolas', monospace;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+  background: #e3f2fd;
+  border-color: #2196f3;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(33, 150, 243, 0.25);
+}
+
+.download-btn.english:hover {
+  background: #e8f5e8;
+  border-color: #4caf50;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.15);
+}
+
+.download-btn.chinese:hover {
+  background: #fff3e0;
+  border-color: #ff9800;
+  box-shadow: 0 8px 25px rgba(255, 152, 0, 0.15);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+  color: #e74c3c;
+}
+
+.btn-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.btn-desc {
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+/* Social Links */
+.links-section {
+  margin-bottom: 3rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border: 2px solid #e0e6ed;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+  font-family: 'Consolas', monospace;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.social-link.github:hover {
+  background: #f6f8fa;
+  border-color: #24292e;
+  box-shadow: 0 8px 25px rgba(36, 41, 46, 0.15);
+}
+
+.social-link.orcid:hover {
+  background: #f0f8f0;
+  border-color: #a6ce39;
+  box-shadow: 0 8px 25px rgba(166, 206, 57, 0.15);
+}
+
+.social-link.linkedin:hover {
+  background: #f0f4f8;
+  border-color: #0077b5;
+  box-shadow: 0 8px 25px rgba(0, 119, 181, 0.15);
+}
+
+.social-link.huggingface:hover {
+  background: #fff8f0;
+  border-color: #ff9900;
+  box-shadow: 0 8px 25px rgba(255, 153, 0, 0.15);
+}
+
+.link-icon {
+  font-size: 1.2rem;
+}
+
+.social-link.github .link-icon {
+  color: #24292e;
+}
+
+.social-link.orcid .link-icon {
+  color: #a6ce39;
+}
+
+.social-link.linkedin .link-icon {
+  color: #0077b5;
+}
+
+.social-link.huggingface .link-icon {
+  color: #ff9900;
+}
+
+.link-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.link-desc {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.link-arrow {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover .link-arrow {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+/* Code Section Styles */
+.code-container {
+  /* 去掉背景色 */
+}
+
+.notebook-selector {
+  margin-bottom: 2rem;
+}
+
+.notebook-tabs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.notebook-btn {
+  padding: 0.75rem 1.25rem;
+  background: #f8f9fa;
+  border: 2px solid #e0e6ed;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #7f8c8d;
+  transition: all 0.3s ease;
+  font-family: 'Consolas', monospace;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.notebook-btn:hover {
+  border-color: #3498db;
+  color: #3498db;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+}
+
+.notebook-btn.active {
+  background: #3498db;
+  border-color: #3498db;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.notebook-viewer {
+  max-height: 800px;
+  overflow-y: auto;
+  border-radius: 12px;
+  border: 1px solid #e0e6ed;
+  background: #fafbfc;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.notebook-content {
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+}
+
+.loading-spinner i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Jupyter Notebook Styles */
+.notebook-cell {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background: white;
+}
+
+.cell-input {
+  border-left: 4px solid #3498db;
+}
+
+.cell-output {
+  border-left: 4px solid #27ae60;
+}
+
+.cell-markdown {
+  border-left: 4px solid #9b59b6;
+}
+
+.cell-header {
+  background: #f8f9fa;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 1px solid #e9ecef;
+  font-family: 'Consolas', monospace;
+}
+
+.cell-content {
+  padding: 1rem;
+}
+
+.code-block {
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 1rem;
+  font-family: 'Consolas', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.output-block {
+  background: #f8f9fa;
+  color: #495057;
+  padding: 1rem;
+  font-family: 'Consolas', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.markdown-content {
+  line-height: 1.6;
+  font-family: 'Consolas', monospace;
+}
+
+.markdown-content h1, .markdown-content h2, .markdown-content h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.markdown-content p {
+  margin-bottom: 1rem;
+}
+
+.markdown-content pre {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Consolas', monospace;
+}
+
+.markdown-content code {
+  background: #f1f3f4;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-family: 'Consolas', monospace;
+}
+
+/* Gallery Styles */
+.gallery-container {
+  /* 去掉背景色 */
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.photo-item {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.photo-item:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
   font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
-  text-align: center;
+  cursor: pointer;
+  z-index: 1001;
+  font-family: 'Consolas', monospace;
 }
 
-.download-link {
-  display: inline-block;
-  margin: 10px;
-  padding: 8px 16px;
-  background-color: #007cba;
+.modal-close:hover {
+  color: #3498db;
+}
+
+#modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  font-size: 13px !important;
+  font-size: 24px;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: all;
+  transition: all 0.3s ease;
+  font-family: 'Consolas', monospace;
 }
 
-.download-link:hover {
-  background-color: #005a8b;
-  color: white;
-  text-decoration: none;
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
 }
 
-.back-notice {
-  background-color: #e7f3ff;
-  border: 1px solid #b3d9ff;
-  border-radius: 5px;
-  padding: 15px;
-  margin: 20px 0;
+/* Remove mobile responsive - 不再考虑移动端兼容 */
+
+/* Hide default Jekyll elements */
+.masthead, .page__hero, .breadcrumbs, .sidebar, .page__footer {
+  display: none !important;
+}
+
+/* 简化的全局样式 */
+.page, .page__content {
+  font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace !important;
+}
+
+/* Output image styling */
+.output-image {
+  margin: 1rem 0;
   text-align: center;
-  font-size: 13px !important;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
 }
 
-/* 响应式设计 */
-@media (max-width: 768px) {
-  .cv-container {
-    flex-direction: column;
-  }
-  
-  .pdf-section {
-    margin-bottom: 20px;
-  }
-  
-  .pdf-viewer {
-    height: 500px;
-  }
+.output-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* 移除默认的页面约束 */
-body {
-  margin: 0 !important;
-  padding: 0 !important;
+/* HTML output styling (for DataFrames, etc.) */
+.output-html {
+  margin: 1rem 0;
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 1rem;
 }
 
-.layout--single .page {
-  width: 100% !important;
-  margin: 0 !important;
+.output-html table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Consolas', monospace;
+  font-size: 0.85rem;
 }
 
-/* 防止水平溢出 */
-html {
-  overflow-x: hidden;
+.output-html th,
+.output-html td {
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.output-html th {
+  background-color: #f8f9fa;
+  font-weight: 600;
 }
 </style>
 
-<div class="cv-container">
-  <div class="pdf-section">
-    <div class="pdf-title">📄 中文简历 | Chinese CV</div>
-    <div class="pdf-container">
-      <embed src="刘嘉润 个人简历.pdf" type="application/pdf" class="pdf-viewer">
-      <!-- <p>如果PDF无法显示，请点击下方链接下载：</p> -->
-      <a href="刘嘉润 个人简历.pdf" class="download-link" download>下载</a>
-    </div>
-  </div>
+<!-- Include necessary libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/notebookjs@0.8.3/notebook.min.js"></script>
 
-  <div class="pdf-section">
-    <div class="pdf-title">📄 英文简历 | English CV</div>
-    <div class="pdf-container">
-      <embed src="Jiarun Liu CV.pdf" type="application/pdf" class="pdf-viewer">
-      <!-- <p>If the PDF cannot be displayed, please click the link below to download:</p> -->
-      <a href="Jiarun Liu CV.pdf" class="download-link" download>Download</a>
-    </div>
-  </div>
-</div>
-
-<!-- 
-========================================
-原始主页内容已被临时注释掉
-Original homepage content temporarily commented out
-========================================
-
-<div class="academic-badges">
-  <img alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img alt="PyTorch" src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
-  <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-  <img alt="Vue.js" src="https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white" />
-  <img alt="C++" src="https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
-</div>
-
-<div class="multilingual-content">
-  <div class="lang-zh">
-    <h2>个人简介</h2>
-    
-    <p>我是<strong>刘嘉润</strong>，出生于2001年4月，现就读于<strong>北京邮电大学信息与通信工程学院</strong>，攻读26年获硕士学位。我性格开朗，为人热情，做事严谨，热爱思考，对人工智能技术有纯粹的追求。</p>
-
-    <h3>🎓 教育背景</h3>
-
-    <p><strong>北京邮电大学 (2023.09 - 2026.06)</strong><br>
-    硕士研究生 | 信息与通信工程<br>
-    研究方向为自然语言处理和强化学习，重点偏向 Computer Using Agent<br>
-    课程成绩：89.05/100，绩点：3.65/4.0；四六级成绩分别为 658、521 分</p>
-
-    <p><strong>北京邮电大学 (2019.09 - 2023.06)</strong><br>  
-    本科 | 信息与通信工程（英文）</p>
-
-    <p><em>初中就读于北京市第五中学分校，高中就读于北京市第二中学实验班。</em></p>
-
-    <h3>🔬 研究领域</h3>
-
-    <p>我的研究兴趣主要集中在<strong>自然语言处理</strong>和<strong>强化学习</strong>领域。目前专注于<strong>大语言模型Web智能体</strong>的前沿研究，探索如何增强AI系统与网络环境的交互能力。</p>
-    
-    <p>我在北京邮电大学智能系统实验室进行研究工作，该实验室隶属于网络与交换技术国家重点实验室。</p>
-
-    <h3>📝 学术成果</h3>
-
-    <p>目前我已在顶级会议发表多篇论文，包括：</p>
-    <ul>
-      <li><strong>AAAI-2025 Oral</strong> 一作论文：WEPO: Web Element Preference Optimization for LLM-based Web Navigation</li>
-      <li><strong>ACL-2025 Findings</strong> 三作论文：All That Glitters Is Not Gold: Improving Robust Retrieval-Augmented Language Models with Fact-Centric Preference Alignment</li>
-      <li><strong>ICIP-2024 Poster</strong> 二作论文：Meta-DM: Applications of Diffusion Models on Few-Shot Learning</li>
-    </ul>
-
-    <p><em>目前仍有在投相关工作两篇，投稿至 NeurIPS 25、AAAI 26 等学术会议。</em></p>
-
-    <h3>🏆 获奖情况</h3>
-
-    <ul>
-      <li><strong>本科期间</strong>：连续三年获得本科生三等奖学金，并获得"英才班"创新基金</li>
-      <li><strong>研究生期间</strong>：连续两年获得研究生一等奖学金，并与团队在2023年上海临港杯人工智能全球创新大赛（总决赛）获得金奖</li>
-    </ul>
-
-    <h3>📧 联系方式</h3>
-
-    <p>📧 <strong>学术邮箱</strong>: liujiarun01@bupt.edu.cn<br>
-    📧 <strong>个人邮箱</strong>: liujiarun01@126.com<br>
-    🌐 <strong>Google Scholar</strong>: <a href="https://scholar.google.com/citations?user=dP4KddUAAAAJ&hl=en">学术主页</a><br>
-    🌐 <strong>ResearchGate</strong>: <a href="https://www.researchgate.net/profile/Jiarun-Liu-3">研究资料</a><br>
-    🐦 <strong>Twitter/X</strong>: <a href="https://twitter.com/leoAK123">@leoAK123</a><br>
-    📺 <strong>Bilibili</strong>: <a href="https://space.bilibili.com/474465629">个人频道</a></p>
-
-    <hr>
-
-    <p><em>欢迎访问我的学术主页！我期待与您进行有意义的学术交流与合作。</em></p>
-  </div>
-
-  <div class="lang-en" style="display: none;">
-    <h2>About Me</h2>
-    
-    <p>I am <strong>Jiarun Liu</strong>, born in April 2001, currently pursuing my Master's degree at the <strong>School of Information and Communication Engineering (SICE)</strong>, Beijing University of Posts and Telecommunications (BUPT). I am a dedicated researcher with a strong passion for tackling challenging problems in artificial intelligence.</p>
-
-    <h3>🎓 Education</h3>
-
-    <p><strong>Beijing University of Posts and Telecommunications (2023.09 - 2026.06)</strong><br>
-    Master's Degree | Information and Communication Engineering<br>
-    Research focus on Natural Language Processing and Reinforcement Learning, with emphasis on Computer Using Agent<br>
-    GPA: 89.05/100 (3.65/4.0); CET-4: 658, CET-6: 521</p>
-
-    <p><strong>Beijing University of Posts and Telecommunications (2019.09 - 2023.06)</strong><br>  
-    Bachelor's Degree | Information and Communication Engineering (English Program)</p>
-
-    <p><em>Secondary education: Beijing No.5 Middle School Branch, Beijing No.2 Middle School Experimental Class.</em></p>
-
-    <h3>🔬 Research Interests</h3>
-
-    <p>My research interests primarily focus on <strong>Natural Language Processing</strong> and <strong>Reinforcement Learning</strong>. Currently, I am working on cutting-edge research in <strong>Large Language Model-based Web Agents</strong>, exploring ways to enhance AI systems' ability to interact with web environments.</p>
-    
-    <p>I conduct my research at the <strong>Laboratory of Intelligent Systems</strong>, which is part of the <strong>State Key Laboratory of Network and Switching Technology</strong> at BUPT.</p>
-
-    <h3>📝 Academic Achievements</h3>
-
-    <p>I have published multiple papers in top-tier conferences, including:</p>
-    <ul>
-      <li><strong>AAAI-2025 Oral</strong> First Author: WEPO: Web Element Preference Optimization for LLM-based Web Navigation</li>
-      <li><strong>ACL-2025 Findings</strong> Third Author: All That Glitters Is Not Gold: Improving Robust Retrieval-Augmented Language Models with Fact-Centric Preference Alignment</li>
-      <li><strong>ICIP-2024 Poster</strong> Second Author: Meta-DM: Applications of Diffusion Models on Few-Shot Learning</li>
-    </ul>
-
-    <p><em>Currently have two additional works under review, submitted to NeurIPS 25, AAAI 26, and other academic conferences.</em></p>
-
-    <h3>🏆 Awards & Honors</h3>
-
-    <ul>
-      <li><strong>Undergraduate</strong>: Three consecutive years of Third-Class Scholarship, "Elite Class" Innovation Fund</li>
-      <li><strong>Graduate</strong>: Two consecutive years of First-Class Scholarship, Gold Prize in Shanghai Lingang Cup AI Global Innovation Competition (Finals) 2023</li>
-    </ul>
-
-    <h3>📧 Contact Information</h3>
-
-    <p>📧 <strong>Academic Email</strong>: liujiarun01@bupt.edu.cn<br>
-    📧 <strong>Personal Email</strong>: liujiarun01@126.com<br>
-    🌐 <strong>Google Scholar</strong>: <a href="https://scholar.google.com/citations?user=dP4KddUAAAAJ&hl=en">Academic Profile</a><br>
-    🌐 <strong>ResearchGate</strong>: <a href="https://www.researchgate.net/profile/Jiarun-Liu-3">Research Materials</a><br>
-    🐦 <strong>Twitter/X</strong>: <a href="https://twitter.com/leoAK123">@leoAK123</a><br>
-    📺 <strong>Bilibili</strong>: <a href="https://space.bilibili.com/474465629">Personal Channel</a></p>
-
-    <hr>
-
-    <p><em>Welcome to my academic homepage! I look forward to engaging in meaningful academic discussions and collaborations with you.</em></p>
-  </div>
-</div>
-
--->
+<script src="assets/js/portfolio.js"></script>
 
