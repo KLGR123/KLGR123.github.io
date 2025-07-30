@@ -18,7 +18,7 @@ redirect_from:
     <div class="header-container">
       <div class="profile-section">
         <div class="profile-info">
-          <h1 class="portfolio-title">Jiarun Liu</h1>
+          <h1 class="portfolio-title">Jiarun Liu <span style="font-family: sans-serif; font-weight: 300;">刘嘉润</span></h1>
           <p class="portfolio-subtitle">Research & Development Portfolio</p>
           <div class="profile-tags">
             <span class="tag">Machine Learning</span>
@@ -91,7 +91,7 @@ redirect_from:
               </div>
               <div class="btn-content">
                 <span class="btn-title">中文简历</span>
-                <span class="btn-desc">下载PDF</span>
+                <span class="btn-desc">下载 PDF</span>
               </div>
             </a>
           </div>
@@ -223,7 +223,7 @@ redirect_from:
 
 /* Modern Portfolio Styles - 使用Consolas字体 */
 .modern-portfolio {
-  min-height: 100vh;
+  min-height: calc(100vh - 40px); /* 减去页面标题的高度 */
   background: #ffffff;
   font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
   margin: 0;
@@ -248,7 +248,7 @@ redirect_from:
   overflow: hidden;
   width: 100vw;
   max-width: none;
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   border-radius: 0px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -853,6 +853,24 @@ redirect_from:
 }
 
 /* Remove mobile responsive - 不再考虑移动端兼容 */
+
+/* Page Title Header */
+.page-title-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+}
+
+.page-title {
+  font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 
 /* Hide default Jekyll elements */
 .masthead, .page__hero, .breadcrumbs, .sidebar, .page__footer {

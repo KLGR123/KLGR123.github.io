@@ -218,39 +218,25 @@ async function discoverNotebooksbyTrying() {
   // Common patterns and known files
   const possibleNames = [
     // Known existing files
-    'dynamic-programming-in-RL.ipynb',
+    '3dconv.ipynb',
+    'attn.ipynb',
+    'backprop-ninja.ipynb', 
+    'backprop.ipynb',
+    'batchnorm.ipynb',
+    'bigram.ipynb',
+    'dp-rl.ipynb',
+    'kl-divergence.ipynb',
+    'mat_inv.ipynb',
+    'mla.ipynb',
+    'mlp.ipynb',
+    'moe.ipynb',
+    'optim.ipynb',
+    'pt-basic.ipynb',
+    'pt-nlp.ipynb',
     'rbm-mnist.ipynb',
-    
-    // Common research patterns
-    'machine-learning.ipynb',
-    'deep-learning.ipynb', 
-    'neural-networks.ipynb',
-    'reinforcement-learning.ipynb',
-    'computer-vision.ipynb',
-    'natural-language-processing.ipynb',
-    'nlp.ipynb',
-    'data-analysis.ipynb',
-    'data-science.ipynb',
-    'statistics.ipynb',
-    'visualization.ipynb',
-    'experiment.ipynb',
-    'analysis.ipynb',
-    'model.ipynb',
-    'training.ipynb',
-    'evaluation.ipynb',
-    'research.ipynb',
-    'study.ipynb',
-    'project.ipynb',
-    'demo.ipynb',
-    'tutorial.ipynb',
-    'example.ipynb',
-    
-    // Pattern-based attempts (common naming)
-    'main.ipynb',
-    'index.ipynb',
-    'notebook.ipynb',
-    'untitled.ipynb',
-    'test.ipynb'
+    'svd.ipynb',
+    'transformer.ipynb',
+    'wavenet.ipynb',
   ];
   
   console.log(`🔄 Trying ${possibleNames.length} possible notebook names...`);
@@ -533,11 +519,7 @@ async function autoDiscoverPhotos() {
   
   // Fallback to known common patterns
   const commonPatterns = [
-    '1.JPG', '2.JPG', '3.JPG', '4.JPG', '5.JPG', 
-    '6.JPG', '7.jpeg', '8.JPG', '9.JPG', '10.JPG',
-    'photo1.jpg', 'photo2.jpg', 'photo3.jpg',
-    'image1.png', 'image2.png', 'image3.png',
-    'pic1.jpg', 'pic2.jpg', 'pic3.jpg'
+    '1.JPG', '2.JPG', '3.JPG', '4.JPG', '5.JPG', '6.JPG', '7.JPG', '8.JPG', '9.JPG', '10.JPG'
   ];
   
   const foundPhotos = [];
