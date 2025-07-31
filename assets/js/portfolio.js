@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initBookFlip();
   initNotebookSystem();
   initPhotoGallery();
+  initCodeCopyButtons();
   
   console.log('🎉 All portfolio functionality initialized successfully!');
 });
@@ -359,10 +360,16 @@ function renderNotebookFallback(notebook, container) {
       
       if (cell.cell_type === 'code') {
         const sourceCode = Array.isArray(cell.source) ? cell.source.join('') : (cell.source || '');
+        html += '<div class="code-container">';
         html += '<div class="code-block">';
+        html += '<button class="copy-btn" onclick="copyCodeToClipboard(this)">';
+        html += '<i class="fas fa-copy"></i> Copy';
+        html += '</button>';
         html += '<pre><code>';
-        html += sourceCode.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        // Apply syntax highlighting to raw source code (no HTML escaping beforehand)
+        html += applySyntaxHighlighting(sourceCode);
         html += '</code></pre>';
+        html += '</div>';
         html += '</div>';
         
         // Show outputs if any
@@ -435,6 +442,11 @@ function renderNotebookFallback(notebook, container) {
     
     html += '</div>';
     container.innerHTML = html;
+    
+    // Add copy buttons to any existing code blocks that don't have them
+    setTimeout(() => {
+      addCopyButtonsToExistingCode();
+    }, 100);
     
     console.log('✅ Fallback notebook rendered successfully');
     
@@ -519,7 +531,17 @@ async function autoDiscoverPhotos() {
   
   // Fallback to known common patterns
   const commonPatterns = [
-    '1.JPG', '2.JPG', '3.JPG', '4.JPG', '5.JPG', '6.JPG', '7.JPG', '8.JPG', '9.JPG', '10.JPG'
+    '1.JPG', 
+    '2.JPG', 
+    '3.JPG', 
+    '4.JPG', 
+    '5.JPG', 
+    '6.JPG', 
+    '7.JPG', 
+    '8.JPG', 
+    '9.JPG', 
+    '10.JPG',
+    '11.JPG', 
   ];
   
   const foundPhotos = [];
@@ -686,4 +708,191 @@ setTimeout(() => {
     console.log('Book classes:', book.className);
     console.log('Book transform:', window.getComputedStyle(book).transform);
   }
-}, 2000); 
+}, 2000);
+
+// Python syntax highlighting function - Simple and reliable version
+function applySyntaxHighlighting(code) {
+  // Python keywords
+  const keywords = ['def', 'class', 'if', 'elif', 'else', 'for', 'while', 'try', 'except', 'finally', 
+                   'import', 'from', 'as', 'return', 'yield', 'with', 'lambda', 'and', 'or', 'not', 
+                   'in', 'is', 'True', 'False', 'None', 'pass', 'break', 'continue', 'global', 'nonlocal'];
+  
+  // Built-in functions
+  const builtins = ['print', 'len', 'range', 'enumerate', 'zip', 'map', 'filter', 'sorted', 'sum', 
+                   'max', 'min', 'abs', 'round', 'type', 'isinstance', 'str', 'int', 'float', 'list', 
+                   'dict', 'set', 'tuple', 'open', 'input', 'format', 'torch', 'nn', 'transform'];
+  
+  // First escape HTML characters to prevent injection
+  let highlighted = code
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+  
+  // Use temporary placeholders to avoid conflicts
+  const placeholders = {};
+  let counter = 0;
+  
+  // 1. Replace strings with placeholders (handle escaped quotes)
+  highlighted = highlighted.replace(/(&#39;)([^&#39;\n]*?)(&#39;|&quot;)([^&quot;\n]*?)(&quot;)/g, function(match) {
+    const placeholder = `__STRING_${counter}__`;
+    placeholders[placeholder] = `<span class="string">${match}</span>`;
+    counter++;
+    return placeholder;
+  });
+  
+  // Handle single-quoted strings
+  highlighted = highlighted.replace(/(&#39;)([^&#39;\n]*?)(&#39;)/g, function(match) {
+    const placeholder = `__STRING_${counter}__`;
+    placeholders[placeholder] = `<span class="string">${match}</span>`;
+    counter++;
+    return placeholder;
+  });
+  
+  // Handle double-quoted strings
+  highlighted = highlighted.replace(/(&quot;)([^&quot;\n]*?)(&quot;)/g, function(match) {
+    const placeholder = `__STRING_${counter}__`;
+    placeholders[placeholder] = `<span class="string">${match}</span>`;
+    counter++;
+    return placeholder;
+  });
+  
+  // 2. Replace comments with placeholders
+  highlighted = highlighted.replace(/(#[^\n\r]*)/g, function(match) {
+    const placeholder = `__COMMENT_${counter}__`;
+    placeholders[placeholder] = `<span class="comment">${match}</span>`;
+    counter++;
+    return placeholder;
+  });
+  
+  // 3. Replace numbers with placeholders
+  highlighted = highlighted.replace(/\b(\d+\.?\d*)\b/g, function(match) {
+    const placeholder = `__NUMBER_${counter}__`;
+    placeholders[placeholder] = `<span class="number">${match}</span>`;
+    counter++;
+    return placeholder;
+  });
+  
+  // 4. Replace keywords with placeholders
+  keywords.forEach(keyword => {
+    const regex = new RegExp(`\\b${keyword}\\b`, 'g');
+    highlighted = highlighted.replace(regex, function(match) {
+      const placeholder = `__KEYWORD_${counter}__`;
+      placeholders[placeholder] = `<span class="keyword">${match}</span>`;
+      counter++;
+      return placeholder;
+    });
+  });
+  
+  // 5. Replace built-in functions with placeholders
+  builtins.forEach(builtin => {
+    const regex = new RegExp(`\\b${builtin}\\b(?=\\s*\\()`, 'g');
+    highlighted = highlighted.replace(regex, function(match) {
+      const placeholder = `__BUILTIN_${counter}__`;
+      placeholders[placeholder] = `<span class="builtin">${match}</span>`;
+      counter++;
+      return placeholder;
+    });
+  });
+  
+  // 6. Replace function definitions with placeholders
+  highlighted = highlighted.replace(/\b(def\s+)(\w+)/g, function(match, def_keyword, func_name) {
+    const placeholder = `__FUNCTION_${counter}__`;
+    placeholders[placeholder] = `${def_keyword}<span class="function">${func_name}</span>`;
+    counter++;
+    return placeholder;
+  });
+  
+  // 7. Replace all placeholders back with highlighted HTML
+  Object.keys(placeholders).forEach(placeholder => {
+    highlighted = highlighted.replace(new RegExp(placeholder, 'g'), placeholders[placeholder]);
+  });
+  
+  return highlighted;
+}
+
+// Copy code to clipboard function
+async function copyCodeToClipboard(button) {
+  const codeBlock = button.parentElement;
+  const codeElement = codeBlock.querySelector('pre code');
+  const originalText = button.innerHTML;
+  
+  if (!codeElement) {
+    console.error('Code element not found');
+    return;
+  }
+  
+  // Get the text content without HTML tags
+  const codeText = codeElement.textContent || codeElement.innerText;
+  
+  try {
+    await navigator.clipboard.writeText(codeText);
+    
+    // Visual feedback
+    button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+    button.classList.add('copied');
+    
+    setTimeout(() => {
+      button.innerHTML = originalText;
+      button.classList.remove('copied');
+    }, 2000);
+    
+    console.log('✅ Code copied to clipboard');
+  } catch (err) {
+    console.error('❌ Failed to copy code:', err);
+    
+    // Fallback for older browsers
+    try {
+      const textArea = document.createElement('textarea');
+      textArea.value = codeText;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      
+      button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+      button.classList.add('copied');
+      
+      setTimeout(() => {
+        button.innerHTML = originalText;
+        button.classList.remove('copied');
+      }, 2000);
+      
+      console.log('✅ Code copied using fallback method');
+    } catch (fallbackErr) {
+      console.error('❌ Fallback copy also failed:', fallbackErr);
+      button.innerHTML = '<i class="fas fa-times"></i> Copy Failed';
+      setTimeout(() => {
+        button.innerHTML = originalText;
+      }, 2000);
+    }
+  }
+}
+
+// Initialize code copy buttons (for any code blocks added dynamically)
+function initCodeCopyButtons() {
+  console.log('📋 Initializing code copy buttons...');
+  
+  // This function will be called when notebooks are loaded
+  // The copy buttons are added inline during notebook rendering
+  
+  console.log('✅ Code copy functionality ready');
+}
+
+// Update notebook content and add copy buttons to existing code blocks
+function addCopyButtonsToExistingCode() {
+  const codeBlocks = document.querySelectorAll('.code-block:not(.has-copy-btn)');
+  
+  codeBlocks.forEach(block => {
+    if (!block.querySelector('.copy-btn')) {
+      const copyBtn = document.createElement('button');
+      copyBtn.className = 'copy-btn';
+      copyBtn.innerHTML = '<i class="fas fa-copy"></i> Copy';
+      copyBtn.onclick = () => copyCodeToClipboard(copyBtn);
+      
+      block.appendChild(copyBtn);
+      block.classList.add('has-copy-btn');
+    }
+  });
+} 

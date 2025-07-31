@@ -1,6 +1,7 @@
 ---
+layout: default
 permalink: /
-title: "🏔️ Hi there! It's Jasper!"
+title: "Hi it's Jasper!"
 excerpt: "Modern Academic Portfolio - CV, Code Demos, Gallery"
 author_profile: false
 redirect_from: 
@@ -18,7 +19,7 @@ redirect_from:
     <div class="header-container">
       <div class="profile-section">
         <div class="profile-info">
-          <h1 class="portfolio-title">Jiarun Liu <span style="font-family: sans-serif; font-weight: 300;">刘嘉润</span></h1>
+          <h1 class="portfolio-title">Jiarun Liu 🏔️</h1>
           <p class="portfolio-subtitle">Research & Development Portfolio</p>
           <div class="profile-tags">
             <span class="tag">Machine Learning</span>
@@ -223,7 +224,7 @@ redirect_from:
 
 /* Modern Portfolio Styles - 使用Consolas字体 */
 .modern-portfolio {
-  min-height: calc(100vh - 40px); /* 减去页面标题的高度 */
+  min-height: calc(100vh - 60px); /* 减去底部栏的高度 */
   background: #ffffff;
   font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
   margin: 0;
@@ -688,8 +689,8 @@ redirect_from:
 }
 
 .code-block {
-  background: #2d3748;
-  color: #e2e8f0;
+  background: #1e1e1e;
+  color: #d4d4d4;
   padding: 1rem;
   font-family: 'Consolas', monospace;
   font-size: 0.9rem;
@@ -698,6 +699,57 @@ redirect_from:
   white-space: pre;
   border-radius: 6px;
   margin: 0;
+  position: relative;
+  border: 1px solid #333;
+}
+
+/* Python语法高亮颜色 */
+.code-block .keyword { color: #569cd6; } /* 关键字：蓝色 */
+.code-block .string { color: #ce9178; } /* 字符串：橙色 */
+.code-block .comment { color: #6a9955; } /* 注释：绿色 */
+.code-block .function { color: #dcdcaa; } /* 函数：黄色 */
+.code-block .number { color: #b5cea8; } /* 数字：浅绿 */
+.code-block .operator { color: #d4d4d4; } /* 操作符：白色 */
+.code-block .builtin { color: #4ec9b0; } /* 内置函数：青色 */
+
+/* 代码块容器，用于添加复制按钮 */
+.code-container {
+  position: relative;
+}
+
+/* 复制按钮样式 */
+.copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #d4d4d4;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-family: 'Consolas', monospace;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  opacity: 0.7;
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.copy-btn.copied {
+  background: rgba(76, 175, 80, 0.3);
+  border-color: #4caf50;
+  color: #4caf50;
+}
+
+.copy-btn i {
+  margin-right: 0.3rem;
 }
 
 .output-block {
@@ -854,27 +906,84 @@ redirect_from:
 
 /* Remove mobile responsive - 不再考虑移动端兼容 */
 
-/* Page Title Header */
-.page-title-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 1rem 0;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 0;
+
+
+/* Page Footer Bar */
+.page-footer-bar {
+  background: url('assets/images/background.jpg') center/cover !important;
+  color: white !important;
+  padding: 0.8rem 0 !important;
+  text-align: center !important;
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100vw !important;
+  left: 50% !important;
+  right: 50% !important;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  margin-top: 2rem !important;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2) !important;
+  display: block !important;
+  z-index: 1000 !important;
 }
 
-.page-title {
-  font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+.page-footer-bar::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  pointer-events: none !important;
+}
+
+.footer-content {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.footer-text {
+  font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace !important;
+  font-size: 0.85rem !important;
+  margin: 0 !important;
+  font-weight: 300 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+  display: block !important;
 }
 
 /* Hide default Jekyll elements */
-.masthead, .page__hero, .breadcrumbs, .sidebar, .page__footer {
+.masthead, .page__hero, .breadcrumbs, .sidebar, .page__footer:not(.page-footer-bar) {
   display: none !important;
+}
+
+/* Ensure our custom footer is always visible */
+footer.page-footer-bar {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Debug styles removed - clean design */
+
+/* Body and html styling to prevent interference */
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Force footer to be at the very bottom */
+body > footer.page-footer-bar {
+  order: 999 !important;
+  flex-shrink: 0 !important;
+  margin-top: auto !important;
 }
 
 /* 简化的全局样式 */
