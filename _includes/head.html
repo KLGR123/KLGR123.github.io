@@ -8,6 +8,45 @@
 
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
+<!-- MathJax for math rendering -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    processClass: "math",
+    ignoreClass: "no-math",
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  TeX: { 
+    equationNumbers: { autoNumber: "AMS" },
+    extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"],
+    Macros: {
+      leftarrow: "\\gets"
+    }
+  },
+  "HTML-CSS": { 
+    fonts: ["TeX"],
+    scale: 100,
+    minScaleAdjust: 50
+  },
+  CommonHTML: { 
+    scale: 100,
+    minScaleAdjust: 50
+  },
+  showMathMenu: false,
+  showProcessingMessages: false
+});
+
+// Ensure MathJax processes content when dynamically loaded
+MathJax.Hub.Configured();
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
 <!-- Basic SEO meta tags -->
 <meta property="og:title" content="{{ page.title | default: site.title }}">
 <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">

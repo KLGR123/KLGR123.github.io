@@ -25,7 +25,7 @@ redirect_from:
             <span class="tag">Machine Learning</span>
             <span class="tag">Reinforcement Learning</span>
             <span class="tag">LLM Research</span>
-            <span class="tag">Jazz Trumpeter</span>
+            <span class="tag">Trumpeter</span>
           </div>
         </div>
       </div>

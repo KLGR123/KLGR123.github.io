@@ -235,6 +235,7 @@ async function discoverNotebooksbyTrying() {
     'pt-basic.ipynb',
     'pt-nlp.ipynb',
     'rbm-mnist.ipynb',
+    'sarsa.ipynb',
     'svd.ipynb',
     'transformer.ipynb',
     'wavenet.ipynb',
@@ -423,8 +424,31 @@ function renderNotebookFallback(notebook, container) {
       } else if (cell.cell_type === 'markdown') {
         const markdownText = Array.isArray(cell.source) ? cell.source.join('') : (cell.source || '');
         html += '<div class="markdown-content">';
-        // Simple markdown to HTML conversion
-        let processedText = markdownText
+        // Enhanced markdown to HTML conversion with math support
+        let processedText = markdownText;
+        
+        // First, preserve math blocks (both inline and display)
+        const mathBlocks = [];
+        let mathCounter = 0;
+        
+        // Preserve display math ($$...$$)
+        processedText = processedText.replace(/\$\$([\s\S]*?)\$\$/gim, function(match) {
+          const placeholder = `__MATHBLOCK_${mathCounter}__`;
+          mathBlocks[mathCounter] = match;
+          mathCounter++;
+          return placeholder;
+        });
+        
+        // Preserve inline math ($...$)
+        processedText = processedText.replace(/\$([^$\n]*?)\$/gim, function(match) {
+          const placeholder = `__MATHBLOCK_${mathCounter}__`;
+          mathBlocks[mathCounter] = match;
+          mathCounter++;
+          return placeholder;
+        });
+        
+        // Now process markdown
+        processedText = processedText
           .replace(/^# (.*$)/gim, '<h1>$1</h1>')
           .replace(/^## (.*$)/gim, '<h2>$1</h2>')
           .replace(/^### (.*$)/gim, '<h3>$1</h3>')
@@ -433,6 +457,11 @@ function renderNotebookFallback(notebook, container) {
           .replace(/```([\s\S]*?)```/gim, '<pre><code>$1</code></pre>')
           .replace(/`([^`]*)`/gim, '<code>$1</code>')
           .replace(/\n/gim, '<br>');
+        
+        // Restore math blocks
+        for (let i = 0; i < mathCounter; i++) {
+          processedText = processedText.replace(`__MATHBLOCK_${i}__`, mathBlocks[i]);
+        }
         html += processedText;
         html += '</div>';
       }
@@ -446,6 +475,19 @@ function renderNotebookFallback(notebook, container) {
     // Add copy buttons to any existing code blocks that don't have them
     setTimeout(() => {
       addCopyButtonsToExistingCode();
+      // Re-render math equations using MathJax
+      if (typeof MathJax !== 'undefined' && MathJax.Hub) {
+        console.log('🔢 Re-rendering math formulas with MathJax...');
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, container]);
+      } else {
+        console.log('⚠️ MathJax not available for re-rendering');
+        // Fallback: try to manually trigger page reprocessing
+        setTimeout(() => {
+          if (typeof MathJax !== 'undefined') {
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+          }
+        }, 500);
+      }
     }, 100);
     
     console.log('✅ Fallback notebook rendered successfully');
