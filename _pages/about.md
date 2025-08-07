@@ -628,8 +628,6 @@ redirect_from:
 }
 
 .notebook-viewer {
-  max-height: 800px;
-  overflow-y: auto;
   border-radius: 12px;
   border: 1px solid #e0e6ed;
   background: #fafbfc;
