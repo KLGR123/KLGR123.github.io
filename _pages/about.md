@@ -169,6 +169,15 @@ redirect_from:
             Jupyter Notebooks
           </h2>
           <div class="notebook-selector">
+            <div class="folder-selector">
+              <label for="folder-select" class="folder-label">
+                <i class="fas fa-folder"></i>
+                Choose Folder
+              </label>
+              <select id="folder-select" class="folder-dropdown">
+                <option value="">Loading...</option>
+              </select>
+            </div>
             <div class="notebook-tabs" id="notebook-tabs">
               <!-- Will be populated dynamically -->
             </div>
@@ -590,6 +599,62 @@ redirect_from:
 
 .notebook-selector {
   margin-bottom: 2rem;
+}
+
+/* 文件夹选择器样式 */
+.folder-selector {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.folder-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+  font-family: 'Consolas', monospace;
+}
+
+.folder-label i {
+  color: #f39c12;
+  font-size: 1rem;
+}
+
+.folder-dropdown {
+  padding: 0.6rem 1rem;
+  background: #f8f9fa;
+  border: 2px solid #e0e6ed;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #2c3e50;
+  cursor: pointer;
+  font-family: 'Consolas', monospace;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  min-width: 200px;
+}
+
+.folder-dropdown:hover {
+  border-color: #3498db;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.15);
+}
+
+.folder-dropdown:focus {
+  outline: none;
+  border-color: #3498db;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.folder-dropdown option {
+  padding: 0.5rem;
+  font-family: 'Consolas', monospace;
 }
 
 .notebook-tabs {

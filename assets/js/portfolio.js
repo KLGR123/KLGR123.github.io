@@ -3,6 +3,8 @@ console.log('🚀 Portfolio JavaScript loading...');
 
 // Global variables
 let notebookFiles = [];
+let notebookFolders = {};
+let currentFolder = '';
 let isFlipped = false;
 
 // Main application script
@@ -103,11 +105,12 @@ function initBookFlip() {
 function initNotebookSystem() {
   console.log('📓 Initializing Jupyter notebook system...');
   
-  // Scan for notebook files
-  scanNotebookFiles().then(() => {
-    setupNotebookTabs();
-    if (notebookFiles.length > 0) {
-      loadNotebook(notebookFiles[0].name);
+  // Scan for notebook folders and files
+  scanNotebookFolders().then(() => {
+    setupFolderDropdown();
+    if (Object.keys(notebookFolders).length > 0) {
+      const firstFolder = Object.keys(notebookFolders)[0];
+      selectFolder(firstFolder);
     } else {
       showNoNotebooksMessage();
     }
@@ -118,28 +121,38 @@ function initNotebookSystem() {
 function showNoNotebooksMessage() {
   const notebookContent = document.getElementById('notebook-content');
   if (notebookContent) {
-    notebookContent.innerHTML = `
-      <div style="text-align: center; padding: 3rem; color: #7f8c8d;">
-        <i class="fas fa-book" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
-        <h4>No Jupyter Notebooks Found</h4>
-        <p>Please add your .ipynb files to the assets/jupyter/ directory.</p>
-      </div>
-    `;
+    if (currentFolder) {
+      notebookContent.innerHTML = `
+        <div style="text-align: center; padding: 3rem; color: #7f8c8d;">
+          <i class="fas fa-folder-open" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
+          <h4>Current folder has no Notebook</h4>
+          <p>Folder "${notebookFolders[currentFolder]?.displayName || currentFolder}" has no .ipynb files.</p>
+        </div>
+      `;
+    } else {
+      notebookContent.innerHTML = `
+        <div style="text-align: center; padding: 3rem; color: #7f8c8d;">
+          <i class="fas fa-book" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
+          <h4>No Jupyter Notebooks Found</h4>
+          <p>Please add your .ipynb files to the assets/jupyter/ directory.</p>
+        </div>
+      `;
+    }
   }
 }
 
-// Automatically discover and scan all .ipynb files in assets/jupyter/
-async function scanNotebookFiles() {
-  console.log('🔍 Auto-discovering notebook files...');
+// Automatically discover and scan all folders and .ipynb files in assets/jupyter/
+async function scanNotebookFolders() {
+  console.log('🔍 Auto-discovering notebook folders and files...');
   
   try {
-    // Try to get notebook list from GitHub API (for GitHub Pages)
+    // Try to get folder structure from GitHub API (for GitHub Pages)
     const repoInfo = await getRepositoryInfo();
     if (repoInfo) {
-      const notebooks = await fetchNotebooksFromGitHub(repoInfo);
-      if (notebooks.length > 0) {
-        console.log(`🌐 Found ${notebooks.length} notebooks via GitHub API`);
-        await loadNotebooksFromList(notebooks);
+      const folders = await fetchFoldersFromGitHub(repoInfo);
+      if (Object.keys(folders).length > 0) {
+        console.log(`🌐 Found ${Object.keys(folders).length} folders via GitHub API`);
+        notebookFolders = folders;
         return;
       }
     }
@@ -147,9 +160,9 @@ async function scanNotebookFiles() {
     console.log('⚠️ GitHub API approach failed, trying fallback method');
   }
   
-  // Fallback: Try common notebook names and patterns
+  // Fallback: Try known folder structure
   console.log('🔄 Using fallback discovery method...');
-  await discoverNotebooksbyTrying();
+  await discoverFoldersByTrying();
 }
 
 // Get repository information from current URL or config
@@ -166,106 +179,221 @@ async function getRepositoryInfo() {
   return null;
 }
 
-// Fetch notebook list from GitHub API
-async function fetchNotebooksFromGitHub(repoInfo) {
+// Fetch folder structure from GitHub API
+async function fetchFoldersFromGitHub(repoInfo) {
   try {
     const apiUrl = `https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/contents/assets/jupyter`;
     const response = await fetch(apiUrl);
     
     if (response.ok) {
-      const files = await response.json();
-      return files
-        .filter(file => file.name.endsWith('.ipynb') && file.type === 'file')
-        .map(file => file.name);
+      const items = await response.json();
+      const folders = {};
+      
+      // Get folders
+      const folderItems = items.filter(item => item.type === 'dir');
+      
+      for (const folder of folderItems) {
+        const folderName = folder.name;
+        console.log(`📂 Scanning folder: ${folderName}`);
+        
+        try {
+          // Get notebooks in this folder
+          const folderUrl = `https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/contents/assets/jupyter/${folderName}`;
+          const folderResponse = await fetch(folderUrl);
+          
+          if (folderResponse.ok) {
+            const folderFiles = await folderResponse.json();
+            const notebooks = folderFiles
+              .filter(file => file.name.endsWith('.ipynb') && file.type === 'file')
+              .map(file => ({
+                name: file.name,
+                path: `${folderName}/${file.name}`,
+                displayName: file.name
+                  .replace('.ipynb', '')
+                  .replace(/[-_]/g, ' ')
+                  .replace(/\b\w/g, l => l.toUpperCase())
+              }));
+            
+            if (notebooks.length > 0) {
+              folders[folderName] = {
+                displayName: formatFolderName(folderName),
+                notebooks: notebooks
+              };
+            }
+          }
+        } catch (error) {
+          console.log(`❌ Error scanning folder ${folderName}:`, error);
+        }
+      }
+      
+      return folders;
     }
   } catch (error) {
-    console.log('GitHub API fetch failed:', error);
+    console.log('GitHub API folder fetch failed:', error);
   }
-  return [];
+  return {};
 }
 
-// Load notebooks from a provided list
-async function loadNotebooksFromList(notebookNames) {
-  for (const filename of notebookNames) {
-    try {
-      console.log(`📓 Loading discovered file: ${filename}`);
-      const response = await fetch(`assets/jupyter/${filename}`);
-      
-      if (response.ok) {
-        const content = await response.json();
-        const displayName = filename
-          .replace('.ipynb', '')
-          .replace(/[-_]/g, ' ')
-          .replace(/\b\w/g, l => l.toUpperCase());
-        
-        notebookFiles.push({
-          name: filename,
-          displayName: displayName,
-          content: content
-        });
-        
-        console.log('✅ Successfully loaded:', displayName);
+// Format folder name for display
+function formatFolderName(folderName) {
+  const folderDisplayNames = {
+    'andrej-transformer': 'andrej-transformer',
+    'machine-learning': 'machine-learning',
+    'math': 'math',
+    'pytorch': 'pytorch',
+    'reinforcement-learning': 'reinforcement-learning',
+    'trl': 'trl'
+  };
+  
+  return folderDisplayNames[folderName] || folderName
+    .replace(/[-_]/g, ' ')
+    .replace(/\b\w/g, l => l.toUpperCase());
+}
+
+// Fallback method: try known folder structure
+async function discoverFoldersByTrying() {
+  const knownFolders = {
+    'andrej-transformer': [
+      'backprop-ninja.ipynb',
+      'backprop.ipynb', 
+      'batchnorm.ipynb',
+      'bigram.ipynb',
+      'mlp.ipynb',
+      'optim.ipynb',
+      'transformer.ipynb',
+      'wavenet.ipynb'
+    ],
+    'machine-learning': [
+      '3dconv.ipynb',
+      'aevb.ipynb',
+      'latent-attention.ipynb',
+      'moe.ipynb',
+      'rbm-mnist.ipynb'
+    ],
+    'math': [
+      'attention.ipynb',
+      'kl-divergence.ipynb',
+      'matrix_inverse.ipynb',
+      'svd.ipynb'
+    ],
+    'pytorch': [
+      'pt-basic.ipynb',
+      'pt-nlp.ipynb'
+    ],
+    'reinforcement-learning': [
+      'dynamic-programming.ipynb',
+      'policy-gradient.ipynb',
+      'ppo.ipynb',
+      'sarsa.ipynb'
+    ],
+    'trl': [
+      'trl.ipynb'
+    ]
+  };
+  
+  console.log(`🔄 Trying ${Object.keys(knownFolders).length} known folders...`);
+  
+  for (const [folderName, notebookNames] of Object.entries(knownFolders)) {
+    console.log(`📂 Checking folder: ${folderName}`);
+    const foundNotebooks = [];
+    
+    for (const filename of notebookNames) {
+      try {
+        const response = await fetch(`assets/jupyter/${folderName}/${filename}`, { method: 'HEAD' });
+        if (response.ok) {
+          foundNotebooks.push({
+            name: filename,
+            path: `${folderName}/${filename}`,
+            displayName: filename
+              .replace('.ipynb', '')
+              .replace(/[-_]/g, ' ')
+              .replace(/\b\w/g, l => l.toUpperCase())
+          });
+          console.log(`✅ Found: ${folderName}/${filename}`);
+        }
+      } catch (error) {
+        // File doesn't exist, continue silently
       }
-    } catch (error) {
-      console.log(`❌ Error loading ${filename}:`, error);
+    }
+    
+    if (foundNotebooks.length > 0) {
+      notebookFolders[folderName] = {
+        displayName: formatFolderName(folderName),
+        notebooks: foundNotebooks
+      };
+      console.log(`📁 Added folder ${folderName} with ${foundNotebooks.length} notebooks`);
     }
   }
   
-  console.log(`📚 Total notebooks loaded: ${notebookFiles.length}`);
+  console.log(`📚 Total folders discovered: ${Object.keys(notebookFolders).length}`);
 }
 
-// Fallback method: try common patterns and known files
-async function discoverNotebooksbyTrying() {
-  // Common patterns and known files
-  const possibleNames = [
-    "3dconv.ipynb",
-    "aevb.ipynb",
-    "attention.ipynb",
-    "backprop-ninja.ipynb",
-    "backprop.ipynb",
-    "batchnorm.ipynb",
-    "bigram.ipynb",
-    "dynamic-programming.ipynb",
-    "kl-divergence.ipynb",
-    "latent-attention.ipynb",
-    "matrix_inverse.ipynb",
-    "mlp.ipynb",
-    "moe.ipynb",
-    "optim.ipynb",
-    "policy-gradient.ipynb",
-    "ppo.ipynb",
-    "pt-basic.ipynb",
-    "pt-nlp.ipynb",
-    "rbm-mnist.ipynb",
-    "sarsa.ipynb",
-    "svd.ipynb",
-    "transformer.ipynb",
-    "wavenet.ipynb",
-  ];
-  
-  console.log(`🔄 Trying ${possibleNames.length} possible notebook names...`);
-  
-  const foundNotebooks = [];
-  
-  // Check each possible name
-  for (const filename of possibleNames) {
-    try {
-      const response = await fetch(`assets/jupyter/${filename}`, { method: 'HEAD' });
-      if (response.ok) {
-        foundNotebooks.push(filename);
-        console.log(`✅ Found: ${filename}`);
-      }
-    } catch (error) {
-      // File doesn't exist, continue silently
-    }
+// Setup folder dropdown
+function setupFolderDropdown() {
+  const folderSelect = document.getElementById('folder-select');
+  if (!folderSelect) {
+    console.error('❌ Folder select element not found');
+    return;
   }
   
-  console.log(`📋 Discovered ${foundNotebooks.length} notebooks via pattern matching`);
+  if (Object.keys(notebookFolders).length === 0) {
+    folderSelect.innerHTML = '<option value="">没有找到文件夹</option>';
+    return;
+  }
   
-  if (foundNotebooks.length > 0) {
-    await loadNotebooksFromList(foundNotebooks);
+  folderSelect.innerHTML = '';
+  
+  // Add folders to dropdown
+  Object.entries(notebookFolders).forEach(([folderName, folderData]) => {
+    const option = document.createElement('option');
+    option.value = folderName;
+    option.textContent = `${folderData.displayName} (${folderData.notebooks.length})`;
+    folderSelect.appendChild(option);
+  });
+  
+  // Add change event listener
+  folderSelect.addEventListener('change', function() {
+    const selectedFolder = this.value;
+    if (selectedFolder && notebookFolders[selectedFolder]) {
+      selectFolder(selectedFolder);
+    }
+  });
+  
+  console.log('✅ Folder dropdown setup completed');
+}
+
+// Select a folder and update notebooks
+function selectFolder(folderName) {
+  if (!notebookFolders[folderName]) {
+    console.error(`❌ Folder ${folderName} not found`);
+    return;
+  }
+  
+  console.log(`📂 Selecting folder: ${folderName}`);
+  currentFolder = folderName;
+  
+  // Update folder dropdown selection
+  const folderSelect = document.getElementById('folder-select');
+  if (folderSelect) {
+    folderSelect.value = folderName;
+  }
+  
+  // Set current notebooks from selected folder
+  notebookFiles = notebookFolders[folderName].notebooks.map(notebook => ({
+    name: notebook.name,
+    path: notebook.path,
+    displayName: notebook.displayName,
+    content: null // Will be loaded when needed
+  }));
+  
+  // Update notebook tabs
+  setupNotebookTabs();
+  
+  // Load first notebook if available
+  if (notebookFiles.length > 0) {
+    loadNotebook(notebookFiles[0].path);
   } else {
-    console.log('⚠️ No notebooks found. Make sure .ipynb files are in assets/jupyter/ directory');
+    showNoNotebooksMessage();
   }
 }
 
@@ -278,7 +406,7 @@ function setupNotebookTabs() {
   }
   
   if (notebookFiles.length === 0) {
-    tabsContainer.innerHTML = '<p style="color: #7f8c8d; font-style: italic;">No notebooks available</p>';
+    tabsContainer.innerHTML = '<p style="color: #7f8c8d; font-style: italic;">当前文件夹中没有notebook</p>';
     return;
   }
   
@@ -287,12 +415,12 @@ function setupNotebookTabs() {
   notebookFiles.forEach((notebook, index) => {
     const btn = document.createElement('button');
     btn.className = `notebook-btn ${index === 0 ? 'active' : ''}`;
-    btn.setAttribute('data-notebook', notebook.name);
+    btn.setAttribute('data-notebook', notebook.path); // Use path instead of name
     btn.textContent = notebook.displayName;
     
     btn.addEventListener('click', function() {
-      const notebookName = this.getAttribute('data-notebook');
-      loadNotebook(notebookName);
+      const notebookPath = this.getAttribute('data-notebook');
+      loadNotebook(notebookPath);
       
       // Update active state
       document.querySelectorAll('.notebook-btn').forEach(b => b.classList.remove('active'));
@@ -306,31 +434,45 @@ function setupNotebookTabs() {
 }
 
 // Load and render notebook with better error handling
-async function loadNotebook(filename) {
+async function loadNotebook(notebookPath) {
   const notebookContent = document.getElementById('notebook-content');
   if (!notebookContent) {
     console.error('❌ Notebook content element not found');
     return;
   }
   
-  console.log('📓 Loading notebook:', filename);
+  console.log('📓 Loading notebook:', notebookPath);
   
   // Show loading spinner
+  const displayName = notebookPath.split('/').pop();
   notebookContent.innerHTML = `
     <div class="loading-spinner">
       <i class="fas fa-spinner fa-spin"></i>
-      <p>Loading ${filename}...</p>
+      <p>Loading ${displayName}...</p>
     </div>
   `;
   
   try {
     // Find notebook in our loaded files
-    const notebook = notebookFiles.find(nb => nb.name === filename);
+    let notebook = notebookFiles.find(nb => nb.path === notebookPath);
     if (!notebook) {
       throw new Error('Notebook not found in loaded files');
     }
     
-    console.log('📄 Notebook found, rendering with fallback renderer...');
+    // Load content if not already loaded
+    if (!notebook.content) {
+      console.log('📄 Loading notebook content from:', notebookPath);
+      const response = await fetch(`assets/jupyter/${notebookPath}`);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+      
+      notebook.content = await response.json();
+      console.log('✅ Notebook content loaded successfully');
+    }
+    
+    console.log('📄 Rendering notebook with fallback renderer...');
     
     // Always use fallback renderer for better reliability
     renderNotebookFallback(notebook, notebookContent);
@@ -340,9 +482,9 @@ async function loadNotebook(filename) {
     notebookContent.innerHTML = `
       <div style="text-align: center; padding: 2rem; color: #e74c3c;">
         <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-        <h4>Error Loading Notebook</h4>
-        <p>Could not load ${filename}. Please check if the file exists and is valid.</p>
-        <p style="font-size: 0.9em; opacity: 0.7;">Error: ${error.message}</p>
+        <h4>加载Notebook出错</h4>
+        <p>无法加载 ${displayName}。请检查文件是否存在且有效。</p>
+        <p style="font-size: 0.9em; opacity: 0.7;">错误: ${error.message}</p>
       </div>
     `;
   }
