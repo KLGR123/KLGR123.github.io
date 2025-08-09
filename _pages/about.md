@@ -1128,5 +1128,8 @@ body > footer.page-footer-bar {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/notebookjs@0.8.3/notebook.min.js"></script>
 
+<!-- Notebook configuration -->
+<script src="assets/js/notebook-config.js"></script>
+<!-- Main portfolio functionality -->
 <script src="assets/js/portfolio.js"></script>
 

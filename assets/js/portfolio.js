@@ -250,9 +250,126 @@ function formatFolderName(folderName) {
     .replace(/\b\w/g, l => l.toUpperCase());
 }
 
-// Fallback method: try known folder structure
+// Auto-discover all folders and .ipynb files
 async function discoverFoldersByTrying() {
-  const knownFolders = {
+  console.log('🔄 Auto-discovering all notebook folders and files...');
+  
+  // First, try to use external config file
+  let configuredFolders = [];
+  if (window.notebookConfig && window.notebookConfig.folders) {
+    configuredFolders = Object.keys(window.notebookConfig.folders);
+    console.log(`📋 Found ${configuredFolders.length} folders in config file`);
+  }
+  
+  // Get all known folder names from the directory structure
+  const potentialFolders = [
+    ...configuredFolders,
+    'andrej-transformer',
+    'machine-learning', 
+    'math',
+    'pytorch',
+    'reinforcement-learning',
+    'trl'
+  ];
+  
+  // Try to auto-discover more folders by testing common patterns
+  const additionalFolders = [
+    'deep-learning',
+    'statistics', 
+    'optimization',
+    'computer-vision',
+    'nlp',
+    'data-science',
+    'algorithms',
+    'neural-networks'
+  ];
+  
+  // Remove duplicates
+  const allPotentialFolders = [...new Set([...potentialFolders, ...additionalFolders])];
+  
+  console.log(`🔄 Scanning ${allPotentialFolders.length} potential folders...`);
+  
+  for (const folderName of allPotentialFolders) {
+    console.log(`📂 Scanning folder: ${folderName}`);
+    const foundNotebooks = await discoverNotebooksInFolder(folderName);
+    
+    if (foundNotebooks.length > 0) {
+      // Use display name from config if available
+      const displayName = (window.notebookConfig?.folders[folderName]?.displayName) || 
+                          formatFolderName(folderName);
+      
+      notebookFolders[folderName] = {
+        displayName: displayName,
+        notebooks: foundNotebooks
+      };
+      console.log(`📁 Added folder ${folderName} with ${foundNotebooks.length} notebooks`);
+    }
+  }
+  
+  console.log(`📚 Total folders discovered: ${Object.keys(notebookFolders).length}`);
+}
+
+// Discover all .ipynb files in a specific folder
+async function discoverNotebooksInFolder(folderName) {
+  const foundNotebooks = [];
+  
+  // Common notebook filename patterns to try
+  const commonPatterns = [
+    // Try to list directory first (if server supports it)
+    ...(await tryListDirectory(folderName)),
+    // Then try common naming patterns
+    'index.ipynb',
+    'main.ipynb', 
+    'tutorial.ipynb',
+    'example.ipynb',
+    'demo.ipynb',
+    'test.ipynb'
+  ];
+  
+  for (const filename of commonPatterns) {
+    if (!filename.endsWith('.ipynb')) continue;
+    
+    try {
+      const response = await fetch(`assets/jupyter/${folderName}/${filename}`, { method: 'HEAD' });
+      if (response.ok) {
+        // Avoid duplicates
+        if (!foundNotebooks.some(nb => nb.name === filename)) {
+          foundNotebooks.push({
+            name: filename,
+            path: `${folderName}/${filename}`,
+            displayName: filename
+              .replace('.ipynb', '')
+              .replace(/[-_]/g, ' ')
+              .replace(/\b\w/g, l => l.toUpperCase())
+          });
+          console.log(`✅ Found: ${folderName}/${filename}`);
+        }
+      }
+    } catch (error) {
+      // File doesn't exist, continue silently
+    }
+  }
+  
+  return foundNotebooks;
+}
+
+// Try to list directory contents (fallback to known files if not available)
+async function tryListDirectory(folderName) {
+  // For GitHub Pages, we need to manually maintain a list since directory listing isn't available
+  // But we can make this more maintainable by using a separate config
+  const knownFiles = await getKnownFilesForFolder(folderName);
+  return knownFiles;
+}
+
+// Get known files for a folder from config file
+async function getKnownFilesForFolder(folderName) {
+  // Try to use external config if available
+  if (window.notebookConfig && window.notebookConfig.folders[folderName]) {
+    return window.notebookConfig.folders[folderName].files || [];
+  }
+  
+  // Fallback to hardcoded list (for backwards compatibility)
+  const knownFilesByFolder = {
     'andrej-transformer': [
       'backprop-ninja.ipynb',
       'backprop.ipynb', 
@@ -272,9 +389,11 @@ async function discoverFoldersByTrying() {
     ],
     'math': [
       'attention.ipynb',
+      'conjugate-gradient.ipynb',
       'kl-divergence.ipynb',
       'matrix_inverse.ipynb',
-      'svd.ipynb'
+      'svd.ipynb',
+      'symmetric-positive-definite.ipynb'
     ],
     'pytorch': [
       'pt-basic.ipynb',
@@ -282,6 +401,7 @@ async function discoverFoldersByTrying() {
     ],
     'reinforcement-learning': [
       'dynamic-programming.ipynb',
+      'gspo.ipynb',
       'policy-gradient.ipynb',
       'ppo.ipynb',
       'sarsa.ipynb'
@@ -291,41 +411,7 @@ async function discoverFoldersByTrying() {
     ]
   };
   
-  console.log(`🔄 Trying ${Object.keys(knownFolders).length} known folders...`);
-  
-  for (const [folderName, notebookNames] of Object.entries(knownFolders)) {
-    console.log(`📂 Checking folder: ${folderName}`);
-    const foundNotebooks = [];
-    
-    for (const filename of notebookNames) {
-      try {
-        const response = await fetch(`assets/jupyter/${folderName}/${filename}`, { method: 'HEAD' });
-        if (response.ok) {
-          foundNotebooks.push({
-            name: filename,
-            path: `${folderName}/${filename}`,
-            displayName: filename
-              .replace('.ipynb', '')
-              .replace(/[-_]/g, ' ')
-              .replace(/\b\w/g, l => l.toUpperCase())
-          });
-          console.log(`✅ Found: ${folderName}/${filename}`);
-        }
-      } catch (error) {
-        // File doesn't exist, continue silently
-      }
-    }
-    
-    if (foundNotebooks.length > 0) {
-      notebookFolders[folderName] = {
-        displayName: formatFolderName(folderName),
-        notebooks: foundNotebooks
-      };
-      console.log(`📁 Added folder ${folderName} with ${foundNotebooks.length} notebooks`);
-    }
-  }
-  
-  console.log(`📚 Total folders discovered: ${Object.keys(notebookFolders).length}`);
+  return knownFilesByFolder[folderName] || [];
 }
 
 // Setup folder dropdown
