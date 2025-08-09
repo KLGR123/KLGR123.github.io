@@ -825,6 +825,26 @@ redirect_from:
   margin: 0;
   border-radius: 6px;
   border: 1px solid #e9ecef;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 400px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output-block pre {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: visible;
 }
 
 .markdown-content {
