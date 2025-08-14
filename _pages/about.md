@@ -33,7 +33,7 @@ redirect_from:
             <div class="stat-item">
               <i class="fas fa-eye"></i>
               <span class="stat-number total-views">0</span>
-              <span class="stat-label">Total Views</span>
+              <span class="stat-label">Total</span>
             </div>
             <div class="stat-item">
               <i class="fas fa-calendar-day"></i>
@@ -1402,10 +1402,10 @@ function updateLikeButton(isLiked) {
   
   if (isLiked) {
     likeBtn.classList.add('liked');
-    likeText.textContent = '已点赞';
+    likeText.textContent = 'Like';
   } else {
     likeBtn.classList.remove('liked');
-    likeText.textContent = '点赞';
+    likeText.textContent = 'Liked';
   }
 }
 
