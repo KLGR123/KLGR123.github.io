@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "lastUpdated": "2025-08-14T07:07:15.097Z",
+    "lastUpdated": "2025-08-14T07:20:27.591Z",
     "version": "1.0.0",
     "totalUsers": 7
   },
   "pageViews": {
-    "total": 21,
+    "total": 23,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
       "cv": 0,
-      "code": 4,
+      "code": 5,
       "gallery": 0
     },
     "notebooks": {
@@ -21,7 +21,8 @@
       "andrej-transformer/transformer.ipynb": 4,
       "megatron/warmup.ipynb": 2,
       "megatron/flash-attn.ipynb": 5,
-      "math/attention.ipynb": 3
+      "math/attention.ipynb": 3,
+      "pytorch-basic/pt-basic.ipynb": 2
     }
   },
   "likes": {
@@ -35,10 +36,10 @@
   },
   "dailyStats": {
     "2025-08-14": {
-      "views": 21,
+      "views": 23,
       "likes": 0,
-      "uniqueUsers": 7
+      "uniqueUsers": 8
     }
   },
-  "userSessions": 5
+  "userSessions": 10
 }
