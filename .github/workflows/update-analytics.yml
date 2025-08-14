@@ -1,0 +1,62 @@
+name: Update Analytics Data
+
+# 触发条件：每小时运行一次，或手动触发
+on:
+  schedule:
+    - cron: '0 * * * *'  # 每小时的0分钟运行
+  workflow_dispatch:     # 允许手动触发
+  push:
+    branches: [ main ]   # 当推送到main分支时也运行
+
+jobs:
+  update-analytics:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-js-version: '18'
+    
+    - name: Update analytics data
+      run: node collect-analytics.js
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # 检查是否有更改
+        if git diff --quiet assets/data/statistics.json; then
+          echo "No changes to commit"
+        else
+          git add assets/data/statistics.json
+          git commit -m "🤖 Auto-update analytics data $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+          echo "✅ Analytics data updated and pushed"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Create summary
+      run: |
+        echo "## 📊 Analytics Update Summary" >> $GITHUB_STEP_SUMMARY
+        echo "- **Date**: $(date '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+        echo "- **Status**: Successfully updated analytics data" >> $GITHUB_STEP_SUMMARY
+        
+        if [ -f "assets/data/statistics.json" ]; then
+          TOTAL_VIEWS=$(cat assets/data/statistics.json | grep -o '"total":[0-9]*' | head -1 | cut -d':' -f2)
+          TOTAL_LIKES=$(cat assets/data/statistics.json | grep -o '"total":[0-9]*' | tail -1 | cut -d':' -f2)
+          echo "- **Total Views**: ${TOTAL_VIEWS:-0}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total Likes**: ${TOTAL_LIKES:-0}" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        echo "- **Next Update**: In 1 hour" >> $GITHUB_STEP_SUMMARY

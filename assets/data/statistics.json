@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "lastUpdated": "2025-08-14T06:16:51.122Z",
+    "version": "1.0.0",
+    "totalUsers": 5
+  },
+  "pageViews": {
+    "total": 15,
+    "pages": {
+      "/": 0,
+      "/cv": 0,
+      "/code": 0,
+      "/gallery": 0,
+      "cv": 0,
+      "code": 2,
+      "gallery": 0
+    },
+    "notebooks": {
+      "machine-learning/aevb.ipynb": 1,
+      "trl/ppo.ipynb": 2,
+      "andrej-transformer/transformer.ipynb": 2,
+      "megatron/warmup.ipynb": 2,
+      "megatron/flash-attn.ipynb": 3
+    }
+  },
+  "likes": {
+    "total": 4,
+    "notebooks": {
+      "andrej-transformer/bigram.ipynb": 1,
+      "megatron/warmup.ipynb": 1,
+      "megatron/flash-attn.ipynb": 1,
+      "math/attention.ipynb": 1
+    }
+  },
+  "dailyStats": {
+    "2025-08-14": {
+      "views": 15,
+      "likes": 0,
+      "uniqueUsers": 3
+    }
+  },
+  "userSessions": 3
+}

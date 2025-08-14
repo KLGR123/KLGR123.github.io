@@ -529,6 +529,11 @@ async function loadNotebook(notebookPath) {
   
   console.log('📓 Loading notebook:', notebookPath);
   
+  // 记录笔记本访问（如果统计系统已加载）
+  if (typeof window.recordNotebookView === 'function') {
+    window.recordNotebookView(notebookPath);
+  }
+  
   // Show loading spinner
   const displayName = notebookPath.split('/').pop();
   notebookContent.innerHTML = `

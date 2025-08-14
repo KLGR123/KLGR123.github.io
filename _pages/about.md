@@ -27,6 +27,25 @@ redirect_from:
             <span class="tag">LLM Research</span>
             <span class="tag">Trumpeter</span>
           </div>
+          
+          <!-- Statistical -->
+          <div class="stats-section">
+            <div class="stat-item">
+              <i class="fas fa-eye"></i>
+              <span class="stat-number total-views">0</span>
+              <span class="stat-label">Total Views</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-calendar-day"></i>
+              <span class="stat-number today-views">0</span>
+              <span class="stat-label">Today</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-heart"></i>
+              <span class="stat-number total-likes">0</span>
+              <span class="stat-label">Likes</span>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -184,6 +203,29 @@ redirect_from:
           </div>
           
           <div class="notebook-viewer">
+cl            <!-- 笔记本统计栏 -->
+            <div class="notebook-stats-bar" id="notebook-stats-bar" style="display: none;">
+              <div class="notebook-info">
+                <h3 class="notebook-title" id="current-notebook-title">Notebook Title</h3>
+                <div class="notebook-meta">
+                  <span class="notebook-views">
+                    <i class="fas fa-eye"></i>
+                    <span class="notebook-views-count">0</span> Reads
+                  </span>
+                  <span class="notebook-likes">
+                    <i class="fas fa-heart"></i>
+                    <span class="notebook-likes-count">0</span> Likes
+                  </span>
+                </div>
+              </div>
+              <div class="notebook-actions">
+                <button class="like-btn" id="like-btn" onclick="handleNotebookLike()">
+                  <i class="fas fa-heart"></i>
+                  <span class="like-text">Like</span>
+                </button>
+              </div>
+            </div>
+            
             <div class="notebook-content" id="notebook-content">
               <div class="loading-spinner">
                 <i class="fas fa-spinner fa-spin"></i>
@@ -1119,6 +1161,191 @@ body > footer.page-footer-bar {
   background-color: #f8f9fa;
   font-weight: 600;
 }
+
+/* ===== 统计功能样式 ===== */
+
+/* Header统计信息 */
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  color: white;
+  text-align: center;
+}
+
+.stat-item i {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.stat-number {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Consolas', monospace;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+/* 笔记本统计栏 */
+.notebook-stats-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 0;
+}
+
+.notebook-info {
+  flex: 1;
+}
+
+.notebook-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-family: 'Consolas', monospace;
+}
+
+.notebook-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.notebook-views,
+.notebook-likes {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.notebook-views i {
+  color: #17a2b8;
+}
+
+.notebook-likes i {
+  color: #e74c3c;
+}
+
+.notebook-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.like-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  border-radius: 25px;
+  color: #6c757d;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Consolas', monospace;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.like-btn:hover {
+  border-color: #e74c3c;
+  color: #e74c3c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.15);
+}
+
+.like-btn.liked {
+  background: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+.like-btn.liked:hover {
+  background: #c0392b;
+  border-color: #c0392b;
+}
+
+.like-btn i {
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.like-btn:hover i,
+.like-btn.liked i {
+  transform: scale(1.2);
+}
+
+/* 点赞动画效果 */
+@keyframes likeAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.like-btn.animating i {
+  animation: likeAnimation 0.6s ease;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .stats-section {
+    gap: 1rem;
+    padding: 0.8rem;
+  }
+  
+  .stat-item {
+    gap: 0.2rem;
+  }
+  
+  .stat-number {
+    font-size: 1rem;
+  }
+  
+  .stat-label {
+    font-size: 0.65rem;
+  }
+  
+  .notebook-stats-bar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .notebook-meta {
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .notebook-actions {
+    justify-content: center;
+  }
+}
 </style>
 
 <!-- Include necessary libraries -->
@@ -1130,6 +1357,141 @@ body > footer.page-footer-bar {
 
 <!-- Notebook configuration -->
 <script src="assets/js/notebook-config.js"></script>
+<!-- Analytics system -->
+<script src="assets/js/analytics.js"></script>
 <!-- Main portfolio functionality -->
 <script src="assets/js/portfolio.js"></script>
+
+<!-- 统计功能交互脚本 -->
+<script>
+// 当前选中的笔记本路径
+let currentNotebookPath = null;
+
+// 处理笔记本点赞
+function handleNotebookLike() {
+  if (!currentNotebookPath) {
+    console.warn('No notebook selected for liking');
+    return;
+  }
+  
+  // 调用统计系统的点赞功能
+  if (typeof window.toggleNotebookLike === 'function') {
+    const newLikeState = window.toggleNotebookLike(currentNotebookPath);
+    
+    // 更新UI
+    updateLikeButton(newLikeState);
+    updateNotebookStatsDisplay(currentNotebookPath);
+    
+    // 添加动画效果
+    const likeBtn = document.getElementById('like-btn');
+    if (likeBtn) {
+      likeBtn.classList.add('animating');
+      setTimeout(() => {
+        likeBtn.classList.remove('animating');
+      }, 600);
+    }
+    
+    console.log(`${newLikeState ? '👍' : '👎'} Like toggled for: ${currentNotebookPath}`);
+  }
+}
+
+// 更新点赞按钮状态
+function updateLikeButton(isLiked) {
+  const likeBtn = document.getElementById('like-btn');
+  const likeText = likeBtn.querySelector('.like-text');
+  
+  if (isLiked) {
+    likeBtn.classList.add('liked');
+    likeText.textContent = '已点赞';
+  } else {
+    likeBtn.classList.remove('liked');
+    likeText.textContent = '点赞';
+  }
+}
+
+// 更新笔记本统计显示
+function updateNotebookStatsDisplay(notebookPath) {
+  if (typeof window.getNotebookStats === 'function') {
+    const stats = window.getNotebookStats(notebookPath);
+    
+    // 更新阅读量
+    const viewsElement = document.querySelector('.notebook-views-count');
+    if (viewsElement) {
+      viewsElement.textContent = stats.views;
+    }
+    
+    // 更新点赞数
+    const likesElement = document.querySelector('.notebook-likes-count');
+    if (likesElement) {
+      likesElement.textContent = stats.likes;
+    }
+    
+    // 更新点赞按钮状态
+    updateLikeButton(stats.hasLiked);
+  }
+}
+
+// 显示笔记本统计栏
+function showNotebookStats(notebookPath, notebookName) {
+  currentNotebookPath = notebookPath;
+  
+  // 更新标题
+  const titleElement = document.getElementById('current-notebook-title');
+  if (titleElement) {
+    titleElement.textContent = notebookName || notebookPath.split('/').pop().replace('.ipynb', '');
+  }
+  
+  // 显示统计栏
+  const statsBar = document.getElementById('notebook-stats-bar');
+  if (statsBar) {
+    statsBar.style.display = 'flex';
+  }
+  
+  // 更新统计数据
+  updateNotebookStatsDisplay(notebookPath);
+}
+
+// 隐藏笔记本统计栏
+function hideNotebookStats() {
+  const statsBar = document.getElementById('notebook-stats-bar');
+  if (statsBar) {
+    statsBar.style.display = 'none';
+  }
+  currentNotebookPath = null;
+}
+
+// 监听笔记本加载事件
+document.addEventListener('DOMContentLoaded', function() {
+  // 检查是否有analytics系统
+  setTimeout(() => {
+    if (window.portfolioAnalytics) {
+      console.log('✅ Analytics system integrated with UI');
+      
+      // 监听笔记本切换
+      const originalLoadNotebook = window.loadNotebook;
+      if (typeof originalLoadNotebook === 'function') {
+        window.loadNotebook = function(notebookPath) {
+          // 显示统计信息
+          const notebookName = notebookPath.split('/').pop().replace('.ipynb', '')
+            .replace(/[-_]/g, ' ')
+            .replace(/\b\w/g, l => l.toUpperCase());
+          showNotebookStats(notebookPath, notebookName);
+          
+          // 调用原始函数
+          return originalLoadNotebook.call(this, notebookPath);
+        };
+      }
+    } else {
+      console.warn('⚠️ Analytics system not found');
+    }
+  }, 1000);
+});
+
+// 定期更新总体统计显示
+setInterval(() => {
+  if (window.portfolioAnalytics && typeof window.portfolioAnalytics.updateDisplay === 'function') {
+    window.portfolioAnalytics.updateDisplay();
+  }
+}, 30000); // 每30秒更新一次
+</script>
 
