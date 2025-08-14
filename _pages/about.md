@@ -203,7 +203,7 @@ redirect_from:
           </div>
           
           <div class="notebook-viewer">
-cl            <!-- 笔记本统计栏 -->
+            <!-- 笔记本统计栏 -->
             <div class="notebook-stats-bar" id="notebook-stats-bar" style="display: none;">
               <div class="notebook-info">
                 <h3 class="notebook-title" id="current-notebook-title">Notebook Title</h3>
