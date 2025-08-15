@@ -1,40 +1,40 @@
 {
   "metadata": {
-    "lastUpdated": "2025-08-15T10:20:44.403Z",
+    "lastUpdated": "2025-08-15T11:16:54.563Z",
     "version": "1.0.0",
-    "totalUsers": 74
+    "totalUsers": 79
   },
   "pageViews": {
-    "total": 224,
+    "total": 238,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 30,
-      "code": 115,
-      "gallery": 30
+      "cv": 32,
+      "code": 123,
+      "gallery": 32
     },
     "notebooks": {
-      "machine-learning/aevb.ipynb": 24,
+      "machine-learning/aevb.ipynb": 27,
       "trl/ppo.ipynb": 26,
-      "andrej-transformer/transformer.ipynb": 27,
+      "andrej-transformer/transformer.ipynb": 30,
       "megatron/warmup.ipynb": 27,
       "megatron/flash-attn.ipynb": 17,
       "math/attention.ipynb": 22,
-      "pytorch-basic/pt-basic.ipynb": 21,
-      "andrej-transformer/bigram.ipynb": 24
+      "pytorch-basic/pt-basic.ipynb": 24,
+      "andrej-transformer/bigram.ipynb": 26
     }
   },
   "likes": {
-    "total": 38,
+    "total": 40,
     "notebooks": {
       "andrej-transformer/bigram.ipynb": 7,
       "megatron/warmup.ipynb": 4,
-      "megatron/flash-attn.ipynb": 5,
+      "megatron/flash-attn.ipynb": 6,
       "math/attention.ipynb": 5,
       "machine-learning/aevb.ipynb": 5,
-      "trl/ppo.ipynb": 4,
+      "trl/ppo.ipynb": 5,
       "andrej-transformer/transformer.ipynb": 6,
       "pytorch-basic/pt-basic.ipynb": 2
     }
@@ -46,10 +46,10 @@
       "uniqueUsers": 50
     },
     "2025-08-15": {
-      "views": 37,
+      "views": 51,
       "likes": 0,
-      "uniqueUsers": 18
+      "uniqueUsers": 19
     }
   },
-  "userSessions": 102
+  "userSessions": 103
 }
