@@ -1402,10 +1402,10 @@ function updateLikeButton(isLiked) {
   
   if (isLiked) {
     likeBtn.classList.add('liked');
-    likeText.textContent = 'Like';
+    likeText.textContent = 'Liked';
   } else {
     likeBtn.classList.remove('liked');
-    likeText.textContent = 'Liked';
+    likeText.textContent = 'Like';
   }
 }
 
