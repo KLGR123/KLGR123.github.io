@@ -1,28 +1,28 @@
 {
   "metadata": {
-    "lastUpdated": "2025-08-17T18:27:22.164Z",
+    "lastUpdated": "2025-08-17T19:14:58.144Z",
     "version": "1.0.0",
-    "totalUsers": 199
+    "totalUsers": 202
   },
   "pageViews": {
-    "total": 599,
+    "total": 608,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 84,
-      "code": 318,
-      "gallery": 84
+      "cv": 85,
+      "code": 323,
+      "gallery": 85
     },
     "notebooks": {
       "machine-learning/aevb.ipynb": 69,
-      "trl/ppo.ipynb": 69,
-      "andrej-transformer/transformer.ipynb": 64,
-      "megatron/warmup.ipynb": 68,
+      "trl/ppo.ipynb": 70,
+      "andrej-transformer/transformer.ipynb": 65,
+      "megatron/warmup.ipynb": 71,
       "megatron/flash-attn.ipynb": 56,
-      "math/attention.ipynb": 78,
-      "pytorch-basic/pt-basic.ipynb": 64,
+      "math/attention.ipynb": 79,
+      "pytorch-basic/pt-basic.ipynb": 67,
       "andrej-transformer/bigram.ipynb": 79
     }
   },
@@ -56,10 +56,10 @@
       "uniqueUsers": 45
     },
     "2025-08-17": {
-      "views": 106,
+      "views": 115,
       "likes": 0,
-      "uniqueUsers": 33
+      "uniqueUsers": 35
     }
   },
-  "userSessions": 258
+  "userSessions": 262
 }
