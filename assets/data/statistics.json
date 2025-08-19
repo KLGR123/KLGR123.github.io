@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "lastUpdated": "2025-08-18T23:17:59.781Z",
+    "lastUpdated": "2025-08-19T01:37:24.098Z",
     "version": "1.0.0",
     "totalUsers": 267
   },
   "pageViews": {
-    "total": 801,
+    "total": 803,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
       "cv": 114,
-      "code": 428,
+      "code": 429,
       "gallery": 114
     },
     "notebooks": {
@@ -23,7 +23,7 @@
       "megatron/flash-attn.ipynb": 79,
       "math/attention.ipynb": 93,
       "pytorch-basic/pt-basic.ipynb": 83,
-      "andrej-transformer/bigram.ipynb": 100
+      "andrej-transformer/bigram.ipynb": 101
     }
   },
   "likes": {
@@ -64,7 +64,12 @@
       "views": 173,
       "likes": 0,
       "uniqueUsers": 40
+    },
+    "2025-08-19": {
+      "views": 2,
+      "likes": 0,
+      "uniqueUsers": 2
     }
   },
-  "userSessions": 337
+  "userSessions": 342
 }
