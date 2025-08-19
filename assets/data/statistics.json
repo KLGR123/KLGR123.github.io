@@ -1,25 +1,25 @@
 {
   "metadata": {
-    "lastUpdated": "2025-08-19T17:17:05.286Z",
+    "lastUpdated": "2025-08-19T18:25:58.401Z",
     "version": "1.0.0",
-    "totalUsers": 309
+    "totalUsers": 310
   },
   "pageViews": {
-    "total": 928,
+    "total": 932,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
       "cv": 131,
-      "code": 497,
+      "code": 499,
       "gallery": 131
     },
     "notebooks": {
       "machine-learning/aevb.ipynb": 103,
       "trl/ppo.ipynb": 110,
       "andrej-transformer/transformer.ipynb": 99,
-      "megatron/warmup.ipynb": 94,
+      "megatron/warmup.ipynb": 97,
       "megatron/flash-attn.ipynb": 98,
       "math/attention.ipynb": 108,
       "pytorch-basic/pt-basic.ipynb": 93,
@@ -66,10 +66,10 @@
       "uniqueUsers": 40
     },
     "2025-08-19": {
-      "views": 127,
+      "views": 131,
       "likes": 0,
-      "uniqueUsers": 37
+      "uniqueUsers": 40
     }
   },
-  "userSessions": 392
+  "userSessions": 394
 }
