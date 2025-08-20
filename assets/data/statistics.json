@@ -1,23 +1,23 @@
 {
   "metadata": {
-    "lastUpdated": "2025-08-20T01:27:27.857Z",
+    "lastUpdated": "2025-08-20T03:08:01.178Z",
     "version": "1.0.0",
-    "totalUsers": 323
+    "totalUsers": 324
   },
   "pageViews": {
-    "total": 971,
+    "total": 973,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
       "cv": 136,
-      "code": 520,
+      "code": 521,
       "gallery": 136
     },
     "notebooks": {
       "machine-learning/aevb.ipynb": 104,
-      "trl/ppo.ipynb": 114,
+      "trl/ppo.ipynb": 116,
       "andrej-transformer/transformer.ipynb": 100,
       "megatron/warmup.ipynb": 106,
       "megatron/flash-attn.ipynb": 101,
@@ -71,10 +71,10 @@
       "uniqueUsers": 52
     },
     "2025-08-20": {
-      "views": 4,
+      "views": 6,
       "likes": 0,
-      "uniqueUsers": 1
+      "uniqueUsers": 3
     }
   },
-  "userSessions": 408
+  "userSessions": 409
 }
