@@ -12,17 +12,17 @@ from pathlib import Path
 def format_display_name(folder_name):
     """Format folder name for display."""
     display_names = {
-        'andrej-transformer': 'Andrej Transformer',
-        'machine-learning': 'Machine Learning', 
-        'math': 'Math',
-        'pytorch': 'PyTorch',
-        'reinforcement-learning': 'Reinforcement Learning',
-        'trl': 'TRL',
-        'deep-learning': 'Deep Learning',
-        'computer-vision': 'Computer Vision',
-        'nlp': 'Natural Language Processing',
-        'data-science': 'Data Science',
-        'neural-networks': 'Neural Networks'
+        'algorithm': 'Algorithm',
+        'hands-on-transformer': 'Hands-on Transformer',
+        'math-demo': 'Math Demo',
+        'modern-arch': 'Modern Architecture',
+        'modern-infra': 'Modern Infrastructure',
+        'optimizer': 'Optimizer',
+        'pytorch-basic': 'PyTorch Basic',
+        'rl-demo': 'Reinforcement Learning Demo',
+        # 如果你添加了新文件夹，在这里添加自定义显示名称
+        # 'computer-vision': 'Computer Vision',
+        # 'nlp': 'Natural Language Processing',
     }
     
     return display_names.get(folder_name, 

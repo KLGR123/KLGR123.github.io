@@ -127,14 +127,16 @@ class AnalyticsCollector {
 
     // 模拟笔记本访问
     const popularNotebooks = [
-      'andrej-transformer/transformer.ipynb',
-      'andrej-transformer/bigram.ipynb',
-      'machine-learning/aevb.ipynb',
-      'math/attention.ipynb',
-      'megatron/warmup.ipynb',
-      'megatron/flash-attn.ipynb',
+      'hands-on-transformer/transformer.ipynb',
+      'hands-on-transformer/bigram.ipynb',
+      'modern-arch/aevb.ipynb',
+      'math-demo/attention.ipynb',
+      'modern-infra/warmup.ipynb',
+      'modern-infra/flash-attn.ipynb',
       'pytorch-basic/pt-basic.ipynb',
-      'trl/ppo.ipynb'
+      'rl-demo/ppo.ipynb',
+      'algorithm/twosum.ipynb',
+      'optimizer/adamw.ipynb'
     ];
 
     popularNotebooks.forEach(notebook => {

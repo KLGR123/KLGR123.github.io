@@ -16,27 +16,31 @@
       "gallery": 136
     },
     "notebooks": {
-      "machine-learning/aevb.ipynb": 104,
-      "trl/ppo.ipynb": 116,
-      "andrej-transformer/transformer.ipynb": 100,
-      "megatron/warmup.ipynb": 106,
-      "megatron/flash-attn.ipynb": 101,
-      "math/attention.ipynb": 108,
+      "modern-arch/aevb.ipynb": 104,
+      "rl-demo/ppo.ipynb": 116,
+      "hands-on-transformer/transformer.ipynb": 100,
+      "modern-infra/warmup.ipynb": 106,
+      "modern-infra/flash-attn.ipynb": 101,
+      "math-demo/attention.ipynb": 108,
       "pytorch-basic/pt-basic.ipynb": 97,
-      "andrej-transformer/bigram.ipynb": 122
+      "hands-on-transformer/bigram.ipynb": 122,
+      "algorithm/twosum.ipynb": 45,
+      "optimizer/adamw.ipynb": 62
     }
   },
   "likes": {
     "total": 180,
     "notebooks": {
-      "andrej-transformer/bigram.ipynb": 29,
-      "megatron/warmup.ipynb": 16,
-      "megatron/flash-attn.ipynb": 17,
-      "math/attention.ipynb": 30,
-      "machine-learning/aevb.ipynb": 27,
-      "trl/ppo.ipynb": 18,
-      "andrej-transformer/transformer.ipynb": 33,
-      "pytorch-basic/pt-basic.ipynb": 10
+      "hands-on-transformer/bigram.ipynb": 29,
+      "modern-infra/warmup.ipynb": 16,
+      "modern-infra/flash-attn.ipynb": 17,
+      "math-demo/attention.ipynb": 30,
+      "modern-arch/aevb.ipynb": 27,
+      "rl-demo/ppo.ipynb": 18,
+      "hands-on-transformer/transformer.ipynb": 33,
+      "pytorch-basic/pt-basic.ipynb": 10,
+      "algorithm/twosum.ipynb": 8,
+      "optimizer/adamw.ipynb": 12
     }
   },
   "dailyStats": {

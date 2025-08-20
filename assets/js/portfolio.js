@@ -237,12 +237,14 @@ async function fetchFoldersFromGitHub(repoInfo) {
 // Format folder name for display
 function formatFolderName(folderName) {
   const folderDisplayNames = {
-    'andrej-transformer': 'andrej-transformer',
-    'machine-learning': 'machine-learning',
-    'math': 'math',
-    'pytorch': 'pytorch',
-    'reinforcement-learning': 'reinforcement-learning',
-    'trl': 'trl'
+    'algorithm': 'Algorithm',
+    'hands-on-transformer': 'Hands-on Transformer',
+    'math-demo': 'Math Demo',
+    'modern-arch': 'Modern Architecture',
+    'modern-infra': 'Modern Infrastructure',
+    'optimizer': 'Optimizer',
+    'pytorch-basic': 'PyTorch Basic',
+    'rl-demo': 'Reinforcement Learning Demo'
   };
   
   return folderDisplayNames[folderName] || folderName
@@ -264,12 +266,14 @@ async function discoverFoldersByTrying() {
   // Get all known folder names from the directory structure
   const potentialFolders = [
     ...configuredFolders,
-    'andrej-transformer',
-    'machine-learning', 
-    'math',
-    'pytorch',
-    'reinforcement-learning',
-    'trl'
+    'algorithm',
+    'hands-on-transformer',
+    'math-demo',
+    'modern-arch',
+    'modern-infra',
+    'optimizer',
+    'pytorch-basic',
+    'rl-demo'
   ];
   
   // Try to auto-discover more folders by testing common patterns
@@ -281,7 +285,8 @@ async function discoverFoldersByTrying() {
     'nlp',
     'data-science',
     'algorithms',
-    'neural-networks'
+    'neural-networks',
+    'machine-learning'
   ];
   
   // Remove duplicates
@@ -370,44 +375,69 @@ async function getKnownFilesForFolder(folderName) {
   
   // Fallback to hardcoded list (for backwards compatibility)
   const knownFilesByFolder = {
-    'andrej-transformer': [
+    'algorithm': [
+      'twosum.ipynb'
+    ],
+    'hands-on-transformer': [
       'backprop-ninja.ipynb',
       'backprop.ipynb', 
       'batchnorm.ipynb',
       'bigram.ipynb',
       'mlp.ipynb',
-      'optim.ipynb',
       'transformer.ipynb',
       'wavenet.ipynb'
     ],
-    'machine-learning': [
-      '3dconv.ipynb',
-      'aevb.ipynb',
-      'latent-attention.ipynb',
-      'moe.ipynb',
-      'rbm-mnist.ipynb'
-    ],
-    'math': [
+    'math-demo': [
       'attention.ipynb',
       'conjugate-gradient.ipynb',
       'kl-divergence.ipynb',
       'matrix_inverse.ipynb',
+      'ppl.ipynb',
       'svd.ipynb',
       'symmetric-positive-definite.ipynb'
     ],
-    'pytorch': [
+    'modern-arch': [
+      '3dconv.ipynb',
+      'aevb.ipynb',
+      'beam-search.ipynb',
+      'bge-infonce-todo.ipynb',
+      'lora-todo.ipynb',
+      'mla.ipynb',
+      'moe.ipynb',
+      'norm.ipynb',
+      'rbm-mnist.ipynb',
+      'rope.ipynb',
+      'transformer.ipynb'
+    ],
+    'modern-infra': [
+      'amp-gradscale.ipynb',
+      'data-parallel.ipynb',
+      'flash-attn.ipynb',
+      'grad-clipping.ipynb',
+      'model-clipping.ipynb',
+      'quantization.ipynb',
+      'warmup.ipynb'
+    ],
+    'optimizer': [
+      'adamw.ipynb',
+      'lamb-lars.ipynb',
+      'optim.ipynb'
+    ],
+    'pytorch-basic': [
       'pt-basic.ipynb',
       'pt-nlp.ipynb'
     ],
-    'reinforcement-learning': [
+    'rl-demo': [
+      'dpo.ipynb',
       'dynamic-programming.ipynb',
+      'gae.ipynb',
+      'grpo.ipynb',
       'gspo.ipynb',
       'policy-gradient.ipynb',
       'ppo.ipynb',
-      'sarsa.ipynb'
-    ],
-    'trl': [
-      'trl.ipynb'
+      'q-learning.ipynb',
+      'sarsa.ipynb',
+      'trpo.ipynb'
     ]
   };
   
