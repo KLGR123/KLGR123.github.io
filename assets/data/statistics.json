@@ -1,44 +1,44 @@
 {
   "metadata": {
-    "lastUpdated": "2025-08-27T10:19:19.237Z",
+    "lastUpdated": "2025-08-27T10:25:20.342Z",
     "version": "1.0.0",
-    "totalUsers": 697
+    "totalUsers": 700
   },
   "pageViews": {
-    "total": 2092,
+    "total": 2102,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 289,
-      "code": 1125,
-      "gallery": 289
+      "cv": 291,
+      "code": 1131,
+      "gallery": 291
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 232,
+      "modern-arch/aevb.ipynb": 234,
       "rl-demo/ppo.ipynb": 238,
       "hands-on-transformer/transformer.ipynb": 250,
-      "modern-infra/warmup.ipynb": 235,
-      "modern-infra/flash-attn.ipynb": 221,
+      "modern-infra/warmup.ipynb": 236,
+      "modern-infra/flash-attn.ipynb": 224,
       "math-demo/attention.ipynb": 251,
-      "pytorch-basic/pt-basic.ipynb": 222,
-      "hands-on-transformer/bigram.ipynb": 255,
+      "pytorch-basic/pt-basic.ipynb": 225,
+      "hands-on-transformer/bigram.ipynb": 256,
       "algorithm/twosum.ipynb": 153,
       "optimizer/adamw.ipynb": 182
     }
   },
   "likes": {
-    "total": 396,
+    "total": 400,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 64,
+      "hands-on-transformer/bigram.ipynb": 65,
       "modern-infra/warmup.ipynb": 30,
       "modern-infra/flash-attn.ipynb": 37,
-      "math-demo/attention.ipynb": 60,
-      "modern-arch/aevb.ipynb": 59,
+      "math-demo/attention.ipynb": 61,
+      "modern-arch/aevb.ipynb": 60,
       "rl-demo/ppo.ipynb": 34,
       "hands-on-transformer/transformer.ipynb": 54,
-      "pytorch-basic/pt-basic.ipynb": 24,
+      "pytorch-basic/pt-basic.ipynb": 25,
       "algorithm/twosum.ipynb": 30,
       "optimizer/adamw.ipynb": 24
     }
@@ -110,10 +110,10 @@
       "uniqueUsers": 39
     },
     "2025-08-27": {
-      "views": 52,
+      "views": 62,
       "likes": 0,
-      "uniqueUsers": 20
+      "uniqueUsers": 23
     }
   },
-  "userSessions": 918
+  "userSessions": 920
 }
