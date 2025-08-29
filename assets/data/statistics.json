@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "lastUpdated": "2025-08-29T09:19:49.105Z",
+    "lastUpdated": "2025-08-29T10:19:21.824Z",
     "version": "1.0.0",
-    "totalUsers": 787
+    "totalUsers": 793
   },
   "pageViews": {
-    "total": 2362,
+    "total": 2379,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 324,
-      "code": 1270,
-      "gallery": 324
+      "cv": 327,
+      "code": 1280,
+      "gallery": 327
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 268,
-      "rl-demo/ppo.ipynb": 260,
-      "hands-on-transformer/transformer.ipynb": 284,
-      "modern-infra/warmup.ipynb": 260,
-      "modern-infra/flash-attn.ipynb": 250,
+      "rl-demo/ppo.ipynb": 262,
+      "hands-on-transformer/transformer.ipynb": 287,
+      "modern-infra/warmup.ipynb": 263,
+      "modern-infra/flash-attn.ipynb": 252,
       "math-demo/attention.ipynb": 288,
-      "pytorch-basic/pt-basic.ipynb": 250,
-      "hands-on-transformer/bigram.ipynb": 283,
-      "algorithm/twosum.ipynb": 192,
-      "optimizer/adamw.ipynb": 224
+      "pytorch-basic/pt-basic.ipynb": 251,
+      "hands-on-transformer/bigram.ipynb": 284,
+      "algorithm/twosum.ipynb": 194,
+      "optimizer/adamw.ipynb": 225
     }
   },
   "likes": {
-    "total": 463,
+    "total": 465,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 74,
       "modern-infra/warmup.ipynb": 32,
@@ -37,8 +37,8 @@
       "math-demo/attention.ipynb": 73,
       "modern-arch/aevb.ipynb": 71,
       "rl-demo/ppo.ipynb": 35,
-      "hands-on-transformer/transformer.ipynb": 60,
-      "pytorch-basic/pt-basic.ipynb": 31,
+      "hands-on-transformer/transformer.ipynb": 61,
+      "pytorch-basic/pt-basic.ipynb": 32,
       "algorithm/twosum.ipynb": 34,
       "optimizer/adamw.ipynb": 28
     }
@@ -120,10 +120,10 @@
       "uniqueUsers": 48
     },
     "2025-08-29": {
-      "views": 36,
+      "views": 53,
       "likes": 0,
-      "uniqueUsers": 16
+      "uniqueUsers": 19
     }
   },
-  "userSessions": 1057
+  "userSessions": 1058
 }
