@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "lastUpdated": "2025-09-07T05:16:20.772Z",
+    "lastUpdated": "2025-09-07T06:24:49.704Z",
     "version": "1.0.0",
-    "totalUsers": 1283
+    "totalUsers": 1285
   },
   "pageViews": {
-    "total": 3850,
+    "total": 3855,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 546,
-      "code": 2081,
-      "gallery": 546
+      "cv": 547,
+      "code": 2084,
+      "gallery": 547
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 415,
@@ -23,7 +23,7 @@
       "modern-infra/flash-attn.ipynb": 398,
       "math-demo/attention.ipynb": 441,
       "pytorch-basic/pt-basic.ipynb": 399,
-      "hands-on-transformer/bigram.ipynb": 465,
+      "hands-on-transformer/bigram.ipynb": 467,
       "algorithm/twosum.ipynb": 350,
       "optimizer/adamw.ipynb": 370
     }
@@ -165,10 +165,10 @@
       "uniqueUsers": 42
     },
     "2025-09-07": {
-      "views": 9,
+      "views": 14,
       "likes": 0,
-      "uniqueUsers": 8
+      "uniqueUsers": 9
     }
   },
-  "userSessions": 1657
+  "userSessions": 1659
 }
