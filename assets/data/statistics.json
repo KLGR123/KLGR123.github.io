@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2025-09-20T13:21:29.572Z",
+    "lastUpdated": "2025-09-20T14:15:10.717Z",
     "version": "1.0.0",
-    "totalUsers": 1970
+    "totalUsers": 1971
   },
   "pageViews": {
-    "total": 5911,
+    "total": 5915,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
       "cv": 840,
-      "code": 3199,
+      "code": 3201,
       "gallery": 840
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 616,
-      "rl-demo/ppo.ipynb": 626,
+      "modern-arch/aevb.ipynb": 618,
+      "rl-demo/ppo.ipynb": 628,
       "hands-on-transformer/transformer.ipynb": 680,
-      "modern-infra/warmup.ipynb": 653,
-      "modern-infra/flash-attn.ipynb": 624,
-      "math-demo/attention.ipynb": 686,
-      "pytorch-basic/pt-basic.ipynb": 618,
-      "hands-on-transformer/bigram.ipynb": 688,
-      "algorithm/twosum.ipynb": 595,
-      "optimizer/adamw.ipynb": 567
+      "modern-infra/warmup.ipynb": 656,
+      "modern-infra/flash-attn.ipynb": 625,
+      "math-demo/attention.ipynb": 688,
+      "pytorch-basic/pt-basic.ipynb": 619,
+      "hands-on-transformer/bigram.ipynb": 690,
+      "algorithm/twosum.ipynb": 598,
+      "optimizer/adamw.ipynb": 568
     }
   },
   "likes": {
-    "total": 1181,
+    "total": 1186,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 167,
+      "hands-on-transformer/bigram.ipynb": 168,
       "modern-infra/warmup.ipynb": 83,
-      "modern-infra/flash-attn.ipynb": 92,
+      "modern-infra/flash-attn.ipynb": 93,
       "math-demo/attention.ipynb": 171,
-      "modern-arch/aevb.ipynb": 184,
-      "rl-demo/ppo.ipynb": 101,
+      "modern-arch/aevb.ipynb": 185,
+      "rl-demo/ppo.ipynb": 102,
       "hands-on-transformer/transformer.ipynb": 155,
       "pytorch-basic/pt-basic.ipynb": 79,
       "algorithm/twosum.ipynb": 92,
-      "optimizer/adamw.ipynb": 77
+      "optimizer/adamw.ipynb": 78
     }
   },
   "dailyStats": {
@@ -230,10 +230,10 @@
       "uniqueUsers": 44
     },
     "2025-09-20": {
-      "views": 79,
+      "views": 83,
       "likes": 0,
-      "uniqueUsers": 28
+      "uniqueUsers": 31
     }
   },
-  "userSessions": 2553
+  "userSessions": 2558
 }
