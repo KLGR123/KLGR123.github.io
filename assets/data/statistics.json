@@ -1,43 +1,43 @@
 {
   "metadata": {
-    "lastUpdated": "2025-09-28T08:21:30.634Z",
+    "lastUpdated": "2025-09-28T09:16:40.202Z",
     "version": "1.0.0",
-    "totalUsers": 2395
+    "totalUsers": 2400
   },
   "pageViews": {
-    "total": 7186,
+    "total": 7200,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 1028,
-      "code": 3892,
-      "gallery": 1028
+      "cv": 1030,
+      "code": 3900,
+      "gallery": 1030
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 749,
-      "rl-demo/ppo.ipynb": 752,
+      "modern-arch/aevb.ipynb": 751,
+      "rl-demo/ppo.ipynb": 753,
       "hands-on-transformer/transformer.ipynb": 820,
       "modern-infra/warmup.ipynb": 784,
       "modern-infra/flash-attn.ipynb": 759,
-      "math-demo/attention.ipynb": 822,
-      "pytorch-basic/pt-basic.ipynb": 761,
-      "hands-on-transformer/bigram.ipynb": 814,
-      "algorithm/twosum.ipynb": 720,
-      "optimizer/adamw.ipynb": 692
+      "math-demo/attention.ipynb": 823,
+      "pytorch-basic/pt-basic.ipynb": 762,
+      "hands-on-transformer/bigram.ipynb": 817,
+      "algorithm/twosum.ipynb": 723,
+      "optimizer/adamw.ipynb": 694
     }
   },
   "likes": {
-    "total": 1423,
+    "total": 1425,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 194,
       "modern-infra/warmup.ipynb": 97,
       "modern-infra/flash-attn.ipynb": 113,
-      "math-demo/attention.ipynb": 203,
+      "math-demo/attention.ipynb": 204,
       "modern-arch/aevb.ipynb": 226,
       "rl-demo/ppo.ipynb": 116,
-      "hands-on-transformer/transformer.ipynb": 183,
+      "hands-on-transformer/transformer.ipynb": 184,
       "pytorch-basic/pt-basic.ipynb": 103,
       "algorithm/twosum.ipynb": 117,
       "optimizer/adamw.ipynb": 91
@@ -270,10 +270,10 @@
       "uniqueUsers": 46
     },
     "2025-09-28": {
-      "views": 23,
+      "views": 37,
       "likes": 0,
-      "uniqueUsers": 13
+      "uniqueUsers": 14
     }
   },
-  "userSessions": 3104
+  "userSessions": 3106
 }
