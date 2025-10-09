@@ -1,23 +1,23 @@
 {
   "metadata": {
-    "lastUpdated": "2025-10-08T23:16:39.184Z",
+    "lastUpdated": "2025-10-09T01:23:24.902Z",
     "version": "1.0.0",
-    "totalUsers": 2992
+    "totalUsers": 2993
   },
   "pageViews": {
-    "total": 8978,
+    "total": 8981,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
       "cv": 1288,
-      "code": 4871,
+      "code": 4872,
       "gallery": 1288
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 948,
-      "rl-demo/ppo.ipynb": 933,
+      "rl-demo/ppo.ipynb": 935,
       "hands-on-transformer/transformer.ipynb": 977,
       "modern-infra/warmup.ipynb": 959,
       "modern-infra/flash-attn.ipynb": 937,
@@ -323,7 +323,12 @@
       "views": 162,
       "likes": 0,
       "uniqueUsers": 47
+    },
+    "2025-10-09": {
+      "views": 3,
+      "likes": 0,
+      "uniqueUsers": 2
     }
   },
-  "userSessions": 3807
+  "userSessions": 3811
 }
