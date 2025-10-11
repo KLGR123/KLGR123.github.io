@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2025-10-11T13:20:37.621Z",
+    "lastUpdated": "2025-10-11T14:14:35.217Z",
     "version": "1.0.0",
-    "totalUsers": 3112
+    "totalUsers": 3116
   },
   "pageViews": {
-    "total": 9338,
+    "total": 9349,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 1336,
-      "code": 5062,
-      "gallery": 1336
+      "cv": 1338,
+      "code": 5068,
+      "gallery": 1338
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 986,
+      "modern-arch/aevb.ipynb": 988,
       "rl-demo/ppo.ipynb": 969,
       "hands-on-transformer/transformer.ipynb": 1019,
       "modern-infra/warmup.ipynb": 988,
-      "modern-infra/flash-attn.ipynb": 974,
-      "math-demo/attention.ipynb": 1039,
-      "pytorch-basic/pt-basic.ipynb": 1012,
-      "hands-on-transformer/bigram.ipynb": 1039,
-      "algorithm/twosum.ipynb": 973,
+      "modern-infra/flash-attn.ipynb": 975,
+      "math-demo/attention.ipynb": 1042,
+      "pytorch-basic/pt-basic.ipynb": 1013,
+      "hands-on-transformer/bigram.ipynb": 1041,
+      "algorithm/twosum.ipynb": 976,
       "optimizer/adamw.ipynb": 940
     }
   },
   "likes": {
-    "total": 1824,
+    "total": 1826,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 248,
       "modern-infra/warmup.ipynb": 131,
       "modern-infra/flash-attn.ipynb": 134,
       "math-demo/attention.ipynb": 259,
-      "modern-arch/aevb.ipynb": 290,
+      "modern-arch/aevb.ipynb": 291,
       "rl-demo/ppo.ipynb": 146,
       "hands-on-transformer/transformer.ipynb": 247,
       "pytorch-basic/pt-basic.ipynb": 128,
       "algorithm/twosum.ipynb": 148,
-      "optimizer/adamw.ipynb": 113
+      "optimizer/adamw.ipynb": 114
     }
   },
   "dailyStats": {
@@ -335,10 +335,10 @@
       "uniqueUsers": 45
     },
     "2025-10-11": {
-      "views": 69,
+      "views": 80,
       "likes": 0,
-      "uniqueUsers": 23
+      "uniqueUsers": 25
     }
   },
-  "userSessions": 3999
+  "userSessions": 4002
 }
