@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2025-10-21T12:41:31.725Z",
+    "lastUpdated": "2025-10-21T13:33:18.572Z",
     "version": "1.0.0",
-    "totalUsers": 3641
+    "totalUsers": 3646
   },
   "pageViews": {
-    "total": 10923,
+    "total": 10938,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 1567,
-      "code": 5929,
-      "gallery": 1567
+      "cv": 1570,
+      "code": 5938,
+      "gallery": 1570
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 1171,
-      "rl-demo/ppo.ipynb": 1125,
-      "hands-on-transformer/transformer.ipynb": 1199,
-      "modern-infra/warmup.ipynb": 1159,
+      "modern-arch/aevb.ipynb": 1173,
+      "rl-demo/ppo.ipynb": 1127,
+      "hands-on-transformer/transformer.ipynb": 1201,
+      "modern-infra/warmup.ipynb": 1160,
       "modern-infra/flash-attn.ipynb": 1126,
-      "math-demo/attention.ipynb": 1205,
-      "pytorch-basic/pt-basic.ipynb": 1210,
-      "hands-on-transformer/bigram.ipynb": 1202,
+      "math-demo/attention.ipynb": 1206,
+      "pytorch-basic/pt-basic.ipynb": 1211,
+      "hands-on-transformer/bigram.ipynb": 1205,
       "algorithm/twosum.ipynb": 1150,
-      "optimizer/adamw.ipynb": 1114
+      "optimizer/adamw.ipynb": 1115
     }
   },
   "likes": {
-    "total": 2102,
+    "total": 2107,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 286,
+      "hands-on-transformer/bigram.ipynb": 287,
       "modern-infra/warmup.ipynb": 151,
       "modern-infra/flash-attn.ipynb": 151,
       "math-demo/attention.ipynb": 302,
-      "modern-arch/aevb.ipynb": 323,
-      "rl-demo/ppo.ipynb": 167,
-      "hands-on-transformer/transformer.ipynb": 288,
+      "modern-arch/aevb.ipynb": 324,
+      "rl-demo/ppo.ipynb": 168,
+      "hands-on-transformer/transformer.ipynb": 289,
       "pytorch-basic/pt-basic.ipynb": 152,
       "algorithm/twosum.ipynb": 173,
-      "optimizer/adamw.ipynb": 129
+      "optimizer/adamw.ipynb": 130
     }
   },
   "dailyStats": {
@@ -385,10 +385,10 @@
       "uniqueUsers": 43
     },
     "2025-10-21": {
-      "views": 71,
+      "views": 86,
       "likes": 0,
-      "uniqueUsers": 25
+      "uniqueUsers": 28
     }
   },
-  "userSessions": 4661
+  "userSessions": 4666
 }
