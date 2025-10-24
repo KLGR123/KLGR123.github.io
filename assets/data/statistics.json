@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2025-10-24T21:17:02.204Z",
+    "lastUpdated": "2025-10-24T22:17:58.511Z",
     "version": "1.0.0",
-    "totalUsers": 3803
+    "totalUsers": 3808
   },
   "pageViews": {
-    "total": 11410,
+    "total": 11425,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 1634,
-      "code": 6186,
-      "gallery": 1634
+      "cv": 1637,
+      "code": 6195,
+      "gallery": 1637
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 1243,
       "rl-demo/ppo.ipynb": 1193,
-      "hands-on-transformer/transformer.ipynb": 1269,
+      "hands-on-transformer/transformer.ipynb": 1271,
       "modern-infra/warmup.ipynb": 1218,
-      "modern-infra/flash-attn.ipynb": 1201,
-      "math-demo/attention.ipynb": 1265,
+      "modern-infra/flash-attn.ipynb": 1203,
+      "math-demo/attention.ipynb": 1267,
       "pytorch-basic/pt-basic.ipynb": 1266,
       "hands-on-transformer/bigram.ipynb": 1264,
       "algorithm/twosum.ipynb": 1212,
-      "optimizer/adamw.ipynb": 1179
+      "optimizer/adamw.ipynb": 1181
     }
   },
   "likes": {
-    "total": 2215,
+    "total": 2219,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 306,
       "modern-infra/warmup.ipynb": 157,
       "modern-infra/flash-attn.ipynb": 159,
       "math-demo/attention.ipynb": 315,
-      "modern-arch/aevb.ipynb": 337,
+      "modern-arch/aevb.ipynb": 338,
       "rl-demo/ppo.ipynb": 175,
       "hands-on-transformer/transformer.ipynb": 306,
-      "pytorch-basic/pt-basic.ipynb": 161,
-      "algorithm/twosum.ipynb": 179,
-      "optimizer/adamw.ipynb": 140
+      "pytorch-basic/pt-basic.ipynb": 162,
+      "algorithm/twosum.ipynb": 180,
+      "optimizer/adamw.ipynb": 141
     }
   },
   "dailyStats": {
@@ -400,10 +400,10 @@
       "uniqueUsers": 49
     },
     "2025-10-24": {
-      "views": 147,
+      "views": 162,
       "likes": 0,
-      "uniqueUsers": 41
+      "uniqueUsers": 43
     }
   },
-  "userSessions": 4900
+  "userSessions": 4905
 }
