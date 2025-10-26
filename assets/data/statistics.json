@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2025-10-26T18:25:49.895Z",
+    "lastUpdated": "2025-10-26T19:14:26.838Z",
     "version": "1.0.0",
-    "totalUsers": 3896
+    "totalUsers": 3901
   },
   "pageViews": {
-    "total": 11689,
+    "total": 11704,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 1673,
-      "code": 6334,
-      "gallery": 1673
+      "cv": 1676,
+      "code": 6343,
+      "gallery": 1676
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 1268,
       "rl-demo/ppo.ipynb": 1222,
       "hands-on-transformer/transformer.ipynb": 1296,
       "modern-infra/warmup.ipynb": 1254,
-      "modern-infra/flash-attn.ipynb": 1248,
-      "math-demo/attention.ipynb": 1291,
+      "modern-infra/flash-attn.ipynb": 1251,
+      "math-demo/attention.ipynb": 1292,
       "pytorch-basic/pt-basic.ipynb": 1305,
-      "hands-on-transformer/bigram.ipynb": 1288,
+      "hands-on-transformer/bigram.ipynb": 1291,
       "algorithm/twosum.ipynb": 1245,
       "optimizer/adamw.ipynb": 1213
     }
   },
   "likes": {
-    "total": 2267,
+    "total": 2273,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 314,
+      "hands-on-transformer/bigram.ipynb": 315,
       "modern-infra/warmup.ipynb": 161,
-      "modern-infra/flash-attn.ipynb": 161,
+      "modern-infra/flash-attn.ipynb": 162,
       "math-demo/attention.ipynb": 323,
-      "modern-arch/aevb.ipynb": 345,
-      "rl-demo/ppo.ipynb": 178,
-      "hands-on-transformer/transformer.ipynb": 310,
+      "modern-arch/aevb.ipynb": 346,
+      "rl-demo/ppo.ipynb": 179,
+      "hands-on-transformer/transformer.ipynb": 311,
       "pytorch-basic/pt-basic.ipynb": 167,
       "algorithm/twosum.ipynb": 184,
-      "optimizer/adamw.ipynb": 144
+      "optimizer/adamw.ipynb": 145
     }
   },
   "dailyStats": {
@@ -410,10 +410,10 @@
       "uniqueUsers": 46
     },
     "2025-10-26": {
-      "views": 107,
+      "views": 122,
       "likes": 0,
-      "uniqueUsers": 30
+      "uniqueUsers": 33
     }
   },
-  "userSessions": 5045
+  "userSessions": 5047
 }
