@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2025-11-02T14:15:57.538Z",
+    "lastUpdated": "2025-11-02T15:17:04.748Z",
     "version": "1.0.0",
-    "totalUsers": 4230
+    "totalUsers": 4232
   },
   "pageViews": {
-    "total": 12690,
+    "total": 12698,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 1815,
-      "code": 6873,
-      "gallery": 1815
+      "cv": 1816,
+      "code": 6877,
+      "gallery": 1816
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 1381,
-      "rl-demo/ppo.ipynb": 1327,
-      "hands-on-transformer/transformer.ipynb": 1421,
+      "rl-demo/ppo.ipynb": 1330,
+      "hands-on-transformer/transformer.ipynb": 1422,
       "modern-infra/warmup.ipynb": 1370,
       "modern-infra/flash-attn.ipynb": 1382,
-      "math-demo/attention.ipynb": 1393,
+      "math-demo/attention.ipynb": 1395,
       "pytorch-basic/pt-basic.ipynb": 1416,
-      "hands-on-transformer/bigram.ipynb": 1392,
-      "algorithm/twosum.ipynb": 1375,
-      "optimizer/adamw.ipynb": 1318
+      "hands-on-transformer/bigram.ipynb": 1394,
+      "algorithm/twosum.ipynb": 1376,
+      "optimizer/adamw.ipynb": 1319
     }
   },
   "likes": {
-    "total": 2475,
+    "total": 2477,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 339,
       "modern-infra/warmup.ipynb": 179,
       "modern-infra/flash-attn.ipynb": 176,
-      "math-demo/attention.ipynb": 352,
+      "math-demo/attention.ipynb": 353,
       "modern-arch/aevb.ipynb": 374,
       "rl-demo/ppo.ipynb": 196,
       "hands-on-transformer/transformer.ipynb": 340,
       "pytorch-basic/pt-basic.ipynb": 183,
       "algorithm/twosum.ipynb": 200,
-      "optimizer/adamw.ipynb": 156
+      "optimizer/adamw.ipynb": 157
     }
   },
   "dailyStats": {
@@ -445,10 +445,10 @@
       "uniqueUsers": 42
     },
     "2025-11-02": {
-      "views": 71,
+      "views": 79,
       "likes": 0,
-      "uniqueUsers": 27
+      "uniqueUsers": 29
     }
   },
-  "userSessions": 5539
+  "userSessions": 5542
 }
