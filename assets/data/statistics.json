@@ -1,37 +1,37 @@
 {
   "metadata": {
-    "lastUpdated": "2025-11-03T08:28:27.050Z",
+    "lastUpdated": "2025-11-03T09:24:06.957Z",
     "version": "1.0.0",
-    "totalUsers": 4254
+    "totalUsers": 4260
   },
   "pageViews": {
-    "total": 12764,
+    "total": 12780,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 1823,
-      "code": 6910,
-      "gallery": 1823
+      "cv": 1826,
+      "code": 6919,
+      "gallery": 1826
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 1395,
-      "rl-demo/ppo.ipynb": 1342,
-      "hands-on-transformer/transformer.ipynb": 1429,
-      "modern-infra/warmup.ipynb": 1382,
-      "modern-infra/flash-attn.ipynb": 1394,
+      "modern-arch/aevb.ipynb": 1397,
+      "rl-demo/ppo.ipynb": 1345,
+      "hands-on-transformer/transformer.ipynb": 1432,
+      "modern-infra/warmup.ipynb": 1385,
+      "modern-infra/flash-attn.ipynb": 1397,
       "math-demo/attention.ipynb": 1406,
       "pytorch-basic/pt-basic.ipynb": 1428,
-      "hands-on-transformer/bigram.ipynb": 1402,
+      "hands-on-transformer/bigram.ipynb": 1405,
       "algorithm/twosum.ipynb": 1392,
-      "optimizer/adamw.ipynb": 1329
+      "optimizer/adamw.ipynb": 1331
     }
   },
   "likes": {
-    "total": 2489,
+    "total": 2491,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 341,
+      "hands-on-transformer/bigram.ipynb": 342,
       "modern-infra/warmup.ipynb": 179,
       "modern-infra/flash-attn.ipynb": 176,
       "math-demo/attention.ipynb": 353,
@@ -39,7 +39,7 @@
       "rl-demo/ppo.ipynb": 197,
       "hands-on-transformer/transformer.ipynb": 345,
       "pytorch-basic/pt-basic.ipynb": 185,
-      "algorithm/twosum.ipynb": 201,
+      "algorithm/twosum.ipynb": 202,
       "optimizer/adamw.ipynb": 158
     }
   },
@@ -450,10 +450,10 @@
       "uniqueUsers": 44
     },
     "2025-11-03": {
-      "views": 15,
+      "views": 31,
       "likes": 0,
-      "uniqueUsers": 15
+      "uniqueUsers": 18
     }
   },
-  "userSessions": 5584
+  "userSessions": 5589
 }
