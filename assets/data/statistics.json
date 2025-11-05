@@ -1,43 +1,43 @@
 {
   "metadata": {
-    "lastUpdated": "2025-11-05T08:27:37.431Z",
+    "lastUpdated": "2025-11-05T09:22:03.927Z",
     "version": "1.0.0",
-    "totalUsers": 4354
+    "totalUsers": 4360
   },
   "pageViews": {
-    "total": 13063,
+    "total": 13082,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 1867,
-      "code": 7073,
-      "gallery": 1867
+      "cv": 1870,
+      "code": 7084,
+      "gallery": 1870
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 1436,
       "rl-demo/ppo.ipynb": 1390,
       "hands-on-transformer/transformer.ipynb": 1476,
-      "modern-infra/warmup.ipynb": 1407,
-      "modern-infra/flash-attn.ipynb": 1438,
+      "modern-infra/warmup.ipynb": 1408,
+      "modern-infra/flash-attn.ipynb": 1441,
       "math-demo/attention.ipynb": 1442,
-      "pytorch-basic/pt-basic.ipynb": 1466,
+      "pytorch-basic/pt-basic.ipynb": 1467,
       "hands-on-transformer/bigram.ipynb": 1444,
-      "algorithm/twosum.ipynb": 1425,
-      "optimizer/adamw.ipynb": 1365
+      "algorithm/twosum.ipynb": 1427,
+      "optimizer/adamw.ipynb": 1368
     }
   },
   "likes": {
-    "total": 2549,
+    "total": 2552,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 349,
+      "hands-on-transformer/bigram.ipynb": 350,
       "modern-infra/warmup.ipynb": 185,
-      "modern-infra/flash-attn.ipynb": 182,
+      "modern-infra/flash-attn.ipynb": 183,
       "math-demo/attention.ipynb": 361,
       "modern-arch/aevb.ipynb": 381,
       "rl-demo/ppo.ipynb": 201,
-      "hands-on-transformer/transformer.ipynb": 350,
+      "hands-on-transformer/transformer.ipynb": 351,
       "pytorch-basic/pt-basic.ipynb": 189,
       "algorithm/twosum.ipynb": 207,
       "optimizer/adamw.ipynb": 164
@@ -460,10 +460,10 @@
       "uniqueUsers": 38
     },
     "2025-11-05": {
-      "views": 22,
+      "views": 41,
       "likes": 0,
-      "uniqueUsers": 19
+      "uniqueUsers": 20
     }
   },
-  "userSessions": 5699
+  "userSessions": 5700
 }
