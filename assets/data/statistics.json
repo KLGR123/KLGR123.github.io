@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2025-11-30T08:24:24.677Z",
+    "lastUpdated": "2025-11-30T09:18:42.626Z",
     "version": "1.0.0",
-    "totalUsers": 5593
+    "totalUsers": 5598
   },
   "pageViews": {
-    "total": 16779,
+    "total": 16796,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 2389,
-      "code": 9078,
-      "gallery": 2389
+      "cv": 2392,
+      "code": 9088,
+      "gallery": 2392
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 1827,
-      "rl-demo/ppo.ipynb": 1852,
-      "hands-on-transformer/transformer.ipynb": 1895,
+      "modern-arch/aevb.ipynb": 1830,
+      "rl-demo/ppo.ipynb": 1853,
+      "hands-on-transformer/transformer.ipynb": 1897,
       "modern-infra/warmup.ipynb": 1807,
       "modern-infra/flash-attn.ipynb": 1854,
       "math-demo/attention.ipynb": 1889,
       "pytorch-basic/pt-basic.ipynb": 1880,
       "hands-on-transformer/bigram.ipynb": 1909,
-      "algorithm/twosum.ipynb": 1844,
-      "optimizer/adamw.ipynb": 1779
+      "algorithm/twosum.ipynb": 1847,
+      "optimizer/adamw.ipynb": 1780
     }
   },
   "likes": {
-    "total": 3270,
+    "total": 3273,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 457,
       "modern-infra/warmup.ipynb": 245,
       "modern-infra/flash-attn.ipynb": 228,
       "math-demo/attention.ipynb": 443,
-      "modern-arch/aevb.ipynb": 493,
+      "modern-arch/aevb.ipynb": 494,
       "rl-demo/ppo.ipynb": 262,
       "hands-on-transformer/transformer.ipynb": 439,
-      "pytorch-basic/pt-basic.ipynb": 240,
+      "pytorch-basic/pt-basic.ipynb": 241,
       "algorithm/twosum.ipynb": 267,
-      "optimizer/adamw.ipynb": 216
+      "optimizer/adamw.ipynb": 217
     }
   },
   "dailyStats": {
@@ -585,10 +585,10 @@
       "uniqueUsers": 47
     },
     "2025-11-30": {
-      "views": 18,
+      "views": 35,
       "likes": 0,
-      "uniqueUsers": 14
+      "uniqueUsers": 17
     }
   },
-  "userSessions": 7375
+  "userSessions": 7380
 }
