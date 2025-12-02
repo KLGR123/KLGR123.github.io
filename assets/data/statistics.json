@@ -1,44 +1,44 @@
 {
   "metadata": {
-    "lastUpdated": "2025-12-02T12:43:58.403Z",
+    "lastUpdated": "2025-12-02T13:36:54.160Z",
     "version": "1.0.0",
-    "totalUsers": 5725
+    "totalUsers": 5730
   },
   "pageViews": {
-    "total": 17175,
+    "total": 17192,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 2450,
-      "code": 9298,
-      "gallery": 2450
+      "cv": 2453,
+      "code": 9308,
+      "gallery": 2453
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 1862,
+      "modern-arch/aevb.ipynb": 1864,
       "rl-demo/ppo.ipynb": 1889,
       "hands-on-transformer/transformer.ipynb": 1933,
-      "modern-infra/warmup.ipynb": 1830,
-      "modern-infra/flash-attn.ipynb": 1890,
-      "math-demo/attention.ipynb": 1936,
-      "pytorch-basic/pt-basic.ipynb": 1920,
-      "hands-on-transformer/bigram.ipynb": 1954,
+      "modern-infra/warmup.ipynb": 1831,
+      "modern-infra/flash-attn.ipynb": 1891,
+      "math-demo/attention.ipynb": 1937,
+      "pytorch-basic/pt-basic.ipynb": 1921,
+      "hands-on-transformer/bigram.ipynb": 1955,
       "algorithm/twosum.ipynb": 1895,
-      "optimizer/adamw.ipynb": 1820
+      "optimizer/adamw.ipynb": 1821
     }
   },
   "likes": {
-    "total": 3343,
+    "total": 3348,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 463,
+      "hands-on-transformer/bigram.ipynb": 464,
       "modern-infra/warmup.ipynb": 251,
       "modern-infra/flash-attn.ipynb": 231,
-      "math-demo/attention.ipynb": 457,
-      "modern-arch/aevb.ipynb": 504,
+      "math-demo/attention.ipynb": 458,
+      "modern-arch/aevb.ipynb": 505,
       "rl-demo/ppo.ipynb": 268,
-      "hands-on-transformer/transformer.ipynb": 450,
-      "pytorch-basic/pt-basic.ipynb": 245,
+      "hands-on-transformer/transformer.ipynb": 451,
+      "pytorch-basic/pt-basic.ipynb": 246,
       "algorithm/twosum.ipynb": 272,
       "optimizer/adamw.ipynb": 222
     }
@@ -595,10 +595,10 @@
       "uniqueUsers": 48
     },
     "2025-12-02": {
-      "views": 75,
+      "views": 92,
       "likes": 0,
-      "uniqueUsers": 20
+      "uniqueUsers": 23
     }
   },
-  "userSessions": 7525
+  "userSessions": 7530
 }
