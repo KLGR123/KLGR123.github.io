@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2025-12-18T10:24:02.882Z",
+    "lastUpdated": "2025-12-18T11:19:38.559Z",
     "version": "1.0.0",
     "totalUsers": 6518
   },
   "pageViews": {
-    "total": 19554,
+    "total": 19556,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
       "cv": 2786,
-      "code": 10580,
+      "code": 10581,
       "gallery": 2786
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 2195,
-      "rl-demo/ppo.ipynb": 2171,
+      "rl-demo/ppo.ipynb": 2173,
       "hands-on-transformer/transformer.ipynb": 2204,
-      "modern-infra/warmup.ipynb": 2094,
-      "modern-infra/flash-attn.ipynb": 2166,
-      "math-demo/attention.ipynb": 2183,
+      "modern-infra/warmup.ipynb": 2096,
+      "modern-infra/flash-attn.ipynb": 2169,
+      "math-demo/attention.ipynb": 2186,
       "pytorch-basic/pt-basic.ipynb": 2188,
-      "hands-on-transformer/bigram.ipynb": 2223,
-      "algorithm/twosum.ipynb": 2164,
+      "hands-on-transformer/bigram.ipynb": 2226,
+      "algorithm/twosum.ipynb": 2166,
       "optimizer/adamw.ipynb": 2087
     }
   },
   "likes": {
-    "total": 3818,
+    "total": 3821,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 525,
       "modern-infra/warmup.ipynb": 284,
-      "modern-infra/flash-attn.ipynb": 264,
+      "modern-infra/flash-attn.ipynb": 265,
       "math-demo/attention.ipynb": 534,
       "modern-arch/aevb.ipynb": 563,
       "rl-demo/ppo.ipynb": 302,
-      "hands-on-transformer/transformer.ipynb": 520,
+      "hands-on-transformer/transformer.ipynb": 521,
       "pytorch-basic/pt-basic.ipynb": 281,
       "algorithm/twosum.ipynb": 304,
-      "optimizer/adamw.ipynb": 261
+      "optimizer/adamw.ipynb": 262
     }
   },
   "dailyStats": {
@@ -675,10 +675,10 @@
       "uniqueUsers": 39
     },
     "2025-12-18": {
-      "views": 32,
+      "views": 34,
       "likes": 0,
-      "uniqueUsers": 19
+      "uniqueUsers": 21
     }
   },
-  "userSessions": 8554
+  "userSessions": 8558
 }
