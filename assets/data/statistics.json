@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2025-12-23T08:30:10.644Z",
+    "lastUpdated": "2025-12-23T09:25:42.122Z",
     "version": "1.0.0",
-    "totalUsers": 6784
+    "totalUsers": 6788
   },
   "pageViews": {
-    "total": 20354,
+    "total": 20365,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 2905,
-      "code": 11013,
-      "gallery": 2905
+      "cv": 2907,
+      "code": 11019,
+      "gallery": 2907
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 2291,
-      "rl-demo/ppo.ipynb": 2257,
+      "rl-demo/ppo.ipynb": 2259,
       "hands-on-transformer/transformer.ipynb": 2304,
       "modern-infra/warmup.ipynb": 2161,
       "modern-infra/flash-attn.ipynb": 2243,
-      "math-demo/attention.ipynb": 2289,
-      "pytorch-basic/pt-basic.ipynb": 2277,
-      "hands-on-transformer/bigram.ipynb": 2303,
-      "algorithm/twosum.ipynb": 2263,
-      "optimizer/adamw.ipynb": 2155
+      "math-demo/attention.ipynb": 2292,
+      "pytorch-basic/pt-basic.ipynb": 2280,
+      "hands-on-transformer/bigram.ipynb": 2304,
+      "algorithm/twosum.ipynb": 2266,
+      "optimizer/adamw.ipynb": 2157
     }
   },
   "likes": {
-    "total": 3964,
+    "total": 3966,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 547,
       "modern-infra/warmup.ipynb": 296,
       "modern-infra/flash-attn.ipynb": 280,
-      "math-demo/attention.ipynb": 561,
+      "math-demo/attention.ipynb": 562,
       "modern-arch/aevb.ipynb": 575,
       "rl-demo/ppo.ipynb": 312,
       "hands-on-transformer/transformer.ipynb": 543,
       "pytorch-basic/pt-basic.ipynb": 294,
       "algorithm/twosum.ipynb": 310,
-      "optimizer/adamw.ipynb": 266
+      "optimizer/adamw.ipynb": 267
     }
   },
   "dailyStats": {
@@ -700,10 +700,10 @@
       "uniqueUsers": 44
     },
     "2025-12-23": {
-      "views": 21,
+      "views": 32,
       "likes": 0,
-      "uniqueUsers": 14
+      "uniqueUsers": 15
     }
   },
-  "userSessions": 8887
+  "userSessions": 8890
 }
