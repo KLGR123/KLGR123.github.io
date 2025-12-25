@@ -1,42 +1,42 @@
 {
   "metadata": {
-    "lastUpdated": "2025-12-25T08:29:01.120Z",
+    "lastUpdated": "2025-12-25T09:23:46.730Z",
     "version": "1.0.0",
-    "totalUsers": 6899
+    "totalUsers": 6902
   },
   "pageViews": {
-    "total": 20697,
+    "total": 20707,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 2956,
-      "code": 11201,
-      "gallery": 2956
+      "cv": 2958,
+      "code": 11207,
+      "gallery": 2958
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 2313,
+      "modern-arch/aevb.ipynb": 2316,
       "rl-demo/ppo.ipynb": 2293,
-      "hands-on-transformer/transformer.ipynb": 2333,
-      "modern-infra/warmup.ipynb": 2193,
-      "modern-infra/flash-attn.ipynb": 2286,
+      "hands-on-transformer/transformer.ipynb": 2334,
+      "modern-infra/warmup.ipynb": 2194,
+      "modern-infra/flash-attn.ipynb": 2288,
       "math-demo/attention.ipynb": 2341,
-      "pytorch-basic/pt-basic.ipynb": 2308,
-      "hands-on-transformer/bigram.ipynb": 2332,
-      "algorithm/twosum.ipynb": 2296,
+      "pytorch-basic/pt-basic.ipynb": 2311,
+      "hands-on-transformer/bigram.ipynb": 2335,
+      "algorithm/twosum.ipynb": 2299,
       "optimizer/adamw.ipynb": 2193
     }
   },
   "likes": {
-    "total": 4015,
+    "total": 4017,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 555,
-      "modern-infra/warmup.ipynb": 298,
+      "modern-infra/warmup.ipynb": 299,
       "modern-infra/flash-attn.ipynb": 284,
       "math-demo/attention.ipynb": 572,
       "modern-arch/aevb.ipynb": 581,
-      "rl-demo/ppo.ipynb": 315,
+      "rl-demo/ppo.ipynb": 316,
       "hands-on-transformer/transformer.ipynb": 551,
       "pytorch-basic/pt-basic.ipynb": 298,
       "algorithm/twosum.ipynb": 313,
@@ -710,10 +710,10 @@
       "uniqueUsers": 45
     },
     "2025-12-25": {
-      "views": 23,
+      "views": 33,
       "likes": 0,
-      "uniqueUsers": 13
+      "uniqueUsers": 15
     }
   },
-  "userSessions": 9015
+  "userSessions": 9017
 }
