@@ -1,43 +1,43 @@
 {
   "metadata": {
-    "lastUpdated": "2025-12-25T10:22:44.183Z",
+    "lastUpdated": "2025-12-25T11:18:23.755Z",
     "version": "1.0.0",
-    "totalUsers": 6905
+    "totalUsers": 6911
   },
   "pageViews": {
-    "total": 20717,
+    "total": 20735,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 2960,
-      "code": 11213,
-      "gallery": 2960
+      "cv": 2963,
+      "code": 11223,
+      "gallery": 2963
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 2316,
-      "rl-demo/ppo.ipynb": 2295,
+      "rl-demo/ppo.ipynb": 2298,
       "hands-on-transformer/transformer.ipynb": 2334,
-      "modern-infra/warmup.ipynb": 2197,
-      "modern-infra/flash-attn.ipynb": 2290,
+      "modern-infra/warmup.ipynb": 2199,
+      "modern-infra/flash-attn.ipynb": 2293,
       "math-demo/attention.ipynb": 2341,
-      "pytorch-basic/pt-basic.ipynb": 2311,
-      "hands-on-transformer/bigram.ipynb": 2336,
-      "algorithm/twosum.ipynb": 2302,
-      "optimizer/adamw.ipynb": 2193
+      "pytorch-basic/pt-basic.ipynb": 2312,
+      "hands-on-transformer/bigram.ipynb": 2338,
+      "algorithm/twosum.ipynb": 2303,
+      "optimizer/adamw.ipynb": 2194
     }
   },
   "likes": {
-    "total": 4021,
+    "total": 4023,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 556,
       "modern-infra/warmup.ipynb": 300,
       "modern-infra/flash-attn.ipynb": 284,
       "math-demo/attention.ipynb": 572,
       "modern-arch/aevb.ipynb": 581,
-      "rl-demo/ppo.ipynb": 316,
-      "hands-on-transformer/transformer.ipynb": 552,
+      "rl-demo/ppo.ipynb": 317,
+      "hands-on-transformer/transformer.ipynb": 553,
       "pytorch-basic/pt-basic.ipynb": 298,
       "algorithm/twosum.ipynb": 313,
       "optimizer/adamw.ipynb": 269
@@ -710,10 +710,10 @@
       "uniqueUsers": 45
     },
     "2025-12-25": {
-      "views": 43,
+      "views": 61,
       "likes": 0,
-      "uniqueUsers": 17
+      "uniqueUsers": 18
     }
   },
-  "userSessions": 9019
+  "userSessions": 9022
 }
