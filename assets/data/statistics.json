@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "lastUpdated": "2026-01-12T08:33:18.939Z",
+    "lastUpdated": "2026-01-12T09:32:49.522Z",
     "version": "1.0.0",
-    "totalUsers": 7803
+    "totalUsers": 7805
   },
   "pageViews": {
-    "total": 23409,
+    "total": 23416,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 3340,
-      "code": 12668,
-      "gallery": 3340
+      "cv": 3341,
+      "code": 12672,
+      "gallery": 3341
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 2634,
-      "rl-demo/ppo.ipynb": 2593,
-      "hands-on-transformer/transformer.ipynb": 2656,
-      "modern-infra/warmup.ipynb": 2522,
-      "modern-infra/flash-attn.ipynb": 2564,
-      "math-demo/attention.ipynb": 2670,
-      "pytorch-basic/pt-basic.ipynb": 2599,
+      "rl-demo/ppo.ipynb": 2595,
+      "hands-on-transformer/transformer.ipynb": 2659,
+      "modern-infra/warmup.ipynb": 2524,
+      "modern-infra/flash-attn.ipynb": 2566,
+      "math-demo/attention.ipynb": 2671,
+      "pytorch-basic/pt-basic.ipynb": 2600,
       "hands-on-transformer/bigram.ipynb": 2648,
-      "algorithm/twosum.ipynb": 2576,
-      "optimizer/adamw.ipynb": 2496
+      "algorithm/twosum.ipynb": 2577,
+      "optimizer/adamw.ipynb": 2498
     }
   },
   "likes": {
-    "total": 4571,
+    "total": 4573,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 634,
       "modern-infra/warmup.ipynb": 337,
@@ -37,8 +37,8 @@
       "math-demo/attention.ipynb": 650,
       "modern-arch/aevb.ipynb": 661,
       "rl-demo/ppo.ipynb": 357,
-      "hands-on-transformer/transformer.ipynb": 635,
-      "pytorch-basic/pt-basic.ipynb": 335,
+      "hands-on-transformer/transformer.ipynb": 636,
+      "pytorch-basic/pt-basic.ipynb": 336,
       "algorithm/twosum.ipynb": 348,
       "optimizer/adamw.ipynb": 305
     }
@@ -800,10 +800,10 @@
       "uniqueUsers": 49
     },
     "2026-01-12": {
-      "views": 18,
+      "views": 25,
       "likes": 0,
-      "uniqueUsers": 16
+      "uniqueUsers": 18
     }
   },
-  "userSessions": 10174
+  "userSessions": 10179
 }
