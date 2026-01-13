@@ -800,7 +800,7 @@ redirect_from:
 }
 
 .cell-markdown {
-  border-left: 4px solid #9b59b6;
+  border-left: none;
 }
 
 .cell-header {
