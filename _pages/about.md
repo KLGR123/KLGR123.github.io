@@ -183,20 +183,18 @@ redirect_from:
     <section id="code-tab" class="tab-content">
       <div class="content-section">
         <div class="code-container">
-          <h2 class="section-title">
-            <i class="fas fa-code"></i>
-            Jupyter Notebooks
-          </h2>
-          <div class="notebook-selector">
-            <div class="folder-selector">
+          <div class="section-title-with-selector">
+            <div class="title-group">
+              <i class="fas fa-code"></i>
               <label for="folder-select" class="folder-label">
-                <i class="fas fa-folder"></i>
-                Choose Folder
+                Choose Topic
               </label>
-              <select id="folder-select" class="folder-dropdown">
-                <option value="">Loading...</option>
-              </select>
             </div>
+            <select id="folder-select" class="folder-dropdown">
+              <option value="">Loading...</option>
+            </select>
+          </div>
+          <div class="notebook-selector">
             <div class="notebook-tabs" id="notebook-tabs">
               <!-- Will be populated dynamically -->
             </div>
@@ -446,9 +444,7 @@ redirect_from:
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Content Section - 去掉背景色 */
 .content-section {
-  /* 去掉背景色和边框 */
   padding: 0;
 }
 
@@ -462,6 +458,36 @@ redirect_from:
   color: #2c3e50;
   border-bottom: 2px solid #e0e6ed;
   padding-bottom: 0.5rem;
+}
+
+/* Section title with selector (for Code tab) */
+.section-title-with-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e6ed;
+}
+
+.title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title-group i {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.title-group .folder-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  cursor: pointer;
 }
 
 /* CV Section Styles */
@@ -657,34 +683,19 @@ redirect_from:
   gap: 0.75rem;
 }
 
-.folder-label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #2c3e50;
-  font-family: 'Consolas', monospace;
-}
-
-.folder-label i {
-  color: #2c3e50;
-  font-size: 1rem;
-}
-
 .folder-dropdown {
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 1rem;
   background: linear-gradient(135deg, rgba(248, 249, 250, 0.9), rgba(233, 236, 239, 0.9));
   border: 2px solid #e0e6ed;
   border-radius: 8px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: #2c3e50;
   cursor: pointer;
   font-family: 'Consolas', monospace;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  min-width: 200px;
+  min-width: 250px;
   backdrop-filter: blur(10px);
 }
 
@@ -821,14 +832,14 @@ redirect_from:
   border: 1px solid #333;
 }
 
-/* Python语法高亮颜色 */
-.code-block .keyword { color: #569cd6; } /* 关键字：蓝色 */
-.code-block .string { color: #ce9178; } /* 字符串：橙色 */
-.code-block .comment { color: #6a9955; } /* 注释：绿色 */
-.code-block .function { color: #dcdcaa; } /* 函数：黄色 */
-.code-block .number { color: #b5cea8; } /* 数字：浅绿 */
-.code-block .operator { color: #d4d4d4; } /* 操作符：白色 */
-.code-block .builtin { color: #4ec9b0; } /* 内置函数：青色 */
+/* Python语法高亮颜色 - 橙色系三色渐变 */
+.code-block .keyword { color: #ff9f43; } /* 关键字：亮橙色 */
+.code-block .string { color: #ffbe76; } /* 字符串：浅橙色 */
+.code-block .comment { color: #a0826d; } /* 注释：深橙灰 */
+.code-block .function { color: #ffa94d; } /* 函数：中橙色 */
+.code-block .number { color: #ffbe76; } /* 数字：浅橙色 */
+.code-block .operator { color: #d4d4d4; } /* 操作符：保持白色 */
+.code-block .builtin { color: #ff9f43; } /* 内置函数：亮橙色 */
 
 /* 代码块容器，用于添加复制按钮 */
 .code-container {
