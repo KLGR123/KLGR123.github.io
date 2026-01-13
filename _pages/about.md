@@ -332,15 +332,9 @@ redirect_from:
   font-weight: 300;
   margin: 0 0 0.3rem 0;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #ff9f43 0%, #ffa94d 50%, #ffbe76 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: none;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
   font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
-  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8)) 
-          drop-shadow(0 0 4px rgba(255, 255, 255, 0.6))
-          drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .portfolio-subtitle {
@@ -982,20 +976,12 @@ redirect_from:
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-/* 奇数图片：橙色滤镜 */
-.photo-item:nth-child(odd) img {
-  filter: sepia(0.3) saturate(1.5) hue-rotate(-10deg) brightness(1.05);
-}
-
-/* 偶数图片：黑白滤镜 */
-.photo-item:nth-child(even) img {
   filter: grayscale(1) contrast(1.1);
 }
 
 .photo-item:hover img {
   transform: scale(1.1);
+  filter: grayscale(0);
 }
 
 /* Modal Styles */
