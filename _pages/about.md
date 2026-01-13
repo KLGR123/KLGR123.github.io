@@ -19,7 +19,7 @@ redirect_from:
     <div class="header-container">
       <div class="profile-section">
         <div class="profile-info">
-          <h1 class="portfolio-title">Jiarun Liu 🏔️</h1>
+          <h1 class="portfolio-title">Jiarun Liu</h1>
           <p class="portfolio-subtitle">Research & Development Portfolio</p>
           <div class="profile-tags">
             <span class="tag">Machine Learning</span>
@@ -481,7 +481,7 @@ redirect_from:
   align-items: center;
   gap: 0.8rem;
   padding: 1rem;
-  background: #f8f9fa;
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.9), rgba(233, 236, 239, 0.9));
   border: 2px solid #e0e6ed;
   border-radius: 8px;
   text-decoration: none;
@@ -489,30 +489,32 @@ redirect_from:
   transition: all 0.3s ease;
   font-family: 'Consolas', monospace;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .download-btn:hover {
-  background: #e3f2fd;
-  border-color: #2196f3;
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  border-color: #495057;
   transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(33, 150, 243, 0.25);
+  box-shadow: 0 12px 35px rgba(73, 80, 87, 0.25);
+  backdrop-filter: blur(15px);
 }
 
 .download-btn.english:hover {
-  background: #e8f5e8;
-  border-color: #4caf50;
-  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.15);
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  border-color: #495057;
+  box-shadow: 0 8px 25px rgba(73, 80, 87, 0.2);
 }
 
 .download-btn.chinese:hover {
-  background: #fff3e0;
-  border-color: #ff9800;
-  box-shadow: 0 8px 25px rgba(255, 152, 0, 0.15);
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  border-color: #495057;
+  box-shadow: 0 8px 25px rgba(73, 80, 87, 0.2);
 }
 
 .btn-icon {
   font-size: 1.2rem;
-  color: #e74c3c;
+  color: #2c3e50;
 }
 
 .btn-content {
@@ -547,7 +549,7 @@ redirect_from:
   align-items: center;
   gap: 0.8rem;
   padding: 1rem;
-  background: #f8f9fa;
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.9), rgba(233, 236, 239, 0.9));
   border: 2px solid #e0e6ed;
   border-radius: 8px;
   text-decoration: none;
@@ -555,35 +557,39 @@ redirect_from:
   transition: all 0.3s ease;
   font-family: 'Consolas', monospace;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 .social-link:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  border-color: #495057;
+  backdrop-filter: blur(15px);
 }
 
 .social-link.github:hover {
-  background: #f6f8fa;
-  border-color: #24292e;
-  box-shadow: 0 8px 25px rgba(36, 41, 46, 0.15);
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  border-color: #495057;
+  box-shadow: 0 8px 25px rgba(73, 80, 87, 0.2);
 }
 
 .social-link.orcid:hover {
-  background: #f0f8f0;
-  border-color: #a6ce39;
-  box-shadow: 0 8px 25px rgba(166, 206, 57, 0.15);
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  border-color: #495057;
+  box-shadow: 0 8px 25px rgba(73, 80, 87, 0.2);
 }
 
 .social-link.linkedin:hover {
-  background: #f0f4f8;
-  border-color: #0077b5;
-  box-shadow: 0 8px 25px rgba(0, 119, 181, 0.15);
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  border-color: #495057;
+  box-shadow: 0 8px 25px rgba(73, 80, 87, 0.2);
 }
 
 .social-link.huggingface:hover {
-  background: #fff8f0;
-  border-color: #ff9900;
-  box-shadow: 0 8px 25px rgba(255, 153, 0, 0.15);
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  border-color: #495057;
+  box-shadow: 0 8px 25px rgba(73, 80, 87, 0.2);
 }
 
 .link-icon {
@@ -591,19 +597,19 @@ redirect_from:
 }
 
 .social-link.github .link-icon {
-  color: #24292e;
+  color: #2c3e50;
 }
 
 .social-link.orcid .link-icon {
-  color: #a6ce39;
+  color: #2c3e50;
 }
 
 .social-link.linkedin .link-icon {
-  color: #0077b5;
+  color: #2c3e50;
 }
 
 .social-link.huggingface .link-icon {
-  color: #ff9900;
+  color: #2c3e50;
 }
 
 .link-content {
@@ -662,13 +668,13 @@ redirect_from:
 }
 
 .folder-label i {
-  color: #f39c12;
+  color: #2c3e50;
   font-size: 1rem;
 }
 
 .folder-dropdown {
   padding: 0.6rem 1rem;
-  background: #f8f9fa;
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.9), rgba(233, 236, 239, 0.9));
   border: 2px solid #e0e6ed;
   border-radius: 8px;
   font-size: 0.85rem;
@@ -679,19 +685,22 @@ redirect_from:
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   min-width: 200px;
+  backdrop-filter: blur(10px);
 }
 
 .folder-dropdown:hover {
-  border-color: #3498db;
-  background: #ffffff;
-  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.15);
+  border-color: #495057;
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  box-shadow: 0 4px 15px rgba(73, 80, 87, 0.2);
+  backdrop-filter: blur(15px);
 }
 
 .folder-dropdown:focus {
   outline: none;
-  border-color: #3498db;
-  background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  border-color: #495057;
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  box-shadow: 0 0 0 3px rgba(73, 80, 87, 0.1);
+  backdrop-filter: blur(15px);
 }
 
 .folder-dropdown option {
@@ -707,7 +716,7 @@ redirect_from:
 
 .notebook-btn {
   padding: 0.75rem 1.25rem;
-  background: #f8f9fa;
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.9), rgba(233, 236, 239, 0.9));
   border: 2px solid #e0e6ed;
   border-radius: 8px;
   cursor: pointer;
@@ -717,21 +726,25 @@ redirect_from:
   transition: all 0.3s ease;
   font-family: 'Consolas', monospace;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
 }
 
 .notebook-btn:hover {
-  border-color: #3498db;
-  color: #3498db;
+  border-color: #495057;
+  color: #2c3e50;
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+  box-shadow: 0 4px 15px rgba(73, 80, 87, 0.2);
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  backdrop-filter: blur(15px);
 }
 
 .notebook-btn.active {
-  background: #3498db;
-  border-color: #3498db;
+  background: linear-gradient(135deg, rgba(73, 80, 87, 0.95), rgba(52, 58, 64, 0.95));
+  border-color: #495057;
   color: white;
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 4px 15px rgba(73, 80, 87, 0.3);
+  backdrop-filter: blur(15px);
 }
 
 .notebook-viewer {
@@ -1242,11 +1255,11 @@ body > footer.page-footer-bar {
 }
 
 .notebook-views i {
-  color: #17a2b8;
+  color: #2c3e50;
 }
 
 .notebook-likes i {
-  color: #e74c3c;
+  color: #2c3e50;
 }
 
 .notebook-actions {
@@ -1259,7 +1272,7 @@ body > footer.page-footer-bar {
   align-items: center;
   gap: 0.5rem;
   padding: 0.6rem 1.2rem;
-  background: #ffffff;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 249, 250, 0.9));
   border: 2px solid #e9ecef;
   border-radius: 25px;
   color: #6c757d;
@@ -1269,26 +1282,30 @@ body > footer.page-footer-bar {
   transition: all 0.3s ease;
   font-family: 'Consolas', monospace;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 .like-btn:hover {
-  border-color: #e74c3c;
-  color: #e74c3c;
+  border-color: #495057;
+  color: #2c3e50;
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.15);
+  box-shadow: 0 4px 15px rgba(73, 80, 87, 0.2);
+  background: linear-gradient(135deg, rgba(233, 236, 239, 0.95), rgba(222, 226, 230, 0.95));
+  backdrop-filter: blur(15px);
 }
 
 .like-btn.liked {
-  background: #e74c3c;
-  border-color: #e74c3c;
+  background: linear-gradient(135deg, rgba(73, 80, 87, 0.95), rgba(52, 58, 64, 0.95));
+  border-color: #495057;
   color: white;
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+  box-shadow: 0 4px 15px rgba(73, 80, 87, 0.3);
+  backdrop-filter: blur(15px);
 }
 
 .like-btn.liked:hover {
-  background: #c0392b;
-  border-color: #c0392b;
+  background: linear-gradient(135deg, rgba(52, 58, 64, 0.98), rgba(33, 37, 41, 0.98));
+  border-color: #343a40;
 }
 
 .like-btn i {
