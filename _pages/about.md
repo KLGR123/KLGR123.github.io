@@ -1721,7 +1721,6 @@ setInterval(() => {
 
 // 防止重复初始化
 let notificationInitialized = false;
-let notificationAutoCloseTimer = null;
 
 // 显示最新博客通知
 function showBlogNotification() {
@@ -1731,12 +1730,10 @@ function showBlogNotification() {
     return;
   }
   
-  // 检查是否在24小时内已经显示过
-  const lastShown = localStorage.getItem('blog_notification_last_shown');
-  const now = Date.now();
-  
-  if (lastShown && (now - parseInt(lastShown)) < 24 * 60 * 60 * 1000) {
-    console.log('📋 Notification already shown in the last 24 hours');
+  // 检查用户是否已经关闭过通知
+  const notificationClosed = sessionStorage.getItem('blog_notification_closed');
+  if (notificationClosed === 'true') {
+    console.log('📋 Notification was closed by user in this session');
     return;
   }
   
@@ -1795,16 +1792,8 @@ function showBlogNotification() {
         requestAnimationFrame(() => {
           notification.classList.add('show');
           console.log('✨ Blog notification shown:', latestBlog.fileDisplayName);
-          
-          // 5秒后自动关闭
-          notificationAutoCloseTimer = setTimeout(() => {
-            closeBlogNotification();
-          }, 5000);
         });
       });
-      
-      // 记录显示时间
-      localStorage.setItem('blog_notification_last_shown', now.toString());
     }
   } else {
     console.warn('⚠️ Latest blog info not found in config');
@@ -1815,21 +1804,18 @@ function showBlogNotification() {
 function closeBlogNotification() {
   const notification = document.getElementById('blog-notification');
   if (notification) {
-    // 清除自动关闭定时器
-    if (notificationAutoCloseTimer) {
-      clearTimeout(notificationAutoCloseTimer);
-      notificationAutoCloseTimer = null;
-    }
-    
     notification.classList.remove('show');
     notification.classList.add('hide');
+    
+    // 记录用户关闭状态（本次会话内不再显示）
+    sessionStorage.setItem('blog_notification_closed', 'true');
     
     // 动画完成后移除hide类
     setTimeout(() => {
       notification.classList.remove('hide');
     }, 500);
     
-    console.log('✨ Blog notification closed');
+    console.log('✨ Blog notification closed by user');
   }
 }
 
@@ -1838,10 +1824,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // 等待配置文件加载完成
   const checkConfigAndShow = () => {
     if (window.notebookConfig && window.notebookConfig.latestBlog) {
-      // 再等待1.5秒，确保页面完全渲染
+      // 等待800ms，确保页面渲染稳定
       setTimeout(() => {
         showBlogNotification();
-      }, 1500);
+      }, 800);
     } else {
       // 配置还没加载，100ms后再检查
       setTimeout(checkConfigAndShow, 100);
