@@ -1393,7 +1393,7 @@ body > footer.page-footer-bar {
 
 /* ===== 最新博客通知组件样式 ===== */
 
-/* 通知容器 */
+/* 通知容器 - 默认显示 */
 .blog-notification {
   position: fixed;
   top: 20px;
@@ -1401,19 +1401,10 @@ body > footer.page-footer-bar {
   z-index: 9999;
   max-width: 400px;
   min-width: 300px;
-  opacity: 0;
-  transform: translateY(-20px) scale(0.95);
-  pointer-events: none;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  visibility: hidden; /* 确保初始完全不可见 */
-}
-
-/* 通知显示状态 */
-.blog-notification.show {
   opacity: 1;
   transform: translateY(0) scale(1);
   pointer-events: all;
-  visibility: visible;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 /* 通知关闭动画 */
@@ -1421,7 +1412,6 @@ body > footer.page-footer-bar {
   opacity: 0;
   transform: translateY(-20px) scale(0.95);
   pointer-events: none;
-  visibility: hidden;
 }
 
 /* 通知内容 */
@@ -1719,84 +1709,71 @@ setInterval(() => {
 
 // ===== 最新博客通知功能 =====
 
-// 防止重复初始化
-let notificationInitialized = false;
-
-// 显示最新博客通知
-function showBlogNotification() {
-  // 防止重复调用
-  if (notificationInitialized) {
-    console.log('📋 Notification already initialized');
-    return;
-  }
+// 初始化通知（页面加载时立即执行）
+function initBlogNotification() {
+  const notification = document.getElementById('blog-notification');
+  const blogNameElement = document.getElementById('latest-blog-name');
   
-  // 检查用户是否已经关闭过通知
+  // 检查用户是否在本次会话中关闭过通知
   const notificationClosed = sessionStorage.getItem('blog_notification_closed');
   if (notificationClosed === 'true') {
-    console.log('📋 Notification was closed by user in this session');
+    // 用户已关闭，立即隐藏
+    if (notification) {
+      notification.style.display = 'none';
+    }
+    console.log('📋 Notification hidden (closed by user in this session)');
     return;
   }
   
   // 从配置中获取最新博客信息
   if (window.notebookConfig && window.notebookConfig.latestBlog) {
     const latestBlog = window.notebookConfig.latestBlog;
-    const notification = document.getElementById('blog-notification');
-    const blogNameElement = document.getElementById('latest-blog-name');
     
     if (notification && blogNameElement) {
-      notificationInitialized = true;
-      
       // 更新博客名称
       blogNameElement.textContent = `${latestBlog.folderDisplayName} / ${latestBlog.fileDisplayName}`;
       
       // 添加点击事件,点击通知可以跳转到博客
       const notificationContent = notification.querySelector('.notification-content');
-      notificationContent.onclick = function(e) {
-        // 如果点击的是关闭按钮,不跳转
-        if (e.target.closest('.notification-close')) {
-          return;
-        }
-        
-        // 切换到Code标签
-        const codeTabBtn = document.querySelector('[data-tab="code"]');
-        if (codeTabBtn) {
-          codeTabBtn.click();
-        }
-        
-        // 选择对应的文件夹
-        setTimeout(() => {
-          const folderSelect = document.getElementById('folder-select');
-          if (folderSelect) {
-            folderSelect.value = latestBlog.folder;
-            folderSelect.dispatchEvent(new Event('change'));
-            
-            // 等待notebook加载后选择对应的文件
-            setTimeout(() => {
-              const notebookBtn = document.querySelector(`[data-notebook="${latestBlog.path}"]`);
-              if (notebookBtn) {
-                notebookBtn.click();
-              }
-            }, 500);
+      if (notificationContent) {
+        notificationContent.onclick = function(e) {
+          // 如果点击的是关闭按钮,不跳转
+          if (e.target.closest('.notification-close')) {
+            return;
           }
-        }, 300);
-        
-        // 关闭通知
-        closeBlogNotification();
-        
-        console.log('📌 Navigating to latest blog:', latestBlog.path);
-      };
+          
+          // 切换到Code标签
+          const codeTabBtn = document.querySelector('[data-tab="code"]');
+          if (codeTabBtn) {
+            codeTabBtn.click();
+          }
+          
+          // 选择对应的文件夹
+          setTimeout(() => {
+            const folderSelect = document.getElementById('folder-select');
+            if (folderSelect) {
+              folderSelect.value = latestBlog.folder;
+              folderSelect.dispatchEvent(new Event('change'));
+              
+              // 等待notebook加载后选择对应的文件
+              setTimeout(() => {
+                const notebookBtn = document.querySelector(`[data-notebook="${latestBlog.path}"]`);
+                if (notebookBtn) {
+                  notebookBtn.click();
+                }
+              }, 500);
+            }
+          }, 300);
+          
+          // 关闭通知
+          closeBlogNotification();
+          
+          console.log('📌 Navigating to latest blog:', latestBlog.path);
+        };
+      }
       
-      // 显示通知(带弹性动画)
-      // 使用requestAnimationFrame确保在下一帧显示，避免闪现
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          notification.classList.add('show');
-          console.log('✨ Blog notification shown:', latestBlog.fileDisplayName);
-        });
-      });
+      console.log('✨ Blog notification initialized:', latestBlog.fileDisplayName);
     }
-  } else {
-    console.warn('⚠️ Latest blog info not found in config');
   }
 }
 
@@ -1804,37 +1781,23 @@ function showBlogNotification() {
 function closeBlogNotification() {
   const notification = document.getElementById('blog-notification');
   if (notification) {
-    notification.classList.remove('show');
     notification.classList.add('hide');
     
     // 记录用户关闭状态（本次会话内不再显示）
     sessionStorage.setItem('blog_notification_closed', 'true');
     
-    // 动画完成后移除hide类
+    // 动画完成后完全隐藏
     setTimeout(() => {
-      notification.classList.remove('hide');
+      notification.style.display = 'none';
     }, 500);
     
     console.log('✨ Blog notification closed by user');
   }
 }
 
-// 初始化通知系统 - 只在DOMContentLoaded后执行一次
+// 页面加载时立即初始化
 document.addEventListener('DOMContentLoaded', function() {
-  // 等待配置文件加载完成
-  const checkConfigAndShow = () => {
-    if (window.notebookConfig && window.notebookConfig.latestBlog) {
-      // 等待800ms，确保页面渲染稳定
-      setTimeout(() => {
-        showBlogNotification();
-      }, 800);
-    } else {
-      // 配置还没加载，100ms后再检查
-      setTimeout(checkConfigAndShow, 100);
-    }
-  };
-  
-  checkConfigAndShow();
+  initBlogNotification();
 });
 
 console.log('📢 Blog notification system loaded');
