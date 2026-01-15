@@ -8,6 +8,7 @@ import os
 import json
 from datetime import datetime
 from pathlib import Path
+import time
 
 def format_display_name(folder_name):
     """Format folder name for display."""
@@ -38,10 +39,14 @@ def scan_jupyter_directory():
     
     config = {
         'folders': {},
-        'lastUpdated': datetime.now().isoformat()
+        'lastUpdated': datetime.now().isoformat(),
+        'latestBlog': None  # Will store the newest blog info
     }
     
     print(f"🔍 Scanning {jupyter_path} for notebook files...")
+    
+    # Track all files with their modification times to find the latest
+    all_files = []
     
     # Scan all subdirectories
     for folder_path in jupyter_path.iterdir():
@@ -60,6 +65,15 @@ def scan_jupyter_directory():
                 if not file_path.name.startswith('.'):  # Skip hidden files
                     ipynb_files.append(file_path.name)
                     print(f"  ✅ Found: {file_path.name}")
+                    
+                    # Track modification time
+                    mtime = file_path.stat().st_mtime
+                    all_files.append({
+                        'folder': folder_name,
+                        'file': file_path.name,
+                        'mtime': mtime,
+                        'displayName': format_display_name(folder_name)
+                    })
             
             if ipynb_files:
                 # Sort files for consistent ordering
@@ -72,6 +86,19 @@ def scan_jupyter_directory():
                 print(f"📁 Added folder '{folder_name}' with {len(ipynb_files)} files")
             else:
                 print(f"  ⚠️ No .ipynb files found in {folder_name}")
+    
+    # Find the most recently modified file
+    if all_files:
+        latest_file = max(all_files, key=lambda x: x['mtime'])
+        config['latestBlog'] = {
+            'folder': latest_file['folder'],
+            'file': latest_file['file'],
+            'folderDisplayName': latest_file['displayName'],
+            'fileDisplayName': latest_file['file'].replace('.ipynb', '').replace('-', ' ').replace('_', ' ').title(),
+            'path': f"{latest_file['folder']}/{latest_file['file']}",
+            'lastModified': datetime.fromtimestamp(latest_file['mtime']).isoformat()
+        }
+        print(f"📌 Latest blog: {config['latestBlog']['folderDisplayName']} / {config['latestBlog']['fileDisplayName']}")
     
     print(f"📚 Total folders found: {len(config['folders'])}")
     return config

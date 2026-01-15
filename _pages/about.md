@@ -14,6 +14,19 @@ redirect_from:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <div class="modern-portfolio">
+  <!-- Latest Blog Notification -->
+  <div id="blog-notification" class="blog-notification">
+    <div class="notification-content">
+      <i class="fas fa-sparkles notification-icon"></i>
+      <span class="notification-text">
+        Check Out the Newest Blog <strong id="latest-blog-name">Loading...</strong>!
+      </span>
+      <button class="notification-close" onclick="closeBlogNotification()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
   <!-- Enhanced Header -->
   <header class="portfolio-header">
     <div class="header-container">
@@ -52,7 +65,7 @@ redirect_from:
       <!-- Enhanced Tab Navigation -->
       <nav class="tab-navigation">
         <div class="nav-container">
-          <button class="tab-btn active" data-tab="cv">
+          <button class="tab-btn" data-tab="cv">
             <div class="tab-icon">
               <i class="fas fa-user-circle"></i>
             </div>
@@ -61,7 +74,7 @@ redirect_from:
               <span class="tab-desc">CV & Links</span>
             </div>
           </button>
-          <button class="tab-btn" data-tab="code">
+          <button class="tab-btn active" data-tab="code">
             <div class="tab-icon">
               <i class="fas fa-code"></i>
             </div>
@@ -88,7 +101,7 @@ redirect_from:
   <main class="tab-content-container">
     
     <!-- CV Tab - 重新设计为下载和链接页面 -->
-    <section id="cv-tab" class="tab-content active">
+    <section id="cv-tab" class="tab-content">
       <div class="content-section">
         <div class="cv-section">
           <h2 class="section-title">
@@ -180,7 +193,7 @@ redirect_from:
     </section>
 
     <!-- Code Demos Tab -->
-    <section id="code-tab" class="tab-content">
+    <section id="code-tab" class="tab-content active">
       <div class="content-section">
         <div class="code-container">
           <div class="section-title-with-selector">
@@ -1377,6 +1390,182 @@ body > footer.page-footer-bar {
     justify-content: center;
   }
 }
+
+/* ===== 最新博客通知组件样式 ===== */
+
+/* 通知容器 */
+.blog-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  max-width: 400px;
+  min-width: 300px;
+  opacity: 0;
+  transform: translateY(-20px) scale(0.95);
+  pointer-events: none;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* 通知显示状态 */
+.blog-notification.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+/* 通知关闭动画 */
+.blog-notification.hide {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.95);
+  pointer-events: none;
+}
+
+/* 通知内容 */
+.notification-content {
+  background: linear-gradient(135deg, rgba(255, 159, 67, 0.95), rgba(255, 190, 118, 0.95));
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 8px 32px rgba(255, 159, 67, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 通知内容闪光效果 */
+.notification-content::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+/* 通知图标 */
+.notification-icon {
+  font-size: 1.2rem;
+  color: white;
+  animation: sparkle 1.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+    opacity: 0.8;
+  }
+}
+
+/* 通知文字 */
+.notification-text {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  line-height: 1.4;
+}
+
+.notification-text strong {
+  font-weight: 700;
+  color: white;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 关闭按钮 */
+.notification-close {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: white;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.notification-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.15) rotate(90deg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notification-close:active {
+  transform: scale(0.95) rotate(90deg);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .blog-notification {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    max-width: none;
+    min-width: auto;
+  }
+  
+  .notification-content {
+    padding: 0.9rem 1rem;
+  }
+  
+  .notification-text {
+    font-size: 0.85rem;
+  }
+  
+  .notification-icon {
+    font-size: 1rem;
+  }
+}
+
+/* 点击通知可以跳转到博客 */
+.notification-content {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.notification-content:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(255, 159, 67, 0.5);
+}
+
+.notification-content:active {
+  transform: scale(0.98);
+}
 </style>
 
 <!-- Include necessary libraries -->
@@ -1524,5 +1713,110 @@ setInterval(() => {
     window.portfolioAnalytics.updateDisplay();
   }
 }, 30000); // 每30秒更新一次
+
+// ===== 最新博客通知功能 =====
+
+// 显示最新博客通知
+function showBlogNotification() {
+  // 检查是否在24小时内已经显示过
+  const lastShown = localStorage.getItem('blog_notification_last_shown');
+  const now = Date.now();
+  
+  if (lastShown && (now - parseInt(lastShown)) < 24 * 60 * 60 * 1000) {
+    console.log('📋 Notification already shown in the last 24 hours');
+    return;
+  }
+  
+  // 从配置中获取最新博客信息
+  if (window.notebookConfig && window.notebookConfig.latestBlog) {
+    const latestBlog = window.notebookConfig.latestBlog;
+    const notification = document.getElementById('blog-notification');
+    const blogNameElement = document.getElementById('latest-blog-name');
+    
+    if (notification && blogNameElement) {
+      // 更新博客名称
+      blogNameElement.textContent = `${latestBlog.folderDisplayName} / ${latestBlog.fileDisplayName}`;
+      
+      // 添加点击事件,点击通知可以跳转到博客
+      const notificationContent = notification.querySelector('.notification-content');
+      notificationContent.onclick = function(e) {
+        // 如果点击的是关闭按钮,不跳转
+        if (e.target.closest('.notification-close')) {
+          return;
+        }
+        
+        // 切换到Code标签
+        const codeTabBtn = document.querySelector('[data-tab="code"]');
+        if (codeTabBtn) {
+          codeTabBtn.click();
+        }
+        
+        // 选择对应的文件夹
+        setTimeout(() => {
+          const folderSelect = document.getElementById('folder-select');
+          if (folderSelect) {
+            folderSelect.value = latestBlog.folder;
+            folderSelect.dispatchEvent(new Event('change'));
+            
+            // 等待notebook加载后选择对应的文件
+            setTimeout(() => {
+              const notebookBtn = document.querySelector(`[data-notebook="${latestBlog.path}"]`);
+              if (notebookBtn) {
+                notebookBtn.click();
+              }
+            }, 500);
+          }
+        }, 300);
+        
+        // 关闭通知
+        closeBlogNotification();
+        
+        console.log('📌 Navigating to latest blog:', latestBlog.path);
+      };
+      
+      // 显示通知(带弹性动画)
+      setTimeout(() => {
+        notification.classList.add('show');
+        console.log('✨ Blog notification shown:', latestBlog.fileDisplayName);
+      }, 500);
+      
+      // 5秒后自动关闭
+      setTimeout(() => {
+        closeBlogNotification();
+      }, 5000);
+      
+      // 记录显示时间
+      localStorage.setItem('blog_notification_last_shown', now.toString());
+    }
+  } else {
+    console.warn('⚠️ Latest blog info not found in config');
+  }
+}
+
+// 关闭博客通知
+function closeBlogNotification() {
+  const notification = document.getElementById('blog-notification');
+  if (notification) {
+    notification.classList.remove('show');
+    notification.classList.add('hide');
+    
+    // 动画完成后移除hide类
+    setTimeout(() => {
+      notification.classList.remove('hide');
+    }, 500);
+    
+    console.log('✨ Blog notification closed');
+  }
+}
+
+// 页面加载完成后显示通知
+window.addEventListener('load', function() {
+  // 等待一小段时间再显示,确保页面完全加载
+  setTimeout(() => {
+    showBlogNotification();
+  }, 1000);
+});
+
+console.log('📢 Blog notification system loaded');
 </script>
 
