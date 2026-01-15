@@ -1405,6 +1405,7 @@ body > footer.page-footer-bar {
   transform: translateY(-20px) scale(0.95);
   pointer-events: none;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  visibility: hidden; /* 确保初始完全不可见 */
 }
 
 /* 通知显示状态 */
@@ -1412,6 +1413,7 @@ body > footer.page-footer-bar {
   opacity: 1;
   transform: translateY(0) scale(1);
   pointer-events: all;
+  visibility: visible;
 }
 
 /* 通知关闭动画 */
@@ -1419,6 +1421,7 @@ body > footer.page-footer-bar {
   opacity: 0;
   transform: translateY(-20px) scale(0.95);
   pointer-events: none;
+  visibility: hidden;
 }
 
 /* 通知内容 */
@@ -1716,8 +1719,18 @@ setInterval(() => {
 
 // ===== 最新博客通知功能 =====
 
+// 防止重复初始化
+let notificationInitialized = false;
+let notificationAutoCloseTimer = null;
+
 // 显示最新博客通知
 function showBlogNotification() {
+  // 防止重复调用
+  if (notificationInitialized) {
+    console.log('📋 Notification already initialized');
+    return;
+  }
+  
   // 检查是否在24小时内已经显示过
   const lastShown = localStorage.getItem('blog_notification_last_shown');
   const now = Date.now();
@@ -1734,6 +1747,8 @@ function showBlogNotification() {
     const blogNameElement = document.getElementById('latest-blog-name');
     
     if (notification && blogNameElement) {
+      notificationInitialized = true;
+      
       // 更新博客名称
       blogNameElement.textContent = `${latestBlog.folderDisplayName} / ${latestBlog.fileDisplayName}`;
       
@@ -1775,15 +1790,18 @@ function showBlogNotification() {
       };
       
       // 显示通知(带弹性动画)
-      setTimeout(() => {
-        notification.classList.add('show');
-        console.log('✨ Blog notification shown:', latestBlog.fileDisplayName);
-      }, 500);
-      
-      // 5秒后自动关闭
-      setTimeout(() => {
-        closeBlogNotification();
-      }, 5000);
+      // 使用requestAnimationFrame确保在下一帧显示，避免闪现
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          notification.classList.add('show');
+          console.log('✨ Blog notification shown:', latestBlog.fileDisplayName);
+          
+          // 5秒后自动关闭
+          notificationAutoCloseTimer = setTimeout(() => {
+            closeBlogNotification();
+          }, 5000);
+        });
+      });
       
       // 记录显示时间
       localStorage.setItem('blog_notification_last_shown', now.toString());
@@ -1797,6 +1815,12 @@ function showBlogNotification() {
 function closeBlogNotification() {
   const notification = document.getElementById('blog-notification');
   if (notification) {
+    // 清除自动关闭定时器
+    if (notificationAutoCloseTimer) {
+      clearTimeout(notificationAutoCloseTimer);
+      notificationAutoCloseTimer = null;
+    }
+    
     notification.classList.remove('show');
     notification.classList.add('hide');
     
@@ -1809,12 +1833,22 @@ function closeBlogNotification() {
   }
 }
 
-// 页面加载完成后显示通知
-window.addEventListener('load', function() {
-  // 等待一小段时间再显示,确保页面完全加载
-  setTimeout(() => {
-    showBlogNotification();
-  }, 1000);
+// 初始化通知系统 - 只在DOMContentLoaded后执行一次
+document.addEventListener('DOMContentLoaded', function() {
+  // 等待配置文件加载完成
+  const checkConfigAndShow = () => {
+    if (window.notebookConfig && window.notebookConfig.latestBlog) {
+      // 再等待1.5秒，确保页面完全渲染
+      setTimeout(() => {
+        showBlogNotification();
+      }, 1500);
+    } else {
+      // 配置还没加载，100ms后再检查
+      setTimeout(checkConfigAndShow, 100);
+    }
+  };
+  
+  checkConfigAndShow();
 });
 
 console.log('📢 Blog notification system loaded');
