@@ -1,45 +1,45 @@
 {
   "metadata": {
-    "lastUpdated": "2026-01-27T15:31:30.821Z",
+    "lastUpdated": "2026-01-27T16:31:04.706Z",
     "version": "1.0.0",
-    "totalUsers": 8583
+    "totalUsers": 8588
   },
   "pageViews": {
-    "total": 25749,
+    "total": 25766,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 3663,
-      "code": 13918,
-      "gallery": 3663
+      "cv": 3666,
+      "code": 13928,
+      "gallery": 3666
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 2902,
-      "rl-demo/ppo.ipynb": 2871,
-      "hands-on-transformer/transformer.ipynb": 2925,
-      "modern-infra/warmup.ipynb": 2809,
-      "modern-infra/flash-attn.ipynb": 2837,
-      "math-demo/attention.ipynb": 2904,
-      "pytorch-basic/pt-basic.ipynb": 2866,
-      "hands-on-transformer/bigram.ipynb": 2927,
-      "algorithm/twosum.ipynb": 2827,
-      "optimizer/adamw.ipynb": 2797
+      "modern-arch/aevb.ipynb": 2903,
+      "rl-demo/ppo.ipynb": 2874,
+      "hands-on-transformer/transformer.ipynb": 2926,
+      "modern-infra/warmup.ipynb": 2811,
+      "modern-infra/flash-attn.ipynb": 2838,
+      "math-demo/attention.ipynb": 2905,
+      "pytorch-basic/pt-basic.ipynb": 2868,
+      "hands-on-transformer/bigram.ipynb": 2928,
+      "algorithm/twosum.ipynb": 2828,
+      "optimizer/adamw.ipynb": 2799
     }
   },
   "likes": {
-    "total": 5053,
+    "total": 5057,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 708,
-      "modern-infra/warmup.ipynb": 366,
+      "modern-infra/warmup.ipynb": 367,
       "modern-infra/flash-attn.ipynb": 358,
-      "math-demo/attention.ipynb": 707,
+      "math-demo/attention.ipynb": 708,
       "modern-arch/aevb.ipynb": 729,
-      "rl-demo/ppo.ipynb": 389,
+      "rl-demo/ppo.ipynb": 390,
       "hands-on-transformer/transformer.ipynb": 708,
       "pytorch-basic/pt-basic.ipynb": 384,
-      "algorithm/twosum.ipynb": 380,
+      "algorithm/twosum.ipynb": 381,
       "optimizer/adamw.ipynb": 344
     }
   },
@@ -875,10 +875,10 @@
       "uniqueUsers": 46
     },
     "2026-01-27": {
-      "views": 68,
+      "views": 85,
       "likes": 0,
-      "uniqueUsers": 33
+      "uniqueUsers": 35
     }
   },
-  "userSessions": 11238
+  "userSessions": 11242
 }
