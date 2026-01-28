@@ -1,45 +1,45 @@
 {
   "metadata": {
-    "lastUpdated": "2026-01-28T12:51:53.013Z",
+    "lastUpdated": "2026-01-28T13:49:26.745Z",
     "version": "1.0.0",
-    "totalUsers": 8620
+    "totalUsers": 8624
   },
   "pageViews": {
-    "total": 25862,
+    "total": 25872,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 3675,
-      "code": 13977,
-      "gallery": 3675
+      "cv": 3677,
+      "code": 13983,
+      "gallery": 3677
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 2914,
-      "rl-demo/ppo.ipynb": 2886,
-      "hands-on-transformer/transformer.ipynb": 2935,
-      "modern-infra/warmup.ipynb": 2825,
+      "modern-arch/aevb.ipynb": 2915,
+      "rl-demo/ppo.ipynb": 2888,
+      "hands-on-transformer/transformer.ipynb": 2936,
+      "modern-infra/warmup.ipynb": 2827,
       "modern-infra/flash-attn.ipynb": 2849,
-      "math-demo/attention.ipynb": 2914,
+      "math-demo/attention.ipynb": 2915,
       "pytorch-basic/pt-basic.ipynb": 2883,
       "hands-on-transformer/bigram.ipynb": 2938,
-      "algorithm/twosum.ipynb": 2842,
+      "algorithm/twosum.ipynb": 2845,
       "optimizer/adamw.ipynb": 2808
     }
   },
   "likes": {
-    "total": 5074,
+    "total": 5076,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 710,
       "modern-infra/warmup.ipynb": 367,
-      "modern-infra/flash-attn.ipynb": 359,
+      "modern-infra/flash-attn.ipynb": 360,
       "math-demo/attention.ipynb": 712,
       "modern-arch/aevb.ipynb": 732,
       "rl-demo/ppo.ipynb": 391,
       "hands-on-transformer/transformer.ipynb": 712,
       "pytorch-basic/pt-basic.ipynb": 384,
-      "algorithm/twosum.ipynb": 381,
+      "algorithm/twosum.ipynb": 382,
       "optimizer/adamw.ipynb": 346
     }
   },
@@ -880,10 +880,10 @@
       "uniqueUsers": 51
     },
     "2026-01-28": {
-      "views": 48,
+      "views": 58,
       "likes": 0,
-      "uniqueUsers": 23
+      "uniqueUsers": 25
     }
   },
-  "userSessions": 11295
+  "userSessions": 11299
 }
