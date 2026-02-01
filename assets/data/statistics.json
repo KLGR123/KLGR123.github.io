@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2026-02-01T15:25:25.529Z",
+    "lastUpdated": "2026-02-01T16:30:43.464Z",
     "version": "1.0.0",
-    "totalUsers": 8809
+    "totalUsers": 8811
   },
   "pageViews": {
-    "total": 26428,
+    "total": 26433,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 3752,
-      "code": 14283,
-      "gallery": 3752
+      "cv": 3753,
+      "code": 14286,
+      "gallery": 3753
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 2988,
-      "rl-demo/ppo.ipynb": 2958,
+      "modern-arch/aevb.ipynb": 2989,
+      "rl-demo/ppo.ipynb": 2960,
       "hands-on-transformer/transformer.ipynb": 3013,
       "modern-infra/warmup.ipynb": 2895,
-      "modern-infra/flash-attn.ipynb": 2933,
+      "modern-infra/flash-attn.ipynb": 2934,
       "math-demo/attention.ipynb": 2998,
-      "pytorch-basic/pt-basic.ipynb": 2935,
-      "hands-on-transformer/bigram.ipynb": 3013,
-      "algorithm/twosum.ipynb": 2914,
+      "pytorch-basic/pt-basic.ipynb": 2936,
+      "hands-on-transformer/bigram.ipynb": 3014,
+      "algorithm/twosum.ipynb": 2917,
       "optimizer/adamw.ipynb": 2877
     }
   },
   "likes": {
-    "total": 5206,
+    "total": 5211,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 731,
       "modern-infra/warmup.ipynb": 373,
       "modern-infra/flash-attn.ipynb": 367,
-      "math-demo/attention.ipynb": 734,
-      "modern-arch/aevb.ipynb": 748,
-      "rl-demo/ppo.ipynb": 401,
+      "math-demo/attention.ipynb": 735,
+      "modern-arch/aevb.ipynb": 749,
+      "rl-demo/ppo.ipynb": 402,
       "hands-on-transformer/transformer.ipynb": 732,
-      "pytorch-basic/pt-basic.ipynb": 394,
+      "pytorch-basic/pt-basic.ipynb": 395,
       "algorithm/twosum.ipynb": 393,
-      "optimizer/adamw.ipynb": 353
+      "optimizer/adamw.ipynb": 354
     }
   },
   "dailyStats": {
@@ -900,10 +900,10 @@
       "uniqueUsers": 40
     },
     "2026-02-01": {
-      "views": 91,
+      "views": 96,
       "likes": 0,
-      "uniqueUsers": 24
+      "uniqueUsers": 27
     }
   },
-  "userSessions": 11547
+  "userSessions": 11548
 }
