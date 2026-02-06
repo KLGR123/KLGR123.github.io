@@ -1,43 +1,43 @@
 {
   "metadata": {
-    "lastUpdated": "2026-02-06T10:39:32.495Z",
+    "lastUpdated": "2026-02-06T11:33:28.987Z",
     "version": "1.0.0",
-    "totalUsers": 9013
+    "totalUsers": 9019
   },
   "pageViews": {
-    "total": 27041,
+    "total": 27059,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 3838,
-      "code": 14616,
-      "gallery": 3838
+      "cv": 3841,
+      "code": 14626,
+      "gallery": 3841
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 3056,
+      "modern-arch/aevb.ipynb": 3058,
       "rl-demo/ppo.ipynb": 3028,
-      "hands-on-transformer/transformer.ipynb": 3073,
+      "hands-on-transformer/transformer.ipynb": 3076,
       "modern-infra/warmup.ipynb": 2972,
       "modern-infra/flash-attn.ipynb": 2992,
-      "math-demo/attention.ipynb": 3075,
-      "pytorch-basic/pt-basic.ipynb": 3015,
+      "math-demo/attention.ipynb": 3077,
+      "pytorch-basic/pt-basic.ipynb": 3018,
       "hands-on-transformer/bigram.ipynb": 3084,
-      "algorithm/twosum.ipynb": 2994,
-      "optimizer/adamw.ipynb": 2935
+      "algorithm/twosum.ipynb": 2996,
+      "optimizer/adamw.ipynb": 2938
     }
   },
   "likes": {
-    "total": 5354,
+    "total": 5356,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 751,
+      "hands-on-transformer/bigram.ipynb": 752,
       "modern-infra/warmup.ipynb": 382,
       "modern-infra/flash-attn.ipynb": 376,
       "math-demo/attention.ipynb": 751,
       "modern-arch/aevb.ipynb": 768,
       "rl-demo/ppo.ipynb": 412,
-      "hands-on-transformer/transformer.ipynb": 752,
+      "hands-on-transformer/transformer.ipynb": 753,
       "pytorch-basic/pt-basic.ipynb": 409,
       "algorithm/twosum.ipynb": 408,
       "optimizer/adamw.ipynb": 365
@@ -925,10 +925,10 @@
       "uniqueUsers": 37
     },
     "2026-02-06": {
-      "views": 47,
+      "views": 65,
       "likes": 0,
-      "uniqueUsers": 14
+      "uniqueUsers": 17
     }
   },
-  "userSessions": 11813
+  "userSessions": 11818
 }
