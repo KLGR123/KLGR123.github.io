@@ -13,14 +13,14 @@ import time
 def format_display_name(folder_name):
     """Format folder name for display."""
     display_names = {
-        'algorithm': 'Algorithm',
-        'hands-on-transformer': 'Hands-on Transformer',
-        'math-demo': 'Math Demo',
-        'modern-arch': 'Modern Architecture',
-        'modern-infra': 'Modern Infrastructure',
-        'optimizer': 'Optimizer',
-        'pytorch-basic': 'PyTorch Basic',
-        'rl-demo': 'Reinforcement Learning Demo',
+        'algorithm': 'algorithm',
+        'hands-on-transformer': 'hands-on-transformer',
+        'math-demo': 'math-demo',
+        'modern-arch': 'modern-arch',
+        'modern-infra': 'modern-infra',
+        'optimizer': 'optimizer',
+        'pytorch-basic': 'pytorch-basic',
+        'rl-demo': 'rl-demo',
         # 如果你添加了新文件夹，在这里添加自定义显示名称
         # 'computer-vision': 'Computer Vision',
         # 'nlp': 'Natural Language Processing',
