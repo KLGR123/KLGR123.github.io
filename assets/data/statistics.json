@@ -1,43 +1,43 @@
 {
   "metadata": {
-    "lastUpdated": "2026-02-15T22:24:43.136Z",
+    "lastUpdated": "2026-02-15T22:30:46.647Z",
     "version": "1.0.0",
-    "totalUsers": 9445
+    "totalUsers": 9446
   },
   "pageViews": {
-    "total": 28337,
+    "total": 28339,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
       "cv": 4022,
-      "code": 15324,
+      "code": 15325,
       "gallery": 4022
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 3203,
-      "rl-demo/ppo.ipynb": 3139,
-      "hands-on-transformer/transformer.ipynb": 3209,
-      "modern-infra/warmup.ipynb": 3120,
+      "modern-arch/aevb.ipynb": 3205,
+      "rl-demo/ppo.ipynb": 3141,
+      "hands-on-transformer/transformer.ipynb": 3211,
+      "modern-infra/warmup.ipynb": 3122,
       "modern-infra/flash-attn.ipynb": 3151,
-      "math-demo/attention.ipynb": 3219,
+      "math-demo/attention.ipynb": 3222,
       "pytorch-basic/pt-basic.ipynb": 3174,
-      "hands-on-transformer/bigram.ipynb": 3210,
+      "hands-on-transformer/bigram.ipynb": 3211,
       "algorithm/twosum.ipynb": 3128,
-      "optimizer/adamw.ipynb": 3066
+      "optimizer/adamw.ipynb": 3068
     }
   },
   "likes": {
-    "total": 5610,
+    "total": 5612,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 789,
       "modern-infra/warmup.ipynb": 395,
-      "modern-infra/flash-attn.ipynb": 394,
+      "modern-infra/flash-attn.ipynb": 395,
       "math-demo/attention.ipynb": 781,
       "modern-arch/aevb.ipynb": 808,
       "rl-demo/ppo.ipynb": 428,
-      "hands-on-transformer/transformer.ipynb": 795,
+      "hands-on-transformer/transformer.ipynb": 796,
       "pytorch-basic/pt-basic.ipynb": 429,
       "algorithm/twosum.ipynb": 426,
       "optimizer/adamw.ipynb": 385
@@ -970,10 +970,10 @@
       "uniqueUsers": 45
     },
     "2026-02-15": {
-      "views": 138,
+      "views": 140,
       "likes": 0,
-      "uniqueUsers": 37
+      "uniqueUsers": 38
     }
   },
-  "userSessions": 12351
+  "userSessions": 12352
 }
