@@ -1,45 +1,45 @@
 {
   "metadata": {
-    "lastUpdated": "2026-02-15T16:30:58.931Z",
+    "lastUpdated": "2026-02-15T17:25:29.289Z",
     "version": "1.0.0",
-    "totalUsers": 9435
+    "totalUsers": 9439
   },
   "pageViews": {
-    "total": 28306,
+    "total": 28317,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 4019,
-      "code": 15308,
-      "gallery": 4019
+      "cv": 4021,
+      "code": 15314,
+      "gallery": 4021
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 3199,
-      "rl-demo/ppo.ipynb": 3137,
-      "hands-on-transformer/transformer.ipynb": 3206,
-      "modern-infra/warmup.ipynb": 3115,
+      "modern-arch/aevb.ipynb": 3200,
+      "rl-demo/ppo.ipynb": 3139,
+      "hands-on-transformer/transformer.ipynb": 3209,
+      "modern-infra/warmup.ipynb": 3116,
       "modern-infra/flash-attn.ipynb": 3148,
-      "math-demo/attention.ipynb": 3211,
+      "math-demo/attention.ipynb": 3214,
       "pytorch-basic/pt-basic.ipynb": 3173,
       "hands-on-transformer/bigram.ipynb": 3209,
-      "algorithm/twosum.ipynb": 3123,
+      "algorithm/twosum.ipynb": 3125,
       "optimizer/adamw.ipynb": 3066
     }
   },
   "likes": {
-    "total": 5601,
+    "total": 5605,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 789,
       "modern-infra/warmup.ipynb": 395,
-      "modern-infra/flash-attn.ipynb": 393,
+      "modern-infra/flash-attn.ipynb": 394,
       "math-demo/attention.ipynb": 781,
       "modern-arch/aevb.ipynb": 807,
-      "rl-demo/ppo.ipynb": 427,
+      "rl-demo/ppo.ipynb": 428,
       "hands-on-transformer/transformer.ipynb": 794,
-      "pytorch-basic/pt-basic.ipynb": 428,
-      "algorithm/twosum.ipynb": 424,
+      "pytorch-basic/pt-basic.ipynb": 429,
+      "algorithm/twosum.ipynb": 425,
       "optimizer/adamw.ipynb": 383
     }
   },
@@ -970,10 +970,10 @@
       "uniqueUsers": 45
     },
     "2026-02-15": {
-      "views": 107,
+      "views": 118,
       "likes": 0,
-      "uniqueUsers": 24
+      "uniqueUsers": 26
     }
   },
-  "userSessions": 12332
+  "userSessions": 12334
 }
