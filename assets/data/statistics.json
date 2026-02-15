@@ -1,43 +1,43 @@
 {
   "metadata": {
-    "lastUpdated": "2026-02-15T09:32:13.804Z",
+    "lastUpdated": "2026-02-15T10:26:48.356Z",
     "version": "1.0.0",
-    "totalUsers": 9410
+    "totalUsers": 9415
   },
   "pageViews": {
-    "total": 28232,
+    "total": 28247,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 4006,
-      "code": 15265,
-      "gallery": 4006
+      "cv": 4009,
+      "code": 15274,
+      "gallery": 4009
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 3192,
+      "modern-arch/aevb.ipynb": 3194,
       "rl-demo/ppo.ipynb": 3130,
       "hands-on-transformer/transformer.ipynb": 3198,
       "modern-infra/warmup.ipynb": 3108,
-      "modern-infra/flash-attn.ipynb": 3138,
+      "modern-infra/flash-attn.ipynb": 3141,
       "math-demo/attention.ipynb": 3203,
       "pytorch-basic/pt-basic.ipynb": 3165,
-      "hands-on-transformer/bigram.ipynb": 3204,
-      "algorithm/twosum.ipynb": 3114,
+      "hands-on-transformer/bigram.ipynb": 3205,
+      "algorithm/twosum.ipynb": 3115,
       "optimizer/adamw.ipynb": 3065
     }
   },
   "likes": {
-    "total": 5589,
+    "total": 5593,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 787,
+      "hands-on-transformer/bigram.ipynb": 788,
       "modern-infra/warmup.ipynb": 395,
       "modern-infra/flash-attn.ipynb": 392,
-      "math-demo/attention.ipynb": 779,
-      "modern-arch/aevb.ipynb": 804,
+      "math-demo/attention.ipynb": 780,
+      "modern-arch/aevb.ipynb": 805,
       "rl-demo/ppo.ipynb": 427,
-      "hands-on-transformer/transformer.ipynb": 791,
+      "hands-on-transformer/transformer.ipynb": 792,
       "pytorch-basic/pt-basic.ipynb": 427,
       "algorithm/twosum.ipynb": 424,
       "optimizer/adamw.ipynb": 383
@@ -970,10 +970,10 @@
       "uniqueUsers": 45
     },
     "2026-02-15": {
-      "views": 33,
+      "views": 48,
       "likes": 0,
-      "uniqueUsers": 11
+      "uniqueUsers": 12
     }
   },
-  "userSessions": 12319
+  "userSessions": 12320
 }
