@@ -1,43 +1,43 @@
 {
   "metadata": {
-    "lastUpdated": "2026-02-23T15:46:17.888Z",
+    "lastUpdated": "2026-02-23T16:57:27.714Z",
     "version": "1.0.0",
-    "totalUsers": 9811
+    "totalUsers": 9817
   },
   "pageViews": {
-    "total": 29434,
+    "total": 29451,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 4177,
-      "code": 15923,
-      "gallery": 4177
+      "cv": 4180,
+      "code": 15933,
+      "gallery": 4180
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 3312,
-      "rl-demo/ppo.ipynb": 3252,
-      "hands-on-transformer/transformer.ipynb": 3312,
+      "modern-arch/aevb.ipynb": 3314,
+      "rl-demo/ppo.ipynb": 3254,
+      "hands-on-transformer/transformer.ipynb": 3314,
       "modern-infra/warmup.ipynb": 3234,
       "modern-infra/flash-attn.ipynb": 3250,
       "math-demo/attention.ipynb": 3338,
-      "pytorch-basic/pt-basic.ipynb": 3295,
-      "hands-on-transformer/bigram.ipynb": 3310,
-      "algorithm/twosum.ipynb": 3249,
-      "optimizer/adamw.ipynb": 3168
+      "pytorch-basic/pt-basic.ipynb": 3297,
+      "hands-on-transformer/bigram.ipynb": 3311,
+      "algorithm/twosum.ipynb": 3251,
+      "optimizer/adamw.ipynb": 3169
     }
   },
   "likes": {
-    "total": 5824,
+    "total": 5829,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 814,
+      "hands-on-transformer/bigram.ipynb": 815,
       "modern-infra/warmup.ipynb": 404,
-      "modern-infra/flash-attn.ipynb": 409,
-      "math-demo/attention.ipynb": 810,
-      "modern-arch/aevb.ipynb": 841,
+      "modern-infra/flash-attn.ipynb": 410,
+      "math-demo/attention.ipynb": 811,
+      "modern-arch/aevb.ipynb": 842,
       "rl-demo/ppo.ipynb": 441,
-      "hands-on-transformer/transformer.ipynb": 826,
+      "hands-on-transformer/transformer.ipynb": 827,
       "pytorch-basic/pt-basic.ipynb": 448,
       "algorithm/twosum.ipynb": 441,
       "optimizer/adamw.ipynb": 410
@@ -1010,10 +1010,10 @@
       "uniqueUsers": 45
     },
     "2026-02-23": {
-      "views": 71,
+      "views": 88,
       "likes": 0,
-      "uniqueUsers": 19
+      "uniqueUsers": 22
     }
   },
-  "userSessions": 12793
+  "userSessions": 12797
 }
