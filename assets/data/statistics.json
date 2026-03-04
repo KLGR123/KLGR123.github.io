@@ -1,45 +1,45 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-04T19:38:02.921Z",
+    "lastUpdated": "2026-03-04T20:32:25.792Z",
     "version": "1.0.0",
-    "totalUsers": 10240
+    "totalUsers": 10245
   },
   "pageViews": {
-    "total": 30722,
+    "total": 30737,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 4355,
-      "code": 16619,
-      "gallery": 4355
+      "cv": 4358,
+      "code": 16628,
+      "gallery": 4358
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 3459,
+      "modern-arch/aevb.ipynb": 3462,
       "rl-demo/ppo.ipynb": 3410,
       "hands-on-transformer/transformer.ipynb": 3456,
-      "modern-infra/warmup.ipynb": 3346,
-      "modern-infra/flash-attn.ipynb": 3367,
-      "math-demo/attention.ipynb": 3475,
+      "modern-infra/warmup.ipynb": 3349,
+      "modern-infra/flash-attn.ipynb": 3369,
+      "math-demo/attention.ipynb": 3476,
       "pytorch-basic/pt-basic.ipynb": 3485,
-      "hands-on-transformer/bigram.ipynb": 3446,
+      "hands-on-transformer/bigram.ipynb": 3449,
       "algorithm/twosum.ipynb": 3401,
       "optimizer/adamw.ipynb": 3343
     }
   },
   "likes": {
-    "total": 6104,
+    "total": 6108,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 855,
       "modern-infra/warmup.ipynb": 425,
       "modern-infra/flash-attn.ipynb": 428,
-      "math-demo/attention.ipynb": 855,
+      "math-demo/attention.ipynb": 856,
       "modern-arch/aevb.ipynb": 874,
-      "rl-demo/ppo.ipynb": 459,
-      "hands-on-transformer/transformer.ipynb": 864,
+      "rl-demo/ppo.ipynb": 460,
+      "hands-on-transformer/transformer.ipynb": 865,
       "pytorch-basic/pt-basic.ipynb": 468,
-      "algorithm/twosum.ipynb": 459,
+      "algorithm/twosum.ipynb": 460,
       "optimizer/adamw.ipynb": 437
     }
   },
@@ -1055,10 +1055,10 @@
       "uniqueUsers": 38
     },
     "2026-03-04": {
-      "views": 111,
+      "views": 126,
       "likes": 0,
-      "uniqueUsers": 30
+      "uniqueUsers": 31
     }
   },
-  "userSessions": 13340
+  "userSessions": 13343
 }
