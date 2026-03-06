@@ -1,44 +1,44 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-06T10:34:51.878Z",
+    "lastUpdated": "2026-03-06T11:28:58.532Z",
     "version": "1.0.0",
-    "totalUsers": 10308
+    "totalUsers": 10312
   },
   "pageViews": {
-    "total": 30926,
+    "total": 30937,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 4383,
-      "code": 16728,
-      "gallery": 4383
+      "cv": 4385,
+      "code": 16734,
+      "gallery": 4385
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 3474,
-      "rl-demo/ppo.ipynb": 3428,
-      "hands-on-transformer/transformer.ipynb": 3485,
-      "modern-infra/warmup.ipynb": 3377,
+      "modern-arch/aevb.ipynb": 3476,
+      "rl-demo/ppo.ipynb": 3429,
+      "hands-on-transformer/transformer.ipynb": 3486,
+      "modern-infra/warmup.ipynb": 3379,
       "modern-infra/flash-attn.ipynb": 3392,
-      "math-demo/attention.ipynb": 3494,
-      "pytorch-basic/pt-basic.ipynb": 3509,
-      "hands-on-transformer/bigram.ipynb": 3468,
-      "algorithm/twosum.ipynb": 3415,
-      "optimizer/adamw.ipynb": 3364
+      "math-demo/attention.ipynb": 3495,
+      "pytorch-basic/pt-basic.ipynb": 3512,
+      "hands-on-transformer/bigram.ipynb": 3470,
+      "algorithm/twosum.ipynb": 3418,
+      "optimizer/adamw.ipynb": 3367
     }
   },
   "likes": {
-    "total": 6143,
+    "total": 6148,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 863,
+      "hands-on-transformer/bigram.ipynb": 864,
       "modern-infra/warmup.ipynb": 427,
-      "modern-infra/flash-attn.ipynb": 428,
+      "modern-infra/flash-attn.ipynb": 429,
       "math-demo/attention.ipynb": 861,
       "modern-arch/aevb.ipynb": 882,
-      "rl-demo/ppo.ipynb": 464,
-      "hands-on-transformer/transformer.ipynb": 869,
-      "pytorch-basic/pt-basic.ipynb": 468,
+      "rl-demo/ppo.ipynb": 465,
+      "hands-on-transformer/transformer.ipynb": 870,
+      "pytorch-basic/pt-basic.ipynb": 469,
       "algorithm/twosum.ipynb": 460,
       "optimizer/adamw.ipynb": 441
     }
@@ -1065,10 +1065,10 @@
       "uniqueUsers": 38
     },
     "2026-03-06": {
-      "views": 50,
+      "views": 61,
       "likes": 0,
-      "uniqueUsers": 22
+      "uniqueUsers": 25
     }
   },
-  "userSessions": 13447
+  "userSessions": 13450
 }
