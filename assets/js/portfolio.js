@@ -697,17 +697,31 @@ function renderNotebookFallback(notebook, container) {
         let mathCounter = 0;
         
         // Preserve display math ($$...$$)
+        // processedText = processedText.replace(/\$\$([\s\S]*?)\$\$/gim, function(match) {
+        //   const placeholder = `__MATHBLOCK_${mathCounter}__`;
+        //   mathBlocks[mathCounter] = match;
+        //   mathCounter++;
+        //   return placeholder;
+        // });
+        
+        // // Preserve inline math ($...$)
+        // processedText = processedText.replace(/\$([^$\n]*?)\$/gim, function(match) {
+        //   const placeholder = `__MATHBLOCK_${mathCounter}__`;
+        //   mathBlocks[mathCounter] = match;
+        //   mathCounter++;
+        //   return placeholder;
+        // });
+
         processedText = processedText.replace(/\$\$([\s\S]*?)\$\$/gim, function(match) {
           const placeholder = `__MATHBLOCK_${mathCounter}__`;
-          mathBlocks[mathCounter] = match;
+          mathBlocks[mathCounter] = match.replace(/</g, '&lt;').replace(/>/g, '&gt;');
           mathCounter++;
           return placeholder;
         });
         
-        // Preserve inline math ($...$)
         processedText = processedText.replace(/\$([^$\n]*?)\$/gim, function(match) {
           const placeholder = `__MATHBLOCK_${mathCounter}__`;
-          mathBlocks[mathCounter] = match;
+          mathBlocks[mathCounter] = match.replace(/</g, '&lt;').replace(/>/g, '&gt;');
           mathCounter++;
           return placeholder;
         });
@@ -717,8 +731,11 @@ function renderNotebookFallback(notebook, container) {
           .replace(/^# (.*$)/gim, '<h1>$1</h1>')
           .replace(/^## (.*$)/gim, '<h2>$1</h2>')
           .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-          .replace(/\*\*(.*)\*\*/gim, '<strong>$1</strong>')
-          .replace(/\*(.*)\*/gim, '<em>$1</em>')
+          // .replace(/\*\*(.*)\*\*/gim, '<strong>$1</strong>')
+          // .replace(/\*(.*)\*/gim, '<em>$1</em>')
+          .replace(/\*\*([^*\n]+)\*\*/gim, '<strong>$1</strong>')
+          .replace(/\*([^*\n]+)\*/gim, '<em>$1</em>')
+          
           .replace(/```([\s\S]*?)```/gim, '<pre><code>$1</code></pre>')
           .replace(/`([^`]*)`/gim, '<code>$1</code>')
           .replace(/\n/gim, '<br>');
