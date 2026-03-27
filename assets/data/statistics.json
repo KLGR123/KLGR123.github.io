@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-27T18:56:25.777Z",
+    "lastUpdated": "2026-03-27T19:41:53.252Z",
     "version": "1.0.0",
-    "totalUsers": 11250
+    "totalUsers": 11253
   },
   "pageViews": {
-    "total": 33750,
+    "total": 33760,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 4787,
-      "code": 18256,
-      "gallery": 4787
+      "cv": 4789,
+      "code": 18262,
+      "gallery": 4789
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 3808,
-      "rl-demo/ppo.ipynb": 3779,
+      "rl-demo/ppo.ipynb": 3782,
       "hands-on-transformer/transformer.ipynb": 3816,
-      "modern-infra/warmup.ipynb": 3657,
+      "modern-infra/warmup.ipynb": 3660,
       "modern-infra/flash-attn.ipynb": 3704,
       "math-demo/attention.ipynb": 3801,
-      "pytorch-basic/pt-basic.ipynb": 3823,
+      "pytorch-basic/pt-basic.ipynb": 3824,
       "hands-on-transformer/bigram.ipynb": 3799,
       "algorithm/twosum.ipynb": 3692,
       "optimizer/adamw.ipynb": 3699
     }
   },
   "likes": {
-    "total": 6735,
+    "total": 6737,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 936,
       "modern-infra/warmup.ipynb": 466,
@@ -37,9 +37,9 @@
       "math-demo/attention.ipynb": 947,
       "modern-arch/aevb.ipynb": 978,
       "rl-demo/ppo.ipynb": 509,
-      "hands-on-transformer/transformer.ipynb": 941,
+      "hands-on-transformer/transformer.ipynb": 942,
       "pytorch-basic/pt-basic.ipynb": 518,
-      "algorithm/twosum.ipynb": 501,
+      "algorithm/twosum.ipynb": 502,
       "optimizer/adamw.ipynb": 485
     }
   },
@@ -1170,10 +1170,10 @@
       "uniqueUsers": 29
     },
     "2026-03-27": {
-      "views": 130,
+      "views": 140,
       "likes": 0,
-      "uniqueUsers": 27
+      "uniqueUsers": 28
     }
   },
-  "userSessions": 14676
+  "userSessions": 14678
 }
