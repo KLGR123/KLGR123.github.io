@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-29T14:34:28.668Z",
+    "lastUpdated": "2026-03-29T15:32:16.036Z",
     "version": "1.0.0",
-    "totalUsers": 11333
+    "totalUsers": 11334
   },
   "pageViews": {
-    "total": 33999,
+    "total": 34004,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 4822,
-      "code": 18392,
-      "gallery": 4822
+      "cv": 4823,
+      "code": 18395,
+      "gallery": 4823
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 3832,
-      "rl-demo/ppo.ipynb": 3812,
+      "rl-demo/ppo.ipynb": 3814,
       "hands-on-transformer/transformer.ipynb": 3835,
-      "modern-infra/warmup.ipynb": 3684,
+      "modern-infra/warmup.ipynb": 3685,
       "modern-infra/flash-attn.ipynb": 3726,
-      "math-demo/attention.ipynb": 3828,
+      "math-demo/attention.ipynb": 3830,
       "pytorch-basic/pt-basic.ipynb": 3851,
-      "hands-on-transformer/bigram.ipynb": 3818,
-      "algorithm/twosum.ipynb": 3719,
+      "hands-on-transformer/bigram.ipynb": 3819,
+      "algorithm/twosum.ipynb": 3721,
       "optimizer/adamw.ipynb": 3728
     }
   },
   "likes": {
-    "total": 6786,
+    "total": 6789,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 941,
       "modern-infra/warmup.ipynb": 470,
       "modern-infra/flash-attn.ipynb": 477,
-      "math-demo/attention.ipynb": 950,
+      "math-demo/attention.ipynb": 951,
       "modern-arch/aevb.ipynb": 987,
       "rl-demo/ppo.ipynb": 516,
       "hands-on-transformer/transformer.ipynb": 949,
-      "pytorch-basic/pt-basic.ipynb": 521,
+      "pytorch-basic/pt-basic.ipynb": 522,
       "algorithm/twosum.ipynb": 509,
-      "optimizer/adamw.ipynb": 486
+      "optimizer/adamw.ipynb": 487
     }
   },
   "dailyStats": {
@@ -1180,10 +1180,10 @@
       "uniqueUsers": 43
     },
     "2026-03-29": {
-      "views": 78,
+      "views": 83,
       "likes": 0,
-      "uniqueUsers": 18
+      "uniqueUsers": 19
     }
   },
-  "userSessions": 14791
+  "userSessions": 14794
 }
