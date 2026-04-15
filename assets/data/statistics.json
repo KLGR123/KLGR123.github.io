@@ -1,44 +1,44 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-15T10:58:47.626Z",
+    "lastUpdated": "2026-04-15T12:01:22.292Z",
     "version": "1.0.0",
-    "totalUsers": 12027
+    "totalUsers": 12034
   },
   "pageViews": {
-    "total": 36082,
+    "total": 36102,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 5124,
-      "code": 19535,
-      "gallery": 5124
+      "cv": 5128,
+      "code": 19547,
+      "gallery": 5128
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 4072,
-      "rl-demo/ppo.ipynb": 4016,
-      "hands-on-transformer/transformer.ipynb": 4084,
-      "modern-infra/warmup.ipynb": 3924,
-      "modern-infra/flash-attn.ipynb": 3976,
+      "modern-arch/aevb.ipynb": 4074,
+      "rl-demo/ppo.ipynb": 4019,
+      "hands-on-transformer/transformer.ipynb": 4087,
+      "modern-infra/warmup.ipynb": 3927,
+      "modern-infra/flash-attn.ipynb": 3977,
       "math-demo/attention.ipynb": 4085,
-      "pytorch-basic/pt-basic.ipynb": 4064,
-      "hands-on-transformer/bigram.ipynb": 4075,
-      "algorithm/twosum.ipynb": 3962,
+      "pytorch-basic/pt-basic.ipynb": 4067,
+      "hands-on-transformer/bigram.ipynb": 4077,
+      "algorithm/twosum.ipynb": 3965,
       "optimizer/adamw.ipynb": 3949
     }
   },
   "likes": {
-    "total": 7229,
+    "total": 7233,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 996,
-      "modern-infra/warmup.ipynb": 505,
-      "modern-infra/flash-attn.ipynb": 505,
-      "math-demo/attention.ipynb": 1005,
+      "modern-infra/warmup.ipynb": 506,
+      "modern-infra/flash-attn.ipynb": 506,
+      "math-demo/attention.ipynb": 1006,
       "modern-arch/aevb.ipynb": 1044,
       "rl-demo/ppo.ipynb": 541,
       "hands-on-transformer/transformer.ipynb": 1018,
-      "pytorch-basic/pt-basic.ipynb": 567,
+      "pytorch-basic/pt-basic.ipynb": 568,
       "algorithm/twosum.ipynb": 547,
       "optimizer/adamw.ipynb": 521
     }
@@ -1265,10 +1265,10 @@
       "uniqueUsers": 22
     },
     "2026-04-15": {
-      "views": 36,
+      "views": 56,
       "likes": 0,
-      "uniqueUsers": 8
+      "uniqueUsers": 9
     }
   },
-  "userSessions": 15607
+  "userSessions": 15609
 }
