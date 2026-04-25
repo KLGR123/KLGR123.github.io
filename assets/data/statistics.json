@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-25T19:43:28.837Z",
+    "lastUpdated": "2026-04-25T20:38:59.193Z",
     "version": "1.0.0",
-    "totalUsers": 12449
+    "totalUsers": 12454
   },
   "pageViews": {
-    "total": 37349,
+    "total": 37364,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 5319,
-      "code": 20236,
-      "gallery": 5319
+      "cv": 5322,
+      "code": 20245,
+      "gallery": 5322
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 4226,
-      "rl-demo/ppo.ipynb": 4136,
-      "hands-on-transformer/transformer.ipynb": 4210,
+      "modern-arch/aevb.ipynb": 4228,
+      "rl-demo/ppo.ipynb": 4137,
+      "hands-on-transformer/transformer.ipynb": 4213,
       "modern-infra/warmup.ipynb": 4039,
-      "modern-infra/flash-attn.ipynb": 4106,
+      "modern-infra/flash-attn.ipynb": 4108,
       "math-demo/attention.ipynb": 4210,
-      "pytorch-basic/pt-basic.ipynb": 4200,
-      "hands-on-transformer/bigram.ipynb": 4197,
+      "pytorch-basic/pt-basic.ipynb": 4201,
+      "hands-on-transformer/bigram.ipynb": 4198,
       "algorithm/twosum.ipynb": 4103,
       "optimizer/adamw.ipynb": 4082
     }
   },
   "likes": {
-    "total": 7459,
+    "total": 7461,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 1022,
       "modern-infra/warmup.ipynb": 521,
@@ -37,9 +37,9 @@
       "math-demo/attention.ipynb": 1038,
       "modern-arch/aevb.ipynb": 1081,
       "rl-demo/ppo.ipynb": 555,
-      "hands-on-transformer/transformer.ipynb": 1052,
+      "hands-on-transformer/transformer.ipynb": 1053,
       "pytorch-basic/pt-basic.ipynb": 578,
-      "algorithm/twosum.ipynb": 564,
+      "algorithm/twosum.ipynb": 565,
       "optimizer/adamw.ipynb": 542
     }
   },
@@ -1315,10 +1315,10 @@
       "uniqueUsers": 29
     },
     "2026-04-25": {
-      "views": 113,
+      "views": 128,
       "likes": 0,
-      "uniqueUsers": 29
+      "uniqueUsers": 32
     }
   },
-  "userSessions": 16070
+  "userSessions": 16072
 }
