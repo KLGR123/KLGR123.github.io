@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2026-05-09T11:50:41.362Z",
+    "lastUpdated": "2026-05-09T13:18:01.593Z",
     "version": "1.0.0",
-    "totalUsers": 12863
+    "totalUsers": 12868
   },
   "pageViews": {
-    "total": 38591,
+    "total": 38605,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 5500,
-      "code": 20919,
-      "gallery": 5500
+      "cv": 5502,
+      "code": 20927,
+      "gallery": 5502
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 4348,
-      "rl-demo/ppo.ipynb": 4288,
+      "rl-demo/ppo.ipynb": 4290,
       "hands-on-transformer/transformer.ipynb": 4320,
       "modern-infra/warmup.ipynb": 4175,
-      "modern-infra/flash-attn.ipynb": 4241,
+      "modern-infra/flash-attn.ipynb": 4244,
       "math-demo/attention.ipynb": 4355,
-      "pytorch-basic/pt-basic.ipynb": 4348,
+      "pytorch-basic/pt-basic.ipynb": 4349,
       "hands-on-transformer/bigram.ipynb": 4338,
       "algorithm/twosum.ipynb": 4229,
-      "optimizer/adamw.ipynb": 4216
+      "optimizer/adamw.ipynb": 4219
     }
   },
   "likes": {
-    "total": 7739,
+    "total": 7743,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 1069,
       "modern-infra/warmup.ipynb": 542,
       "modern-infra/flash-attn.ipynb": 548,
       "math-demo/attention.ipynb": 1069,
       "modern-arch/aevb.ipynb": 1123,
-      "rl-demo/ppo.ipynb": 570,
-      "hands-on-transformer/transformer.ipynb": 1096,
-      "pytorch-basic/pt-basic.ipynb": 591,
+      "rl-demo/ppo.ipynb": 571,
+      "hands-on-transformer/transformer.ipynb": 1097,
+      "pytorch-basic/pt-basic.ipynb": 592,
       "algorithm/twosum.ipynb": 587,
-      "optimizer/adamw.ipynb": 564
+      "optimizer/adamw.ipynb": 565
     }
   },
   "dailyStats": {
@@ -1385,10 +1385,10 @@
       "uniqueUsers": 20
     },
     "2026-05-09": {
-      "views": 44,
+      "views": 58,
       "likes": 0,
-      "uniqueUsers": 9
+      "uniqueUsers": 12
     }
   },
-  "userSessions": 16542
+  "userSessions": 16547
 }
