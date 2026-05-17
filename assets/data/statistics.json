@@ -1,42 +1,42 @@
 {
   "metadata": {
-    "lastUpdated": "2026-05-17T06:43:49.543Z",
+    "lastUpdated": "2026-05-17T09:05:05.493Z",
     "version": "1.0.0",
-    "totalUsers": 13103
+    "totalUsers": 13109
   },
   "pageViews": {
-    "total": 39309,
+    "total": 39327,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 5610,
-      "code": 21316,
-      "gallery": 5610
+      "cv": 5613,
+      "code": 21326,
+      "gallery": 5613
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 4422,
-      "rl-demo/ppo.ipynb": 4387,
-      "hands-on-transformer/transformer.ipynb": 4388,
-      "modern-infra/warmup.ipynb": 4262,
+      "rl-demo/ppo.ipynb": 4390,
+      "hands-on-transformer/transformer.ipynb": 4389,
+      "modern-infra/warmup.ipynb": 4265,
       "modern-infra/flash-attn.ipynb": 4307,
-      "math-demo/attention.ipynb": 4422,
-      "pytorch-basic/pt-basic.ipynb": 4419,
-      "hands-on-transformer/bigram.ipynb": 4401,
+      "math-demo/attention.ipynb": 4423,
+      "pytorch-basic/pt-basic.ipynb": 4421,
+      "hands-on-transformer/bigram.ipynb": 4402,
       "algorithm/twosum.ipynb": 4291,
       "optimizer/adamw.ipynb": 4299
     }
   },
   "likes": {
-    "total": 7901,
+    "total": 7904,
     "notebooks": {
-      "hands-on-transformer/bigram.ipynb": 1091,
-      "modern-infra/warmup.ipynb": 551,
+      "hands-on-transformer/bigram.ipynb": 1092,
+      "modern-infra/warmup.ipynb": 552,
       "modern-infra/flash-attn.ipynb": 558,
       "math-demo/attention.ipynb": 1091,
       "modern-arch/aevb.ipynb": 1144,
-      "rl-demo/ppo.ipynb": 586,
+      "rl-demo/ppo.ipynb": 587,
       "hands-on-transformer/transformer.ipynb": 1127,
       "pytorch-basic/pt-basic.ipynb": 604,
       "algorithm/twosum.ipynb": 599,
@@ -1425,10 +1425,10 @@
       "uniqueUsers": 30
     },
     "2026-05-17": {
-      "views": 8,
+      "views": 26,
       "likes": 0,
-      "uniqueUsers": 3
+      "uniqueUsers": 4
     }
   },
-  "userSessions": 16784
+  "userSessions": 16789
 }
