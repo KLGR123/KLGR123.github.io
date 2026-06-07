@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-07T12:20:36.353Z",
+    "lastUpdated": "2026-06-07T14:51:59.013Z",
     "version": "1.0.0",
-    "totalUsers": 13521
+    "totalUsers": 13528
   },
   "pageViews": {
-    "total": 40565,
+    "total": 40585,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 5790,
-      "code": 21996,
-      "gallery": 5790
+      "cv": 5794,
+      "code": 22008,
+      "gallery": 5794
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 4549,
+      "modern-arch/aevb.ipynb": 4551,
       "rl-demo/ppo.ipynb": 4517,
-      "hands-on-transformer/transformer.ipynb": 4521,
-      "modern-infra/warmup.ipynb": 4415,
+      "hands-on-transformer/transformer.ipynb": 4523,
+      "modern-infra/warmup.ipynb": 4418,
       "modern-infra/flash-attn.ipynb": 4427,
-      "math-demo/attention.ipynb": 4541,
-      "pytorch-basic/pt-basic.ipynb": 4569,
-      "hands-on-transformer/bigram.ipynb": 4525,
+      "math-demo/attention.ipynb": 4544,
+      "pytorch-basic/pt-basic.ipynb": 4572,
+      "hands-on-transformer/bigram.ipynb": 4526,
       "algorithm/twosum.ipynb": 4422,
       "optimizer/adamw.ipynb": 4433
     }
   },
   "likes": {
-    "total": 8151,
+    "total": 8153,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 1135,
       "modern-infra/warmup.ipynb": 570,
@@ -37,9 +37,9 @@
       "math-demo/attention.ipynb": 1134,
       "modern-arch/aevb.ipynb": 1176,
       "rl-demo/ppo.ipynb": 600,
-      "hands-on-transformer/transformer.ipynb": 1159,
+      "hands-on-transformer/transformer.ipynb": 1160,
       "pytorch-basic/pt-basic.ipynb": 617,
-      "algorithm/twosum.ipynb": 618,
+      "algorithm/twosum.ipynb": 619,
       "optimizer/adamw.ipynb": 583
     }
   },
@@ -1530,10 +1530,10 @@
       "uniqueUsers": 25
     },
     "2026-06-07": {
-      "views": 34,
+      "views": 54,
       "likes": 0,
-      "uniqueUsers": 9
+      "uniqueUsers": 10
     }
   },
-  "userSessions": 17354
+  "userSessions": 17356
 }
