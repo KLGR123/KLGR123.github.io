@@ -1,46 +1,46 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-07T18:04:39.248Z",
+    "lastUpdated": "2026-06-07T20:11:56.394Z",
     "version": "1.0.0",
-    "totalUsers": 13533
+    "totalUsers": 13538
   },
   "pageViews": {
-    "total": 40601,
+    "total": 40614,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 5797,
-      "code": 22017,
-      "gallery": 5797
+      "cv": 5799,
+      "code": 22024,
+      "gallery": 5799
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 4551,
+      "modern-arch/aevb.ipynb": 4553,
       "rl-demo/ppo.ipynb": 4518,
-      "hands-on-transformer/transformer.ipynb": 4523,
+      "hands-on-transformer/transformer.ipynb": 4525,
       "modern-infra/warmup.ipynb": 4421,
       "modern-infra/flash-attn.ipynb": 4427,
-      "math-demo/attention.ipynb": 4545,
-      "pytorch-basic/pt-basic.ipynb": 4572,
-      "hands-on-transformer/bigram.ipynb": 4526,
+      "math-demo/attention.ipynb": 4548,
+      "pytorch-basic/pt-basic.ipynb": 4575,
+      "hands-on-transformer/bigram.ipynb": 4528,
       "algorithm/twosum.ipynb": 4422,
       "optimizer/adamw.ipynb": 4433
     }
   },
   "likes": {
-    "total": 8158,
+    "total": 8160,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 1135,
       "modern-infra/warmup.ipynb": 571,
       "modern-infra/flash-attn.ipynb": 580,
-      "math-demo/attention.ipynb": 1135,
+      "math-demo/attention.ipynb": 1136,
       "modern-arch/aevb.ipynb": 1176,
       "rl-demo/ppo.ipynb": 600,
       "hands-on-transformer/transformer.ipynb": 1160,
       "pytorch-basic/pt-basic.ipynb": 617,
       "algorithm/twosum.ipynb": 621,
-      "optimizer/adamw.ipynb": 583
+      "optimizer/adamw.ipynb": 584
     }
   },
   "dailyStats": {
@@ -1530,10 +1530,10 @@
       "uniqueUsers": 25
     },
     "2026-06-07": {
-      "views": 70,
+      "views": 83,
       "likes": 0,
-      "uniqueUsers": 13
+      "uniqueUsers": 15
     }
   },
-  "userSessions": 17364
+  "userSessions": 17369
 }
