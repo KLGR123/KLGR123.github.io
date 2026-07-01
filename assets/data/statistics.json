@@ -1,41 +1,41 @@
 {
   "metadata": {
-    "lastUpdated": "2026-07-01T15:41:20.066Z",
+    "lastUpdated": "2026-07-01T17:55:24.140Z",
     "version": "1.0.0",
-    "totalUsers": 13941
+    "totalUsers": 13945
   },
   "pageViews": {
-    "total": 41825,
+    "total": 41836,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 5970,
-      "code": 22677,
-      "gallery": 5970
+      "cv": 5972,
+      "code": 22683,
+      "gallery": 5972
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 4700,
-      "rl-demo/ppo.ipynb": 4656,
-      "hands-on-transformer/transformer.ipynb": 4658,
-      "modern-infra/warmup.ipynb": 4534,
-      "modern-infra/flash-attn.ipynb": 4588,
+      "modern-arch/aevb.ipynb": 4703,
+      "rl-demo/ppo.ipynb": 4658,
+      "hands-on-transformer/transformer.ipynb": 4661,
+      "modern-infra/warmup.ipynb": 4536,
+      "modern-infra/flash-attn.ipynb": 4591,
       "math-demo/attention.ipynb": 4699,
-      "pytorch-basic/pt-basic.ipynb": 4723,
-      "hands-on-transformer/bigram.ipynb": 4658,
-      "algorithm/twosum.ipynb": 4565,
-      "optimizer/adamw.ipynb": 4564
+      "pytorch-basic/pt-basic.ipynb": 4725,
+      "hands-on-transformer/bigram.ipynb": 4660,
+      "algorithm/twosum.ipynb": 4568,
+      "optimizer/adamw.ipynb": 4567
     }
   },
   "likes": {
-    "total": 8455,
+    "total": 8456,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 1179,
       "modern-infra/warmup.ipynb": 590,
       "modern-infra/flash-attn.ipynb": 604,
       "math-demo/attention.ipynb": 1182,
-      "modern-arch/aevb.ipynb": 1213,
+      "modern-arch/aevb.ipynb": 1214,
       "rl-demo/ppo.ipynb": 625,
       "hands-on-transformer/transformer.ipynb": 1192,
       "pytorch-basic/pt-basic.ipynb": 641,
@@ -1545,10 +1545,10 @@
       "uniqueUsers": 15
     },
     "2026-07-01": {
-      "views": 13,
+      "views": 24,
       "likes": 0,
-      "uniqueUsers": 6
+      "uniqueUsers": 9
     }
   },
-  "userSessions": 17935
+  "userSessions": 17939
 }
