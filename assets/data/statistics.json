@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "lastUpdated": "2026-08-08T23:27:59.215Z",
+    "lastUpdated": "2026-08-09T01:43:26.138Z",
     "version": "1.0.0",
-    "totalUsers": 14952
+    "totalUsers": 14953
   },
   "pageViews": {
-    "total": 44856,
+    "total": 44860,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
       "cv": 6420,
-      "code": 24335,
+      "code": 24337,
       "gallery": 6420
     },
     "notebooks": {
@@ -29,12 +29,12 @@
     }
   },
   "likes": {
-    "total": 9050,
+    "total": 9052,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 1256,
-      "modern-infra/warmup.ipynb": 624,
+      "modern-infra/warmup.ipynb": 625,
       "modern-infra/flash-attn.ipynb": 657,
-      "math-demo/attention.ipynb": 1264,
+      "math-demo/attention.ipynb": 1265,
       "modern-arch/aevb.ipynb": 1301,
       "rl-demo/ppo.ipynb": 675,
       "hands-on-transformer/transformer.ipynb": 1279,
@@ -44,11 +44,6 @@
     }
   },
   "dailyStats": {
-    "2025-10-12": {
-      "views": 165,
-      "likes": 0,
-      "uniqueUsers": 43
-    },
     "2025-10-13": {
       "views": 153,
       "likes": 0,
@@ -1548,7 +1543,12 @@
       "views": 144,
       "likes": 0,
       "uniqueUsers": 42
+    },
+    "2026-08-09": {
+      "views": 4,
+      "likes": 0,
+      "uniqueUsers": 1
     }
   },
-  "userSessions": 19178
+  "userSessions": 19183
 }
