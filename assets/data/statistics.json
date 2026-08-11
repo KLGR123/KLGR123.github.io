@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "lastUpdated": "2026-08-11T10:58:24.927Z",
+    "lastUpdated": "2026-08-11T11:50:18.072Z",
     "version": "1.0.0",
-    "totalUsers": 15066
+    "totalUsers": 15068
   },
   "pageViews": {
-    "total": 45198,
+    "total": 45204,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 6465,
-      "code": 24522,
-      "gallery": 6465
+      "cv": 6466,
+      "code": 24525,
+      "gallery": 6466
     },
     "notebooks": {
       "modern-arch/aevb.ipynb": 5039,
-      "rl-demo/ppo.ipynb": 5043,
+      "rl-demo/ppo.ipynb": 5045,
       "hands-on-transformer/transformer.ipynb": 5019,
       "modern-infra/warmup.ipynb": 4867,
-      "modern-infra/flash-attn.ipynb": 4959,
-      "math-demo/attention.ipynb": 5068,
+      "modern-infra/flash-attn.ipynb": 4961,
+      "math-demo/attention.ipynb": 5070,
       "pytorch-basic/pt-basic.ipynb": 5110,
-      "hands-on-transformer/bigram.ipynb": 5020,
-      "algorithm/twosum.ipynb": 4951,
-      "optimizer/adamw.ipynb": 4943
+      "hands-on-transformer/bigram.ipynb": 5021,
+      "algorithm/twosum.ipynb": 4954,
+      "optimizer/adamw.ipynb": 4946
     }
   },
   "likes": {
-    "total": 9106,
+    "total": 9108,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 1261,
       "modern-infra/warmup.ipynb": 629,
@@ -37,10 +37,10 @@
       "math-demo/attention.ipynb": 1272,
       "modern-arch/aevb.ipynb": 1309,
       "rl-demo/ppo.ipynb": 677,
-      "hands-on-transformer/transformer.ipynb": 1292,
+      "hands-on-transformer/transformer.ipynb": 1293,
       "pytorch-basic/pt-basic.ipynb": 691,
       "algorithm/twosum.ipynb": 691,
-      "optimizer/adamw.ipynb": 642
+      "optimizer/adamw.ipynb": 643
     }
   },
   "dailyStats": {
@@ -1545,10 +1545,10 @@
       "uniqueUsers": 31
     },
     "2026-08-11": {
-      "views": 41,
+      "views": 47,
       "likes": 0,
-      "uniqueUsers": 14
+      "uniqueUsers": 17
     }
   },
-  "userSessions": 19310
+  "userSessions": 19311
 }
