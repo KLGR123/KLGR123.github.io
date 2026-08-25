@@ -1,43 +1,43 @@
 {
   "metadata": {
-    "lastUpdated": "2026-08-25T13:49:22.213Z",
+    "lastUpdated": "2026-08-25T14:43:36.346Z",
     "version": "1.0.0",
-    "totalUsers": 15775
+    "totalUsers": 15780
   },
   "pageViews": {
-    "total": 47327,
+    "total": 47342,
     "pages": {
       "/": 0,
       "/cv": 0,
       "/code": 0,
       "/gallery": 0,
-      "cv": 6778,
-      "code": 25682,
-      "gallery": 6778
+      "cv": 6781,
+      "code": 25691,
+      "gallery": 6781
     },
     "notebooks": {
-      "modern-arch/aevb.ipynb": 5238,
-      "rl-demo/ppo.ipynb": 5256,
+      "modern-arch/aevb.ipynb": 5241,
+      "rl-demo/ppo.ipynb": 5258,
       "hands-on-transformer/transformer.ipynb": 5231,
-      "modern-infra/warmup.ipynb": 5103,
+      "modern-infra/warmup.ipynb": 5104,
       "modern-infra/flash-attn.ipynb": 5169,
       "math-demo/attention.ipynb": 5287,
-      "pytorch-basic/pt-basic.ipynb": 5335,
-      "hands-on-transformer/bigram.ipynb": 5242,
-      "algorithm/twosum.ipynb": 5205,
+      "pytorch-basic/pt-basic.ipynb": 5336,
+      "hands-on-transformer/bigram.ipynb": 5245,
+      "algorithm/twosum.ipynb": 5207,
       "optimizer/adamw.ipynb": 5151
     }
   },
   "likes": {
-    "total": 9537,
+    "total": 9539,
     "notebooks": {
       "hands-on-transformer/bigram.ipynb": 1317,
       "modern-infra/warmup.ipynb": 663,
       "modern-infra/flash-attn.ipynb": 698,
-      "math-demo/attention.ipynb": 1333,
+      "math-demo/attention.ipynb": 1334,
       "modern-arch/aevb.ipynb": 1370,
       "rl-demo/ppo.ipynb": 711,
-      "hands-on-transformer/transformer.ipynb": 1355,
+      "hands-on-transformer/transformer.ipynb": 1356,
       "pytorch-basic/pt-basic.ipynb": 714,
       "algorithm/twosum.ipynb": 719,
       "optimizer/adamw.ipynb": 677
@@ -1545,10 +1545,10 @@
       "uniqueUsers": 42
     },
     "2026-08-25": {
-      "views": 60,
+      "views": 75,
       "likes": 0,
-      "uniqueUsers": 23
+      "uniqueUsers": 25
     }
   },
-  "userSessions": 20231
+  "userSessions": 20236
 }
